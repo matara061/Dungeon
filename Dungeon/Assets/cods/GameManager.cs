@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     private void Awake()
     {
-        if (GameManager.instance != null)
+        if (instance != null) // if (GameManager.instance != null)
         {
             Destroy(gameObject);
             return;
@@ -32,16 +32,17 @@ public class GameManager : MonoBehaviour
     public Player player;
 
     // public weapon weapon...
-   //                                    public textoFlutuanteManager floatingText;
+      public FloatingTextManager floatingTextManager;
 
     // logic
     public int pesos;
     public int experience;
 
-  //  public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
-  //  {
-  //      floatingText.Show(msg, fontSize, color, position, motion, duration);
-  //  }
+    // Floating Text
+    public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
+    {
+        floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
+    }
 
     // salva status
     public void SaveState() // Scene s, LoadSceneMode mode

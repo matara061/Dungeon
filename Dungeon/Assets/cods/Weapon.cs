@@ -52,7 +52,7 @@ public class Weapon : Collidable
 				pushForce = pushForce
 			};
 
-			//Debug.Log(coll.name);
+			Debug.Log(coll.name);
 			coll.SendMessage("ReceiveDamage", dmg);
 
 		}
