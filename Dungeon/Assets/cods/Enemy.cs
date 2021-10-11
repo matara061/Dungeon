@@ -29,10 +29,10 @@ public class Enemy : Mover
 		hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
 	}
 
-	private void FixedUpdade()
+	private void FixedUpdate()
 	{
 		// player esta no alcace?
-		if (Vector3.Distance(playerTransform.position, startingPosition) < chaseLenght)
+		if (Vector3.Distance(playerTransform.position, startingPosition) < chaseLenght) 
 		{
 			if (Vector3.Distance(playerTransform.position, startingPosition) < triggerLenght)
 				chasing = true;
@@ -64,7 +64,7 @@ public class Enemy : Mover
 				continue; //
 
 
-			if (hits[i].tag == "Fighter" && hits[i].name == "player") // talvez maiuscula
+			if (hits[i].tag == "Fighter" && hits[i].name == "Player") 
 			{
 				collidingWithPlayer = true;
 			}
@@ -77,10 +77,10 @@ public class Enemy : Mover
 
 	}
 
-	//protected override void Death()
-	//{
-	//	Destroy(gameObject);
-	//	GameManager.instance.experience += xpValue;
-	//	GameManager.instance.ShowText("+" + xpValue + "xp", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);
-	//}
+	protected override void Death()
+	{
+		Destroy(gameObject);
+		GameManager.instance.experience += xpValue;
+		GameManager.instance.ShowText("+" + xpValue + "xp", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);
+	}
 }

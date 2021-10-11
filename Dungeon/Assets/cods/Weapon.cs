@@ -14,6 +14,7 @@ public class Weapon : Collidable
 	private SpriteRenderer spriteRenderer;
 
 	// Swing
+	private Animator anim;
 	private float cooldown = 0.5f;
 	private float lastSwing;
 
@@ -21,6 +22,7 @@ public class Weapon : Collidable
 	{
 		base.Start();
 		spriteRenderer = GetComponent<SpriteRenderer>();
+		anim = GetComponent<Animator>();
 	}
 
 	protected override void Update()
@@ -39,9 +41,9 @@ public class Weapon : Collidable
 
 	protected override void OnCollide(Collider2D coll)
 	{
-		if (coll.tag == "Fighter")
+		if (coll.CompareTag("Fighter")) // coll.Tag é o original
 		{
-			if (coll.name == "player")
+			if (coll.name == "Player")
 				return;
 
 			// create a new damage object, then we ll send it to the fighter we ve hit 
@@ -60,6 +62,7 @@ public class Weapon : Collidable
 
 	private void Swing()
 	{
-		Debug.Log("Swing");
+		//Debug.Log("Swing");
+		anim.SetTrigger("Swing");
 	}
 }

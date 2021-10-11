@@ -11,6 +11,8 @@ public class Player : Mover //: Fighter : MonoBehavior
 
         UpdateMotor(new Vector3(x, y, 0));
 
+        DontDestroyOnLoad(gameObject); // add
+
 
     }
 }

@@ -25,13 +25,18 @@ public class Fighter : MonoBehaviour
 			hitpoint -= dmg.damageAmount;
 			pushDirection = (transform.position - dmg.origin).normalized * dmg.pushForce;
 
-		//	GameManager.instance.ShowText(dmg.damageAmount.ToString(), 25, Color.red, transform.position, Vector3.zero, 0.5f);
+			GameManager.instance.ShowText(dmg.damageAmount.ToString(), 25, Color.red, transform.position, Vector3.zero, 0.5f);
 
 			if (hitpoint <= 0)
 			{
 				hitpoint = 0;
-				//Death();
+				Death();
 			}
 		}
 	}
+
+	protected virtual void Death()
+    {
+
+    }
 }
