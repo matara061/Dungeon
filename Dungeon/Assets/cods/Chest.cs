@@ -13,7 +13,7 @@ public class Chest : Collectable  // chest é uma criança de collectable que é
         {
             collected = true;
             GetComponent<SpriteRenderer>().sprite = emptyChest;
-            GameManager.instance.ShowText("+" + pesosAmount + " pesos!", 25, Color.yellow, transform.position, Vector3.up * 25, 3.0f);
+            GameManager.instance.ShowText("+" + pesosAmount + " pesos!", 22, Color.yellow, transform.position, Vector3.up * 25, 3.0f);
             //Debug.Log("Grant " + pesosAmount + " pesos! ");
         }
     }

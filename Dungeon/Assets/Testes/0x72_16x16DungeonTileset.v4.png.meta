@@ -29,6 +29,9 @@ TextureImporter:
   - first:
       213: 7401702256180518906
     second: 0x72_16x16DungeonTileset.v4_8
+  - first:
+      213: -8168956363209427361
+    second: Menu
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -290,7 +293,7 @@ TextureImporter:
         width: 20
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -298,6 +301,27 @@ TextureImporter:
       bones: []
       spriteID: affd8d07cf028b660800000000000000
       internalID: 7401702256180518906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 65
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f563c39f77902ae80800000000000000
+      internalID: -8168956363209427361
       vertices: []
       indices: 
       edges: []

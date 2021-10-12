@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     private void Awake()
     {
-        if (GameManager.instance != null) // if (GameManager.instance != null)
+        if (instance != null) // if (GameManager.instance != null)
         {
             Destroy(gameObject);
             return;
@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadState(Scene s, LoadSceneMode mode)
     {
-        SceneManager.sceneLoaded -= LoadState;
+       // SceneManager.sceneLoaded -= LoadState;
         Debug.Log("LoadState");
     }
 
