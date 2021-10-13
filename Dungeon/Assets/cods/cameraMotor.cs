@@ -17,7 +17,7 @@ public class cameraMotor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        DontDestroyOnLoad(gameObject); // add
     }
 
     private void LateUpdate()
