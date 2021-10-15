@@ -14,6 +14,8 @@ public abstract class Mover : Fighter
     protected float xSpeed = 1.0f;
 
 
+    // virtual voids: Esses métodos são virtuais e podem ser sobrescritos
+    //in child classes
     protected virtual void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
@@ -26,7 +28,7 @@ public abstract class Mover : Fighter
 
         // vira a sprite 
         if (moveDelta.x > 0)
-            transform.localScale = Vector3.one;
+            transform.localScale = Vector3.one; // vector.one é abreviação de Vector3(1, 1, 1)
         else if (moveDelta.x < 0)
             transform.localScale = new Vector3(-1, 1, 1);
 
@@ -36,10 +38,10 @@ public abstract class Mover : Fighter
         // add push vector, if any
         moveDelta += pushDirection;
 
-        // reduce push force every frame, based off recovery speed 
+        // reduz a força de pressão a cada quadro, com base na velocidade de recuperação 
         pushDirection = Vector3.Lerp(pushDirection, Vector3.zero, pushRecoverySpeed);
 
-        // make sure we can move in this direction, by casting a box there first, if the box returns null, we re free to move 
+        // certifique-se de que podemos nos mover nessa direção, lançando uma caixa lá primeiro, se a caixa retornar nulo, estamos livres para nos mover 
         hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
         if (hit.collider == null)
         {

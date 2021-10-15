@@ -41,7 +41,7 @@ public class Enemy : Mover
 			{
 				if (!collidingWithPlayer)
 				{
-					UpdateMotor((playerTransform.position - transform.position).normalized);
+					UpdateMotor((playerTransform.position - transform.position).normalized);// .normalized
 				}
 			}
 			else
@@ -55,7 +55,7 @@ public class Enemy : Mover
 			chasing = false;
 		}
 
-		// check for overlaps
+		// checa sobreposições
 		collidingWithPlayer = false;
 		boxCollider.OverlapCollider(filter, hits);
 		for (int i = 0; i < hits.Length; i++)

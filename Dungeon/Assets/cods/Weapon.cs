@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Weapon : Collidable
+public class Weapon : Collidable // : monobehav....
 {
 	// damage struct
 	public int damagePoint = 1;
@@ -65,4 +65,5 @@ public class Weapon : Collidable
 		//Debug.Log("Swing");
 		anim.SetTrigger("Swing");
 	}
+
 }
