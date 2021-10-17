@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 364147074d5eef843a49aac21eeed4a2
+guid: 63395fba7fe88984392426cd6c111abc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5571167610463942239
-    second: Merlin right_0
+      213: 2299181532483124908
+    second: Merlin left_0
   - first:
-      213: 7806625961233873813
-    second: Merlin right_1
+      213: 1581405481205138204
+    second: Merlin left_1
   - first:
-      213: 4009111330674657136
-    second: Merlin right_2
+      213: -3561351149365157192
+    second: Merlin left_2
   - first:
-      213: -4582536688410101334
-    second: Merlin right_3
+      213: 68129813134658254
+    second: Merlin left_3
   - first:
-      213: 8196018844102763310
-    second: Merlin right_4
+      213: 7543564771105614926
+    second: Merlin left_4
   - first:
-      213: 3187424814098783238
-    second: Merlin right_5
+      213: 2505326327466524210
+    second: Merlin left_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -105,10 +105,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Merlin right_0
+      name: Merlin left_0
       rect:
         serializedVersion: 2
-        x: 26
+        x: 36
         y: 223
         width: 38
         height: 56
@@ -119,17 +119,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f567dd5ac63c05d40800000000000000
-      internalID: 5571167610463942239
+      spriteID: cae7bc51c6558ef10800000000000000
+      internalID: 2299181532483124908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Merlin right_1
+      name: Merlin left_1
       rect:
         serializedVersion: 2
-        x: 123
+        x: 140
         y: 224
         width: 37
         height: 57
@@ -140,17 +140,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59bffa153f4b65c60800000000000000
-      internalID: 7806625961233873813
+      spriteID: c13861118e742f510800000000000000
+      internalID: 1581405481205138204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Merlin right_2
+      name: Merlin left_2
       rect:
         serializedVersion: 2
-        x: 29
+        x: 34
         y: 123
         width: 37
         height: 60
@@ -161,17 +161,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0774bd9938933a730800000000000000
-      internalID: 4009111330674657136
+      spriteID: 8b229ad9ff9839ec0800000000000000
+      internalID: -3561351149365157192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Merlin right_3
+      name: Merlin left_3
       rect:
         serializedVersion: 2
-        x: 126
+        x: 136
         y: 121
         width: 38
         height: 56
@@ -182,17 +182,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa9fe15492f8760c0800000000000000
-      internalID: -4582536688410101334
+      spriteID: eca418e34bb02f000800000000000000
+      internalID: 68129813134658254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Merlin right_4
+      name: Merlin left_4
       rect:
         serializedVersion: 2
-        x: 9
+        x: 14
         y: 22
         width: 77
         height: 56
@@ -203,17 +203,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e23272fd6bb1eb170800000000000000
-      internalID: 8196018844102763310
+      spriteID: e4ca6e9113020b860800000000000000
+      internalID: 7543564771105614926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Merlin right_5
+      name: Merlin left_5
       rect:
         serializedVersion: 2
-        x: 124
+        x: 137
         y: 24
         width: 39
         height: 57
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60c9f901bf10c3c20800000000000000
-      internalID: 3187424814098783238
+      spriteID: 23e73136505b4c220800000000000000
+      internalID: 2505326327466524210
       vertices: []
       indices: 
       edges: []
