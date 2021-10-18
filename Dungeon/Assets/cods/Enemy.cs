@@ -61,7 +61,7 @@ public class Enemy : Mover
 		for (int i = 0; i < hits.Length; i++)
 		{
 			if (hits[i] == null)
-				continue; //
+				continue; // 
 
 
 			if (hits[i].tag == "Fighter" && hits[i].name == "Player") 
