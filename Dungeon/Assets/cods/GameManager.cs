@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     public List<int> xpTable;
 
     // references
-    public Player player;
+    public PlayerMovement2 player; // Player
 
     // public weapon weapon...
       public FloatingTextManager floatingTextManager;
