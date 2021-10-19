@@ -9,7 +9,7 @@ public class BulletScript : Weapon     //EnemyHitbox
     [SerializeField]
     float speed;
 
-    void FixedUpdate() // nao esta cumprindo a funçao original (passar mouse em cima para ver )
+    void FixedUpdate() 
     {
         transform.Translate(Vector3.right * Time.deltaTime * speed);
     }
@@ -18,7 +18,7 @@ public class BulletScript : Weapon     //EnemyHitbox
     {
         if (coll.CompareTag("Fighter")) // coll.Tag é o original
         {
-            if (coll.name == "Player")
+            if (coll.name == "Player") // nao precisa ignorar apenas fazer o fire point esta sempre a frente do jogodor, fazer a sprite do jogador seguir o mouse 
                 return;
 
             Damage dmg = new Damage

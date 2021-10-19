@@ -132,8 +132,9 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  damage: 1
+  damagePoint: 1
   pushForce: 5
+  weaponLevel: 0
   hitEffect: {fileID: 552147988179618230, guid: 1e5bfd2211490ea47ae5d0e39df58efe,
     type: 3}
   speed: 3
@@ -191,7 +192,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9211576964298014329}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ba775d4bb727ea945bdcbef1bc823ebb, type: 3}
