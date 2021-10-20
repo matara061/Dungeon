@@ -8,6 +8,8 @@ public class Gun : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefabs;
 
+    SpriteRenderer sprite;
+
     public float bulletForce = 20f;
 
   //  Vector3 mousePos = Input.mousePosition;
@@ -20,6 +22,8 @@ public class Gun : MonoBehaviour
         animator = GetComponent<Animator>();
 
         Vector3 mousePos = Input.mousePosition;
+
+        sprite = GetComponent<SpriteRenderer>();
 
         Rigidbody2D rb = bulletPrefabs.GetComponent<Rigidbody2D>();
     }
@@ -43,6 +47,15 @@ public class Gun : MonoBehaviour
         // matematica vetorial. Pega dois valores vetoriais e subtrai um pelo outro para obter um novo; utilizado para obter uma rotação mais fluida
         float angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle);
+
+        if (mousePos.x < screenPoint.x)
+        {
+            sprite.flipY = true;
+        }
+        else
+        {
+            sprite.flipY = false;
+        }
 
     }
 
