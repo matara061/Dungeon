@@ -155,9 +155,8 @@ MonoBehaviour:
   weaponPrices: 
   xpTable: 
   player: {fileID: 930431257}
-  floatingTextManager: {fileID: 1359202919}
-  pesos: 0
-  experience: 0
+  pesos: 1
+  experience: 1
 --- !u!4 &83544746
 Transform:
   m_ObjectHideFlags: 0
@@ -5037,7 +5036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2122849033
 MonoBehaviour:
   m_ObjectHideFlags: 0
