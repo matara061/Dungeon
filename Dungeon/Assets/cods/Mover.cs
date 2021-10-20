@@ -10,7 +10,9 @@ public abstract class Mover : Fighter
     protected BoxCollider2D boxCollider;
     protected Vector3 moveDelta;
     protected RaycastHit2D hit;
+    [SerializeField]
     protected float ySpeed = 0.75f;
+    [SerializeField]
     protected float xSpeed = 1.0f;
 
 
