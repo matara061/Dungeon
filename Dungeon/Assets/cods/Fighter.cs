@@ -16,6 +16,14 @@ public class Fighter : MonoBehaviour
 	//push
 	protected Vector3 pushDirection;
 
+	// reference
+	public HealthBar healthBar;
+
+	protected virtual void start()
+    {
+		healthBar.SetMaxHealth(hitpoint);
+    }
+
 	// All fighters can ReceiveDamage / die
 	protected virtual void ReceiveDamage(Damage dmg)
 	{
@@ -26,7 +34,6 @@ public class Fighter : MonoBehaviour
 			pushDirection = (transform.position - dmg.origin).normalized * dmg.pushForce;
 
 			//GameManager.instance.ShowText(dmg.damageAmount.ToString(), 25, Color.red, transform.position, Vector3.zero, 0.5f);
-
 			if (hitpoint <= 0)
 			{
 				hitpoint = 0;
@@ -34,6 +41,11 @@ public class Fighter : MonoBehaviour
 			}
 		}
 	}
+
+	protected virtual void TakeDamage()
+    {
+		healthBar.SetHealth(hitpoint);
+    }
 
 	protected virtual void Death()
     {
