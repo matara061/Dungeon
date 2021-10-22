@@ -9,6 +9,22 @@ public class cameraMotor : MonoBehaviour
     public float boundX = 0.15f;
     public float boundY = 0.15f;
     // Start is called before the first frame update
+
+    public static cameraMotor instance;
+
+    // verifica se objeto nao esta duplicado, se tiver destruir duplicata
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
     void Start()
     {
 

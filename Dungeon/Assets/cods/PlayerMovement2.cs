@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement2 : Mover 
 {
@@ -12,6 +13,22 @@ public class PlayerMovement2 : Mover
     private Vector3 mousePosition;
 
     Vector2 movement;
+
+    public static PlayerMovement2 instance;
+
+    // verifica se objeto nao esta duplicado, se tiver destruir duplicata
+    private void Awake() 
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
 
     void Update()
     {
@@ -48,7 +65,7 @@ public class PlayerMovement2 : Mover
 
         UpdateMotor(new Vector3(x, y, 0));
 
-        DontDestroyOnLoad(gameObject); // add. problema de mov esta no animator 
+        DontDestroyOnLoad(gameObject);  
 
     }
 
@@ -70,9 +87,13 @@ public class PlayerMovement2 : Mover
         }
     }
 
-   // protected override void Death() // arrumar dps
-   // {
-   //     Destroy(gameObject);
-   // }
+    
+
+    protected override void Death() 
+    {
+        SceneManager.LoadScene("Testes");
+        this.transform.position = new Vector3(0, 0, 0);
+        hitpoint = maxHitpoint;
+    }
     
 }

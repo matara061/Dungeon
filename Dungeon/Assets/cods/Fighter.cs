@@ -42,6 +42,7 @@ public class Fighter : MonoBehaviour
 		}
 	}
 
+	// barra de vida canvas
 	protected virtual void TakeDamage()
     {
 		healthBar.SetHealth(hitpoint);
