@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement2 : Mover 
 {
     public float moveSpeed = 5f;
-   // public Rigidbody2D rb;
-
+  
     public Animator animator;
 
     private Vector3 mousePosition;
@@ -65,7 +64,7 @@ public class PlayerMovement2 : Mover
 
         UpdateMotor(new Vector3(x, y, 0));
 
-        DontDestroyOnLoad(gameObject);  
+       // DontDestroyOnLoad(gameObject);  
 
     }
 
