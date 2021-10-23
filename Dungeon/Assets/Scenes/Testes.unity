@@ -1305,6 +1305,8 @@ MonoBehaviour:
     maxNormalAngle: 0
   sceneNames:
   - Teste2
+  - Gabriel Mapas
+  - Andar1
 --- !u!61 &911823024
 BoxCollider2D:
   m_ObjectHideFlags: 0
