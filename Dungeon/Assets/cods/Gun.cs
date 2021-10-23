@@ -30,7 +30,7 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1")) // fazer segurar botao para atirar ao invez de apertar toda hora 
         {
             Shoot();
         }
