@@ -5,22 +5,24 @@ using UnityEngine;
 public class PickupManager : MonoBehaviour
 {
     public Transform cameraTransform;
-    public KeyCode pickupKey = KeyCode.F;
+    public KeyCode pickupKey = KeyCode.E;
     public KeyCode dropKey = KeyCode.G;
     string weaponTag = "Weapon";
 
     public List<GameObject> weapons;
     public int maxWeapons = 2;
 
-    // this variable represent the weapon you carry in your hand 
+    // esta variável representa a arma que você carrega em suas mãos 
     public GameObject currentWeapon;
 
-    // this variable represent your hand which you set as the parent of your currentWeapon
+    // esta variável representa sua mão que você definiu como parente de sua arma atual
     public Transform hand;
 
-    // Insert a gameobject which you drop inside your player gameobject and position it where you want to drop items from
-    // to avoid dropping items inside your player
+     // Insira um objeto de jogo que você soltar dentro do objeto de jogo do seu jogador e posicione-o onde deseja soltar os itens
+     // para evitar a queda de itens dentro do seu player
     public Transform dropPoint;
+
+    
 
     void Update()
     {
@@ -40,37 +42,41 @@ public class PickupManager : MonoBehaviour
         RaycastHit hit;
         Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
 
+        // se acertar algo
         if (Physics.Raycast(ray, out hit))
         {
-            if (hit.transform.CompareTag(weaponTag) && Input.GetKeyDown(pickupKey) && weapons.Count < maxWeapons)
+            Debug.Log(hit + " algo");
+            if (hit.transform.CompareTag(weaponTag) && Input.GetKeyDown(pickupKey))//&& weapons.Count < maxWeapons)
             {
-
-                // save the weapon                
+                Debug.Log(hit + " pick");
+                // salva a weapon               
                 weapons.Add(hit.collider.gameObject);
-
-                // hides the weapon because it's now in our 'inventory'
+                
+                //esconde a arma porque agora está em nosso 'inventário'
                 hit.collider.gameObject.SetActive(false);
 
-                // now we can positioning the weapon at many other places.
-                // but for this demonstration where we just want to show a weapon
-                // in our hand at some point we do it now.
-                hit.transform.parent = hand;
-                hit.transform.position = Vector3.zero;
+                
+                  // now we can positioning the weapon at many other places.
+                  // but for this demonstration where we just want to show a weapon
+                  // in our hand at some point we do it now.
+                  hit.transform.parent = hand;
+                  hit.transform.position = Vector3.zero;
+
             }
         }
 
         // DROP WEAPONS
-        // So let's say you wanted to add a feature where you wanted to drop the weapon you carry in your hand
+        //  recurso no qual deseja largar a arma que carrega na mão
         if (Input.GetKeyDown(dropKey) && currentWeapon != null)
         {
-
-            // First ensure we remove our hand as parent for the weapon
+            Debug.Log(hit + " droup");
+            // Primeiro, certifique-se de remover nossa mão como parente da weapon
             currentWeapon.transform.parent = null;
 
-            // Move the weapon to the drop position
+            // mover weapon para droup position
             currentWeapon.transform.position = dropPoint.position;
 
-            // Remove it from our 'inventory'            
+            // remover do inventario            
             var weaponInstanceId = currentWeapon.GetInstanceID();
             for (int i = 0; i < weapons.Count; i++)
             {
@@ -81,7 +87,7 @@ public class PickupManager : MonoBehaviour
                 }
             }
 
-            // Remove it from our 'hand'
+            // remover da mao 
             currentWeapon = null;
         }
     }
@@ -89,22 +95,23 @@ public class PickupManager : MonoBehaviour
     void SelectWeapon(int index)
     {
 
-        // Ensure we have a weapon in the wanted 'slot'
+        // Certifique-se de que temos uma arma no 'slot' desejado
         if (weapons.Count > index && weapons[index] != null)
         {
 
-            // Check if we already is carrying a weapon
+            // Verifique se já está carregando uma arma
             if (currentWeapon != null)
             {
-                // hide the weapon                
+                // esconde weapon               
                 currentWeapon.gameObject.SetActive(false);
             }
 
-            // Add our new weapon
+            // Add nova arma
             currentWeapon = weapons[index];
 
-            // Show our new weapon
+            // mostra nova arma
             currentWeapon.SetActive(true);
         }
     }
+
 }

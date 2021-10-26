@@ -461,8 +461,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1074574007
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: -4590863263307369687, guid: 6d800b3ab1c031f449a72797448c1df4,
     type: 3}
@@ -1484,7 +1484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraTransform: {fileID: 1067932862}
-  pickupKey: 102
+  pickupKey: 101
   dropKey: 103
   weapons: []
   maxWeapons: 2
@@ -6234,6 +6234,7 @@ MonoBehaviour:
     type: 3}
   bulletForce: 20
   speed: 3
+  pick: {fileID: 930431256}
 --- !u!212 &1626746162
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8298,6 +8299,7 @@ MonoBehaviour:
     type: 3}
   bulletForce: 20
   speed: 1
+  pick: {fileID: 0}
 --- !u!1001 &841922914828241497
 PrefabInstance:
   m_ObjectHideFlags: 0

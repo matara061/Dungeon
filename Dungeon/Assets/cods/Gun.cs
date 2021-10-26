@@ -17,6 +17,8 @@ public class Gun : MonoBehaviour
     [SerializeField]
     float speed;
 
+    public PickupManager pick;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -30,34 +32,39 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1")) // fazer segurar botao para atirar ao invez de apertar toda hora 
+        if (pick.currentWeapon != null)
         {
-            Shoot();
-            //FindObjectOfType<AudioManager>().Play("Fireball");
+            if (Input.GetButtonDown("Fire1")) // fazer segurar botao para atirar ao invez de apertar toda hora 
+            {
+                Shoot();
+                //FindObjectOfType<AudioManager>().Play("Fireball");
+            }
         }
 
     }
     void FixedUpdate()
     {
-        // Faz com que a sprite siga o mouse
-        Vector3 screenPoint = Camera.main.WorldToScreenPoint(transform.position);
-        Vector3 mousePos = Input.mousePosition;
-
-        Vector2 offset = new Vector2(mousePos.x - screenPoint.x, mousePos.y - screenPoint.y);
-
-        // matematica vetorial. Pega dois valores vetoriais e subtrai um pelo outro para obter um novo; utilizado para obter uma rotação mais fluida
-        float angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, angle);
-
-        if (mousePos.x < screenPoint.x)
+        if (pick.currentWeapon != null)
         {
-            sprite.flipY = true;
-        }
-        else
-        {
-            sprite.flipY = false;
-        }
+            // Faz com que a sprite siga o mouse
+            Vector3 screenPoint = Camera.main.WorldToScreenPoint(transform.position);
+            Vector3 mousePos = Input.mousePosition;
 
+            Vector2 offset = new Vector2(mousePos.x - screenPoint.x, mousePos.y - screenPoint.y);
+
+            // matematica vetorial. Pega dois valores vetoriais e subtrai um pelo outro para obter um novo; utilizado para obter uma rotação mais fluida
+            float angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0, 0, angle);
+
+            if (mousePos.x < screenPoint.x)
+            {
+                sprite.flipY = true;
+            }
+            else
+            {
+                sprite.flipY = false;
+            }
+        }
     }
 
     void Shoot()
