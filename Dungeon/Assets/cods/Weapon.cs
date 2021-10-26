@@ -6,8 +6,8 @@ using UnityEngine;
 public class Weapon : Collidable // : monobehav....
 {
 	// damage struct
-	public int damagePoint = 1;
-	public float pushForce = 2.0f;
+	public int[] damagePoint = {1, 2, 3, 4, 5, 6, 7 };
+	public float[] pushForce = { 2.0f, 2.2f, 2.5f, 2.8f, 3f, 3.6f };
 
 	// upgrade
 	public int weaponLevel = 0;
@@ -43,15 +43,15 @@ public class Weapon : Collidable // : monobehav....
 	{
 		if (coll.CompareTag("Fighter")) // coll.Tag é o original
 		{
-			if (coll.name == "Player")
+			if (coll.name == "Player" ) //|| coll.name == "Bullet")
 				return;
 
 			// create a new damage object, then we ll send it to the fighter we ve hit 
 			Damage dmg = new Damage
 			{
-				damageAmount = damagePoint,
+				damageAmount = damagePoint[weaponLevel],
 				origin = transform.position,
-				pushForce = pushForce
+				pushForce = pushForce[weaponLevel]
 			};
 
 			Debug.Log(coll.name);
@@ -65,5 +65,13 @@ public class Weapon : Collidable // : monobehav....
 		//Debug.Log("Swing");
 		anim.SetTrigger("Swing");
 	}
+
+	public void UpgradeWeapon()
+    {
+		weaponLevel++;
+		spriteRenderer.sprite = GameManager.instance.weaponSprites[weaponLevel];
+
+		// change stats %%
+    }
 
 }

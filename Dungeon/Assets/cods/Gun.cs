@@ -17,7 +17,7 @@ public class Gun : MonoBehaviour
     [SerializeField]
     float speed;
 
-    public PickupManager pick;
+   // public PickupManager pick;
 
     void Start()
     {
@@ -32,20 +32,20 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-        if (pick.currentWeapon != null)
-        {
+       // if (pick.currentWeapon != null)
+       // {
             if (Input.GetButtonDown("Fire1")) // fazer segurar botao para atirar ao invez de apertar toda hora 
             {
                 Shoot();
                 //FindObjectOfType<AudioManager>().Play("Fireball");
             }
-        }
+     //   }
 
     }
     void FixedUpdate()
     {
-        if (pick.currentWeapon != null)
-        {
+       // if (pick.currentWeapon != null)
+      //  {
             // Faz com que a sprite siga o mouse
             Vector3 screenPoint = Camera.main.WorldToScreenPoint(transform.position);
             Vector3 mousePos = Input.mousePosition;
@@ -64,7 +64,7 @@ public class Gun : MonoBehaviour
             {
                 sprite.flipY = false;
             }
-        }
+      //  }
     }
 
     void Shoot()
