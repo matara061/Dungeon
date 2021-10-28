@@ -48,12 +48,14 @@ public class GameManager : MonoBehaviour
     // Upgrade weapon 
     public bool TryUpgradeWeapon()
     {
+        Debug.Log("try up");
         // is the weapon level max ?
         if (weaponPrices.Count <= weapon.weaponLevel)
             return false;
 
-        if (pesos >= weaponPrices[weapon.weaponLevel])
+        if (pesos >= weaponPrices[weapon.weaponLevel]) 
         {
+            Debug.Log("tenho grana");
             pesos -= weaponPrices[weapon.weaponLevel];
             weapon.UpgradeWeapon();
             return true;
@@ -70,9 +72,9 @@ public class GameManager : MonoBehaviour
          s += "0" + "|";
          s += pesos.ToString() + "|";
          s += experience.ToString() + "|";
-         s += "0";
+         s += weapon.weaponLevel.ToString();
         
-        // PlayerPrefs.SetString("SaveState");
+         PlayerPrefs.SetString("SaveState", s);
 
 
         Debug.Log("SaveState");
@@ -95,7 +97,18 @@ public class GameManager : MonoBehaviour
 
     public void LoadState(Scene s, LoadSceneMode mode)
     {
-       // SceneManager.sceneLoaded -= LoadState;
+
+        if (!PlayerPrefs.HasKey("SaveState"))
+            return;
+
+        string[] data = PlayerPrefs.GetString("SaveState").Split('|');
+
+        // change player skin
+        pesos = int.Parse(data[1]);
+        experience = int.Parse(data[2]);
+        // muda o nivel da weapon 
+        weapon.SetWeaponLevel(int.Parse(data[3]));
+
         Debug.Log("LoadState");
     }
 

@@ -18,7 +18,12 @@ public class Weapon : Collidable // : monobehav....
 	private float cooldown = 0.5f;
 	private float lastSwing;
 
-	protected override void Start()
+    private void Awake()
+    {
+		spriteRenderer = GetComponent<SpriteRenderer>(); // tem outro jeito de fazer se der ruim. 5:31:35
+	}
+
+    protected override void Start()
 	{
 		base.Start();
 		spriteRenderer = GetComponent<SpriteRenderer>();
@@ -68,10 +73,17 @@ public class Weapon : Collidable // : monobehav....
 
 	public void UpgradeWeapon()
     {
+		Debug.Log("UPgrad");
 		weaponLevel++;
 		spriteRenderer.sprite = GameManager.instance.weaponSprites[weaponLevel];
 
 		// change stats %%
+    }
+
+	public void SetWeaponLevel(int level)
+    {
+		weaponLevel = level;
+		spriteRenderer.sprite = GameManager.instance.weaponSprites[weaponLevel];
     }
 
 }
