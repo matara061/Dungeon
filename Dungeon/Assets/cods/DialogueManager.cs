@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -13,8 +14,9 @@ public class DialogueManager : MonoBehaviour
 
 	private Queue<string> sentences;
 
-	// Use this for initialization
-	void Start()
+   
+    // Use this for initialization
+    void Start()
 	{
 		sentences = new Queue<string>();
 	}

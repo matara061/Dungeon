@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &17825637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,7 +292,7 @@ MonoBehaviour:
   - {fileID: -6845980268273053146, guid: 6d800b3ab1c031f449a72797448c1df4, type: 3}
   - {fileID: -4590863263307369687, guid: 6d800b3ab1c031f449a72797448c1df4, type: 3}
   weaponPrices: 1e0000006400000082000000
-  xpTable: 
+  xpTable: 050000000a000000110000001e0000002f0000003c00000050000000640000007d000000c8000000
   player: {fileID: 930431257}
   weapon: {fileID: 1626746163}
   pesos: 0
@@ -707,7 +707,6 @@ GameObject:
   - component: {fileID: 384656191}
   - component: {fileID: 384656190}
   - component: {fileID: 384656189}
-  - component: {fileID: 384656193}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -795,18 +794,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &384656193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 384656188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e80a1625f758ba4899876c5ac9f5731, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &391912280
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,7 +806,6 @@ GameObject:
   - component: {fileID: 391912283}
   - component: {fileID: 391912282}
   - component: {fileID: 391912281}
-  - component: {fileID: 391912285}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -907,18 +893,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &391912285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 391912280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e80a1625f758ba4899876c5ac9f5731, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &432180643
 GameObject:
   m_ObjectHideFlags: 0
@@ -1996,7 +1970,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.14, y: 0.15}
+    oldSize: {x: 0.14141414, y: 0.15151516}
     newSize: {x: 0.14, y: 0.15}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2464,6 +2438,7 @@ MonoBehaviour:
     maxNormalAngle: 0
   sceneNames:
   - Teste2
+  - Andar1
   player: {fileID: 0}
 --- !u!61 &953009299
 BoxCollider2D:
@@ -3106,6 +3081,7 @@ MonoBehaviour:
     name: sistema
     sentences:
     - Dps do portal menu e diaologos n funcionam......
+    - "J\xE1 arrumei"
 --- !u!114 &1078571754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3400,7 +3376,6 @@ GameObject:
   - component: {fileID: 1264218074}
   - component: {fileID: 1264218079}
   - component: {fileID: 1264218078}
-  - component: {fileID: 1264218080}
   - component: {fileID: 1264218081}
   m_Layer: 5
   m_Name: Menu
@@ -3521,18 +3496,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1264218080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1264218073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e80a1625f758ba4899876c5ac9f5731, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1264218081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8296,7 +8259,7 @@ GameObject:
   - component: {fileID: 1733605640}
   - component: {fileID: 1733605639}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: NPCsFalas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8504,7 +8467,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.15, y: 0.2}
+    oldSize: {x: 0.15151516, y: 0.2020202}
     newSize: {x: 0.15, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -10974,7 +10937,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.1, y: 0.24}
+    oldSize: {x: 0.1010101, y: 0.24242425}
     newSize: {x: 0.1, y: 0.24}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

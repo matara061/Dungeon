@@ -27,7 +27,7 @@ public class cameraMotor : MonoBehaviour
     }
     void Start()
     {
-
+        lookAt = GameObject.Find("Player").transform; //
     }
 
     // Update is called once per frame
