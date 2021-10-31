@@ -17,12 +17,12 @@ public class Fighter : MonoBehaviour
 	protected Vector3 pushDirection;
 
 	// reference
-	public HealthBar healthBar;
+	//public HealthBar healthBar;
 
-	protected virtual void start()
-    {
-		healthBar.SetMaxHealth(hitpoint);
-    }
+	//protected virtual void start()
+    //{
+	//	healthBar.SetMaxHealth(hitpoint);
+    //}
 
 	// All fighters can ReceiveDamage / die
 	protected virtual void ReceiveDamage(Damage dmg)
@@ -43,10 +43,10 @@ public class Fighter : MonoBehaviour
 	}
 
 	// barra de vida canvas
-	protected virtual void TakeDamage()
-    {
-		healthBar.SetHealth(hitpoint);
-    }
+	//protected virtual void TakeDamage()
+    //{
+	//	healthBar.SetHealth(hitpoint);
+    //}
 
 	protected virtual void Death()
     {

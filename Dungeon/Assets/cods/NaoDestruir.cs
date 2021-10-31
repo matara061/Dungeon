@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class NaoDestruir : MonoBehaviour
 {
-    void Awake()
+    private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 }
