@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        PlayerPrefs.DeleteAll(); // delet dps
+       // PlayerPrefs.DeleteAll(); // delet dps
 
         instance = this;
         SceneManager.sceneLoaded += LoadState;
@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
     // ressources
     public List<Sprite> playerSprites;
     public List<Sprite> weaponSprites;
+    public List<Sprite> gunSprites;
+    public List<int> gunPrices;
     public List<int> weaponPrices;
     public List<int> xpTable;
 
@@ -37,6 +39,7 @@ public class GameManager : MonoBehaviour
     public RectTransform hitpointBar;
     public GameObject hud;
     public GameObject menu;
+    public Gun gun;
 
      // public FloatingTextManager floatingTextManager;
 
@@ -63,6 +66,24 @@ public class GameManager : MonoBehaviour
             Debug.Log("tenho grana");
             pesos -= weaponPrices[weapon.weaponLevel];
             weapon.UpgradeWeapon();
+            return true;
+        }
+
+        return false;
+    }
+
+    public bool TryUpgradeGun()
+    {
+        Debug.Log("try up");
+        // is the weapon level max ?
+        if (gunPrices.Count <= gun.gunLevel)
+            return false;
+
+        if (pesos >= gunPrices[gun.gunLevel])
+        {
+            Debug.Log("tenho grana");
+            pesos -= gunPrices[gun.gunLevel];
+            gun.UpgradeGun();
             return true;
         }
 

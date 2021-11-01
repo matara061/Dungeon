@@ -7,17 +7,24 @@ public class Gun : MonoBehaviour
     Animator animator;
     public Transform firePoint;
     public GameObject bulletPrefabs;
-
     SpriteRenderer sprite;
 
     public float bulletForce = 20f;
 
-  //  Vector3 mousePos = Input.mousePosition;
+    // damage struct
+    public int[] damagePoint = { 1, 2, 3, 4, 5, 6, 7 };
+    public float[] pushForce = { 2.0f, 2.2f, 2.5f, 2.8f, 3f, 3.6f };
+
+    // upgrade
+    public int gunLevel = 0;
+    private SpriteRenderer spriteRenderer;
+
+
 
     [SerializeField]
     float speed;
 
-   // public PickupManager pick;
+   
 
     void Start()
     {
@@ -26,26 +33,25 @@ public class Gun : MonoBehaviour
         Vector3 mousePos = Input.mousePosition;
 
         sprite = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>(); // talvez de ruim
 
         Rigidbody2D rb = bulletPrefabs.GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-       // if (pick.currentWeapon != null)
-       // {
+          
             if (Input.GetButtonDown("Fire1")) // fazer segurar botao para atirar ao invez de apertar toda hora 
             {
                 Shoot();
                 //FindObjectOfType<AudioManager>().Play("Fireball");
             }
-     //   }
 
     }
     void FixedUpdate()
     {
-       // if (pick.currentWeapon != null)
-      //  {
+       
+      
             // Faz com que a sprite siga o mouse
             Vector3 screenPoint = Camera.main.WorldToScreenPoint(transform.position);
             Vector3 mousePos = Input.mousePosition;
@@ -64,7 +70,6 @@ public class Gun : MonoBehaviour
             {
                 sprite.flipY = false;
             }
-      //  }
     }
 
     void Shoot()
@@ -80,5 +85,20 @@ public class Gun : MonoBehaviour
         //bullet.GetComponent<Weapon>().StartShoot(isSpriteLeft);
 
 
+    }
+
+    public void UpgradeGun()
+    {
+        Debug.Log("UPgrad");
+        gunLevel++;
+        spriteRenderer.sprite = GameManager.instance.gunSprites[gunLevel];
+
+        // change stats %%
+    }
+
+    public void SetGunLevel(int level)
+    {
+        gunLevel = level;
+        spriteRenderer.sprite = GameManager.instance.gunSprites[gunLevel];
     }
 }

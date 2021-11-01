@@ -2,12 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletScript : Weapon     //EnemyHitbox 
+public class BulletScript : Collidable           //Weapon     //EnemyHitbox 
 {
     public GameObject hitEffect;
 
     [SerializeField]
     float speed;
+
+    public Gun gun;
+
+   // public int[] damagePoint = { 1, 2, 3, 4, 5, 6, 7 };
+   // public float[] pushForce = { 2.0f, 2.2f, 2.5f, 2.8f, 3f, 3.6f };
+
+    protected override void Start()
+    {
+        base.Start();
+    }
 
     void FixedUpdate() 
     {
@@ -23,9 +33,9 @@ public class BulletScript : Weapon     //EnemyHitbox
    
             Damage dmg = new Damage
             {
-                damageAmount = damagePoint[weaponLevel], //
+                damageAmount = gun.damagePoint[gun.gunLevel], //
                 origin = transform.position,
-                pushForce = pushForce[weaponLevel]
+                pushForce = gun.pushForce[gun.gunLevel]
             };
    
             Debug.Log(coll.name);

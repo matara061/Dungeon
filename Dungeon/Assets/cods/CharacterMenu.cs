@@ -6,12 +6,13 @@ using UnityEngine.UI;
 public class CharacterMenu : MonoBehaviour
 {
     // text fields
-    public Text levelText, hitpointText, pesosText, upgradeCostText, xpText;
+    public Text levelText, hitpointText, pesosText, upgradeCostText, upgradeCostTextW, xpText;
 
     // logic
     private int currentCharacterSeletion = 0;
     public Image characterSelectionSprite;
     public Image weaponSprite;
+    public Image gunSprite;
     public RectTransform xpBar;
 
     // Character selection
@@ -52,6 +53,14 @@ public class CharacterMenu : MonoBehaviour
             UpdateMenu();
     }
 
+    // gun upgrade
+    public void OnUpgradeClickW()
+    {
+        Debug.Log("uppppppp");
+        if (GameManager.instance.TryUpgradeGun())
+            UpdateMenu();
+    }
+
     // update character information 
     public void UpdateMenu()
     {
@@ -61,6 +70,13 @@ public class CharacterMenu : MonoBehaviour
             upgradeCostText.text = "MAX";
         else
             upgradeCostText.text = GameManager.instance.weaponPrices[GameManager.instance.weapon.weaponLevel].ToString();
+
+        // gun
+        gunSprite.sprite = GameManager.instance.gunSprites[GameManager.instance.gun.gunLevel];
+        if (GameManager.instance.gun.gunLevel == GameManager.instance.gunPrices.Count)
+            upgradeCostTextW.text = "MAX";
+        else
+            upgradeCostTextW.text = GameManager.instance.gunPrices[GameManager.instance.gun.gunLevel].ToString();
 
         // Meta
         levelText.text = GameManager.instance.GetCurrentLevel().ToString();
