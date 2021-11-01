@@ -25,14 +25,21 @@ public abstract class Mover : Fighter
 
     protected virtual void UpdateMotor(Vector3 input)
     {
+        Vector3 screenPoint = Camera.main.WorldToScreenPoint(transform.position);
+        Vector3 mousePos = Input.mousePosition;
+
         // reseta moveDelta
         moveDelta = new Vector3(input.x * xSpeed, input.y * ySpeed, 0);
 
         // vira a sprite 
         if (moveDelta.x > 0)
             transform.localScale = Vector3.one; // vector.one é abreviação de Vector3(1, 1, 1)
-        else if (moveDelta.x < 0)
+        if (mousePos.x < screenPoint.x)
+        {
             transform.localScale = new Vector3(-1, 1, 1);
+        }
+        //else if (moveDelta.x < 0)
+        //    transform.localScale = new Vector3(-1, 1, 1); // Att Marcel. verificar a posição do mouse; a posição da sprite não depende mais das teclas direcionais// menor -- Somente eixo X 
 
         // faz movimento
         //  transform.Translate(moveDelta * Time.deltaTime);
