@@ -19,8 +19,8 @@ public class GameManager : MonoBehaviour
        // PlayerPrefs.DeleteAll(); // delet dps
 
         instance = this;
-        SceneManager.sceneLoaded += LoadState;
-      //  SceneManager.sceneLoaded += OnSceneLoaded;
+       // SceneManager.sceneLoaded += LoadState;
+        SceneManager.sceneLoaded += OnSceneLoaded;
         DontDestroyOnLoad(gameObject);
 
     }
@@ -185,7 +185,7 @@ public class GameManager : MonoBehaviour
         // muda o nivel da weapon 
         weapon.SetWeaponLevel(int.Parse(data[3]));
 
-        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+        //player.transform.position = GameObject.Find("SpawnPoint").transform.position;
 
         Debug.Log("LoadState");
     }

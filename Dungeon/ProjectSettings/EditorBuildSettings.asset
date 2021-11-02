@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Teste2.unity
     guid: 8f353e241bae91548ae8b696c97eedd9
   - enabled: 1
+    path: Assets/Scenes/Mapa1.unity
+    guid: 9dee9e22555dc274a9462f0b52bf404c
+  - enabled: 1
     path: Assets/Scenes/Mapa2.unity
     guid: 3c89c9f999ad9f34fae1db709688d36a
   - enabled: 1
