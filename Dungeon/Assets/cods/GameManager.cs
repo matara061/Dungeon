@@ -159,20 +159,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("SaveState");
     }
 
-    // public void LoadState()
-    // {
-    //     if (!PlayerPrefs.HasKey("SaveState"))
-    //         return;
-    //
-    //     string[] data = PlayerPrefs.GetString("SaveState").Split('|');
-    //
-    //     // change player skin
-    //     pesos = int.Parse(data[1]);
-    //     experience = int.Parse(data[2]);
-    //     // change the weapon level
-    //
-    //     Debug.Log("LoadState");
-    // }
 
     public void OnSceneLoaded(Scene s, LoadSceneMode mode)
     {

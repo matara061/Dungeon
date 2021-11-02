@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9211576964298014335}
   - component: {fileID: 9211576964298014334}
   - component: {fileID: 2102313426325005611}
+  - component: {fileID: -923910265066491565}
   - component: {fileID: 121629952054726033}
   - component: {fileID: 8990588107366520113}
   - component: {fileID: -5862368709889627115}
@@ -135,10 +136,32 @@ MonoBehaviour:
   hitEffect: {fileID: 552147988179618230, guid: 1e5bfd2211490ea47ae5d0e39df58efe,
     type: 3}
   speed: 3
-  gun: {fileID: 0}
-  origin: {x: 0, y: 0, z: 0}
-  damageAmount: 0
-  pushForce: 0
+  gun: {fileID: -923910265066491565}
+--- !u!114 &-923910265066491565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9211576964298014329}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e367c3151374d664ca5df78fbdd626f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 0}
+  bulletPrefabs: {fileID: 0}
+  bulletForce: 20
+  damagePoint: 01000000020000000300000004000000050000000600000007000000
+  pushForce:
+  - 2
+  - 2.2
+  - 2.5
+  - 2.8
+  - 3
+  - 3.6
+  gunLevel: 0
+  speed: 0
 --- !u!50 &121629952054726033
 Rigidbody2D:
   serializedVersion: 4

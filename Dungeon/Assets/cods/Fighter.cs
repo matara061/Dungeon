@@ -10,19 +10,12 @@ public class Fighter : MonoBehaviour
 	public float pushRecoverySpeed = 0.2f;
 
 	// immunity
-	protected float immuneTime = 1.0f;
+	public float immuneTime = 1.0f;
 	protected float lastImmune;
 
 	//push
 	protected Vector3 pushDirection;
 
-	// reference
-	//public HealthBar healthBar;
-
-	//protected virtual void start()
-    //{
-	//	healthBar.SetMaxHealth(hitpoint);
-    //}
 
 	// All fighters can ReceiveDamage / die
 	protected virtual void ReceiveDamage(Damage dmg)
@@ -42,11 +35,6 @@ public class Fighter : MonoBehaviour
 		}
 	}
 
-	// barra de vida canvas
-	//protected virtual void TakeDamage()
-    //{
-	//	healthBar.SetHealth(hitpoint);
-    //}
 
 	protected virtual void Death()
     {

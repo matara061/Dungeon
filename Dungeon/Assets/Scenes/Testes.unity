@@ -289,14 +289,17 @@ MonoBehaviour:
   playerSprites: []
   weaponSprites:
   - {fileID: -6845980268273053146, guid: 6d800b3ab1c031f449a72797448c1df4, type: 3}
-  - {fileID: 4766128545898520377, guid: b9cb0da07124fa5439036a818edc02aa, type: 3}
   - {fileID: -4590863263307369687, guid: 6d800b3ab1c031f449a72797448c1df4, type: 3}
+  - {fileID: 4766128545898520377, guid: b9cb0da07124fa5439036a818edc02aa, type: 3}
+  - {fileID: 789792770048017229, guid: 8cdef3f62071825449076e675149e8a1, type: 3}
   gunSprites:
+  - {fileID: 6596828142911244932, guid: 9e3cb77a97dcbcf418f068d43589c8bf, type: 3}
   - {fileID: -8450793750321148256, guid: 91ba3b47464e1b344a02dc8981e77367, type: 3}
   - {fileID: -7892942564012148539, guid: 3b9fa525f6a35e7458f4951d29ff1e9b, type: 3}
   - {fileID: 2931194010432298028, guid: 5bcd77a9b70294a42a3ba2f37b115b5c, type: 3}
-  gunPrices: 1e0000003200000064000000
-  weaponPrices: 1e0000006400000082000000
+  - {fileID: 9039532766796973047, guid: 51e78b7df5bad294f8f76029c93a7fbe, type: 3}
+  gunPrices: 1e00000032000000640000002c010000f4010000
+  weaponPrices: 1e0000006400000082000000fa000000
   xpTable: 050000000a000000110000001e0000002f0000003c00000050000000640000007d000000c8000000
   player: {fileID: 930431257}
   weapon: {fileID: 1626746163}
@@ -1318,6 +1321,7 @@ MonoBehaviour:
   hitpoint: 10
   maxHitpoint: 10
   pushRecoverySpeed: 0.2
+  immuneTime: 1
   slider: {fileID: 450349488}
 --- !u!1 &462339635
 GameObject:
@@ -2285,7 +2289,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8450793750321148256, guid: 91ba3b47464e1b344a02dc8981e77367,
+  m_Sprite: {fileID: 6596828142911244932, guid: 9e3cb77a97dcbcf418f068d43589c8bf,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -2492,9 +2496,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a272e31c16cdcf24490a4ea30d707773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoint: 10
-  maxHitpoint: 10
+  hitpoint: 7
+  maxHitpoint: 7
   pushRecoverySpeed: 0.2
+  immuneTime: 1
   ySpeed: 1.5
   xSpeed: 1.5
   moveSpeed: 2
@@ -2605,7 +2610,7 @@ GameObject:
   - component: {fileID: 951094891}
   - component: {fileID: 951094890}
   m_Layer: 0
-  m_Name: Staff 2_0
+  m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2690,7 +2695,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -8450793750321148256, guid: 91ba3b47464e1b344a02dc8981e77367,
+  m_Sprite: {fileID: 6596828142911244932, guid: 9e3cb77a97dcbcf418f068d43589c8bf,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8852,7 +8857,7 @@ Animator:
   m_GameObject: {fileID: 1626746159}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0c212fd23e777fe4fb6ff7386f4e919c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9489,6 +9494,7 @@ MonoBehaviour:
   hitpoint: 10
   maxHitpoint: 10
   pushRecoverySpeed: 0.2
+  immuneTime: 1
   ySpeed: 0.75
   xSpeed: 1
 --- !u!61 &1735891437
@@ -12327,6 +12333,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 841922915071416572, guid: 9ec51f798e216dd429082a2b25e3eea0,
+        type: 3}
+      propertyPath: xpValue
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 841922915071416572, guid: 9ec51f798e216dd429082a2b25e3eea0,
+        type: 3}
+      propertyPath: immuneTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 841922915071416573, guid: 9ec51f798e216dd429082a2b25e3eea0,
         type: 3}
       propertyPath: m_Name
@@ -12345,6 +12361,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4364347142511597809, guid: 616d0716790738a41a7283d93d59f7fc,
+        type: 3}
+      propertyPath: xpValue
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4364347142511597809, guid: 616d0716790738a41a7283d93d59f7fc,
+        type: 3}
+      propertyPath: immuneTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4364347142511597810, guid: 616d0716790738a41a7283d93d59f7fc,
         type: 3}
