@@ -45,18 +45,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0042201355, y: -0.006330341}
+  m_Offset: {x: 0.0007508993, y: -0.004892051}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5, y: 0.7}
+    newSize: {x: 0.2, y: 0.28}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.17734478, y: 0.24908715}
+  m_Size: {x: 0.43184042, y: 0.6027776}
   m_EdgeRadius: 0
 --- !u!114 &841922914657245638
 MonoBehaviour:
@@ -184,18 +184,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0020894632, y: -0.005602151}
+  m_Offset: {x: 0.0007508993, y: -0.004892051}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.28}
+    oldSize: {x: 0.5, y: 0.7}
     newSize: {x: 0.2, y: 0.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.17621107, y: 0.24915689}
+  m_Size: {x: 0.43184042, y: 0.6027776}
   m_EdgeRadius: 0
 --- !u!114 &841922915071416572
 MonoBehaviour:
@@ -209,14 +209,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5890a6995bdeaa9488280b4e7df2f91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoint: 5
-  maxHitpoint: 5
+  hitpoint: 10
+  maxHitpoint: 10
   pushRecoverySpeed: 0.2
-  healthBar: {fileID: 0}
+  immuneTime: 0.2
   ySpeed: 0.75
   xSpeed: 1
-  xpValue: 1
-  triggerLenght: 0.7
+  xpValue: 5
+  triggerLenght: 1
   chaseLenght: 3
   filter:
     useTriggers: 0
