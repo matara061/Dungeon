@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 63395fba7fe88984392426cd6c111abc
+guid: e931591c906bf1145829e3674014ecdd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2299181532483124908
-    second: Merlin left_0
+      213: -8866633830815281754
+    second: Portalverde_0
   - first:
-      213: 1581405481205138204
-    second: Merlin left_1
+      213: 40267304060608980
+    second: Portalverde_1
   - first:
-      213: -3561351149365157192
-    second: Merlin left_2
+      213: -8218335493980534049
+    second: Portalverde_2
   - first:
-      213: 68129813134658254
-    second: Merlin left_3
-  - first:
-      213: 7543564771105614926
-    second: Merlin left_4
-  - first:
-      213: 2505326327466524210
-    second: Merlin left_5
+      213: -3227849732290247149
+    second: Portalverde_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -63,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 120
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,13 +99,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Merlin left_0
+      name: Portalverde_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 223
-        width: 38
-        height: 56
+        x: 4
+        y: 33
+        width: 25
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +113,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cae7bc51c6558ef10800000000000000
-      internalID: 2299181532483124908
+      spriteID: 6ad4bc0228363f480800000000000000
+      internalID: -8866633830815281754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Merlin left_1
+      name: Portalverde_1
       rect:
         serializedVersion: 2
-        x: 140
-        y: 224
-        width: 37
-        height: 57
+        x: 33
+        y: 32
+        width: 26
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c13861118e742f510800000000000000
-      internalID: 1581405481205138204
+      spriteID: 4d1689256ee0f8000800000000000000
+      internalID: 40267304060608980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Merlin left_2
+      name: Portalverde_2
       rect:
         serializedVersion: 2
-        x: 34
-        y: 123
-        width: 37
-        height: 60
+        x: 3
+        y: 1
+        width: 25
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b229ad9ff9839ec0800000000000000
-      internalID: -3561351149365157192
+      spriteID: fda4e4c296b92fd80800000000000000
+      internalID: -8218335493980534049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Merlin left_3
+      name: Portalverde_3
       rect:
         serializedVersion: 2
-        x: 136
-        y: 121
-        width: 38
-        height: 56
+        x: 33
+        y: 0
+        width: 26
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,50 +176,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eca418e34bb02f000800000000000000
-      internalID: 68129813134658254
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Merlin left_4
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 22
-        width: 77
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4ca6e9113020b860800000000000000
-      internalID: 7543564771105614926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Merlin left_5
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 24
-        width: 39
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23e73136505b4c220800000000000000
-      internalID: 2505326327466524210
+      spriteID: 316008635cf5433d0800000000000000
+      internalID: -3227849732290247149
       vertices: []
       indices: 
       edges: []
