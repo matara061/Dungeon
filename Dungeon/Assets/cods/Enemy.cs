@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Enemy : Mover
+public class Enemy : MoverEnemy
 {
 	// experience
 	public int xpValue = 1;
