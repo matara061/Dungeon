@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Dungeon1/Mapa1.unity
     guid: 9dee9e22555dc274a9462f0b52bf404c
   - enabled: 1
+    path: Assets/Scenes/Dungeon1/Mapa1Pa.unity
+    guid: 09b68377137fab24194d811c7fa16cf1
+  - enabled: 1
     path: Assets/Scenes/Dungeon1/Mapa2.unity
     guid: 3c89c9f999ad9f34fae1db709688d36a
   - enabled: 1
