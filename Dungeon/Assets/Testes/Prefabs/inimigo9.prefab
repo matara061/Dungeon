@@ -150,9 +150,9 @@ MonoBehaviour:
   immuneTime: 0.1
   ySpeed: 0.75
   xSpeed: 1
-  xpValue: 1
-  triggerLenght: 1
-  chaseLenght: 5
+  xpValue: 5
+  triggerLenght: 3
+  chaseLenght: 6
   filter:
     useTriggers: 0
     useLayerMask: 0

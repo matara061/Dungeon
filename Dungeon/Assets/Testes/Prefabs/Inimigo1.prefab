@@ -151,7 +151,7 @@ MonoBehaviour:
   ySpeed: 1
   xSpeed: 1
   xpValue: 2
-  triggerLenght: 1
+  triggerLenght: 2
   chaseLenght: 5
   filter:
     useTriggers: 0
