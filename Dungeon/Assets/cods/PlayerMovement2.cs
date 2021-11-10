@@ -86,11 +86,13 @@ public class PlayerMovement2 : Mover
         // }
 
         base.ReceiveDamage(dmg);
+        FindObjectOfType<AudioManager>().Play("Damage");
         GameManager.instance.OnHitpointChange();
     }
 
     public void OnLevelUp()
     {
+        FindObjectOfType<AudioManager>().Play("Level Up");
         maxHitpoint++;
         hitpoint = maxHitpoint;
     }

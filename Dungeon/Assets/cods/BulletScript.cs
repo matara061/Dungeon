@@ -28,11 +28,14 @@ public class BulletScript : Collidable           //Weapon     //EnemyHitbox
     {
         if (coll.CompareTag("Fighter")) // coll.Tag é o original
         {
+           
+
             if (coll.name == "Player") // nao precisa ignorar apenas fazer o fire point esta sempre a frente do jogodor, fazer a sprite do jogador seguir o mouse 
                 return;
    
             Damage dmg = new Damage
             {
+
                 damageAmount = gun.damagePoint[gun.gunLevel], //
                 origin = transform.position,
                 pushForce = gun.pushForce[gun.gunLevel]
@@ -40,21 +43,24 @@ public class BulletScript : Collidable           //Weapon     //EnemyHitbox
    
             Debug.Log(coll.name);
             coll.SendMessage("ReceiveDamage", dmg);
-   
+            
+
         }
-   
+       
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 0.1f);
         Destroy(gameObject); // this.
-   
+        FindObjectOfType<AudioManager>().Play("FireBall Impact");
+
+
     }
 
 
 
     //private void OnCollisionEnter2D(Collision2D Col)
-   //{
-   //     GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-   //     Destroy(effect, 1f);
-   //    Destroy(gameObject); // this.
-   // }
+    //{
+    //     GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+    //     Destroy(effect, 1f);
+    //    Destroy(gameObject); // this.
+    // }
 }

@@ -13,6 +13,7 @@ public class PauseMenu : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.P))
         {
+            FindObjectOfType<AudioManager>().Play("Click");
             if (GameIsPaused)
             {
                 Resume();
@@ -33,6 +34,7 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
+        FindObjectOfType<AudioManager>().Play("Click");
         // Realiza o processo abaixo caso o botão de pause seja ativado.
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
@@ -40,6 +42,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void LoadMenu()
     {
+        FindObjectOfType<AudioManager>().Play("Click");
         // é possivel inserir o save game ou uma tela de carregamento nessa função quando tiver uma
         Time.timeScale = 1f;
         Debug.Log("Menu");
@@ -47,6 +50,7 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
+        FindObjectOfType<AudioManager>().Play("Click");
         // é possivel configurar um LoadScene nessa função. Assim o jogo atual é encerrado e volta para a tela inicial
         Application.Quit();
         Debug.Log("Saindo do jogo");
