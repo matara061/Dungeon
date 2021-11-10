@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1136,6 +1136,95 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636728043}
   m_CullTransparentMesh: 0
+--- !u!1 &1686361359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1686361361}
+  - component: {fileID: 1686361360}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1686361360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686361359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f15c3ce0788c5439eda266c93ee321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: FireBall
+    clip: {fileID: 8300000, guid: 52a07a1bc996d2540a55b44a0d5f7f97, type: 3}
+    volume: 0.306
+    pitch: 2.02
+    source: {fileID: 0}
+  - name: FireBall Impact
+    clip: {fileID: 8300000, guid: 710524c15a599cb409d151d6557a2f78, type: 3}
+    volume: 0.311
+    pitch: 2.01
+    source: {fileID: 0}
+  - name: Money
+    clip: {fileID: 8300000, guid: 02002456b2df3cd41a80e098aee170fa, type: 3}
+    volume: 0.316
+    pitch: 2.02
+    source: {fileID: 0}
+  - name: Level Up
+    clip: {fileID: 8300000, guid: 79da7f26b14f01c4bb8db90e798822d8, type: 3}
+    volume: 0.306
+    pitch: 2.03
+    source: {fileID: 0}
+  - name: Damage
+    clip: {fileID: 8300000, guid: c58f6d02853be3041a47f6a26d4db79b, type: 3}
+    volume: 0.302
+    pitch: 2.06
+    source: {fileID: 0}
+  - name: Portal
+    clip: {fileID: 8300000, guid: 389360995c718364e9b30a73d962198f, type: 3}
+    volume: 0.306
+    pitch: 2.02
+    source: {fileID: 0}
+  - name: Ressurgir
+    clip: {fileID: 8300000, guid: 4d7c9ea2ffbebd84a9d1ab5faa4aaa56, type: 3}
+    volume: 0.302
+    pitch: 2.01
+    source: {fileID: 0}
+  - name: Click
+    clip: {fileID: 8300000, guid: 6f680fb288370a04e83129312cb54f1c, type: 3}
+    volume: 0.301
+    pitch: 2.02
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+--- !u!4 &1686361361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686361359}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.41610143, y: -0.71212816, z: -0.6767927}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1933382667
 GameObject:
   m_ObjectHideFlags: 0
