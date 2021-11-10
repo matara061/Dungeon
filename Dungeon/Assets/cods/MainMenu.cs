@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     public void playGame()
     {
         FindObjectOfType<AudioManager>().Play("Click");
-        SceneManager.LoadScene("Testes");
+        SceneManager.LoadScene("Guild");
     }
 
     public void Tutorial()
