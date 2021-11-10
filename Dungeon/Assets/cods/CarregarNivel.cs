@@ -19,11 +19,13 @@ public class CarregarNivel : MonoBehaviour
     public void LoadNextLevel()
     {
         StartCoroutine (LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        FindObjectOfType<AudioManager>().Play("Ressurgir");
     }
 
     // atrasa a cena para carregar corretamente.
     IEnumerator LoadLevel( int levelIndex )
     {
+        FindObjectOfType<AudioManager>().Play("Ressurgir");
         transition.SetTrigger("Start");
 
         yield return new WaitForSeconds(1f);

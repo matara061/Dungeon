@@ -75,6 +75,7 @@ public class Weapon : Collidable // : monobehav....
 	public void UpgradeWeapon()
     {
 		Debug.Log("UPgrad");
+		FindObjectOfType<AudioManager>().Play("Level Up");
 		weaponLevel++;
 		spriteRenderer.sprite = GameManager.instance.weaponSprites[weaponLevel];
 

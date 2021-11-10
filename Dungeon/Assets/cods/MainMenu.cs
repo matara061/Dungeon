@@ -7,16 +7,19 @@ public class MainMenu : MonoBehaviour
 {
     public void playGame()
     {
+        FindObjectOfType<AudioManager>().Play("Click");
         SceneManager.LoadScene("Testes");
     }
 
     public void Tutorial()
     {
+        FindObjectOfType<AudioManager>().Play("Click");
         SceneManager.LoadScene("Tutorial");
     }
 
     public void QuitGame()
     {
+        FindObjectOfType<AudioManager>().Play("Click");
         Debug.Log("quit");
         Application.Quit();
     }

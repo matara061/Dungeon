@@ -14,6 +14,7 @@ public class Chest : Collectable  // chest é uma criança de collectable que é
         if (!collected)
         {
             collected = true;
+            FindObjectOfType<AudioManager>().Play("Money");
             GetComponent<SpriteRenderer>().sprite = emptyChest;
             GameManager.instance.pesos += pesosAmount;
             Coin.instance.ChangeScore(pesosAmount); // manda valor para Coin

@@ -23,6 +23,7 @@ public class DialogueManager : MonoBehaviour
 
 	public void StartDialogue(Dialogue dialogue)
 	{
+		FindObjectOfType<AudioManager>().Play("Click");
 		animator.SetBool("IsOpen", true);
 
 		nameText.text = dialogue.name;
@@ -39,6 +40,7 @@ public class DialogueManager : MonoBehaviour
 
 	public void DisplayNextSentence()
 	{
+		FindObjectOfType<AudioManager>().Play("Click");
 		if (sentences.Count == 0)
 		{
 			EndDialogue();
@@ -62,6 +64,7 @@ public class DialogueManager : MonoBehaviour
 
 	void EndDialogue()
 	{
+		FindObjectOfType<AudioManager>().Play("Click");
 		animator.SetBool("IsOpen", false);
 	}
 

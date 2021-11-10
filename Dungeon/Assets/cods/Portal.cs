@@ -13,6 +13,7 @@ public class Portal : Collidable
     {
         if (coll.name == "Player")
         {
+            FindObjectOfType<AudioManager>().Play("Portal");
             // teleporta player
             GameManager.instance.SaveState();
             string sceneName = sceneNames[Random.Range(0, sceneNames.Length)];
