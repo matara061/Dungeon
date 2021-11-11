@@ -190,4 +190,24 @@ public class GameManager : MonoBehaviour
         Debug.Log("LoadState");
     }
 
+    public void SaveGame()
+    {   
+            SaveSystem.SavePlayer(this);
+            Debug.Log("savegame");
+    }
+
+    public void LoadGame()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+
+        experience = data.level;
+        player.hitpoint = data.health;
+        pesos = data.pesos;
+        weapon.weaponLevel = data.weapon;
+
+        player.transform.position = new Vector3(data.position[0], data.position[1], data.position[2]); // n sei se da certo.
+
+    }
+
+
 }

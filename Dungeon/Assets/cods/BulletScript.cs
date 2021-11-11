@@ -50,7 +50,7 @@ public class BulletScript : Collidable           //Weapon     //EnemyHitbox
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 0.1f);
         Destroy(gameObject); // this.
-        FindObjectOfType<AudioManager>().Play("FireBall Impact");
+       // FindObjectOfType<AudioManager>().Play("Fireball Impact");
 
 
     }
