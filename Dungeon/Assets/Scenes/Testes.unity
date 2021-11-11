@@ -4076,8 +4076,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30.8, y: -50.39999}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 2.4998, y: -68}
+  m_SizeDelta: {x: 115.480804, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &515225469
 MonoBehaviour:
@@ -4122,9 +4122,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1264218081}
-        m_MethodName: OnArrowClick
-        m_Mode: 6
+      - m_Target: {fileID: 83544745}
+        m_MethodName: LoadGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4319,7 +4319,7 @@ PrefabInstance:
     - target: {fileID: 3914827472532764209, guid: 4ff210ec96487d84a9db02e8ed57c9cf,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3914827473620418285, guid: 4ff210ec96487d84a9db02e8ed57c9cf,
         type: 3}
@@ -4442,8 +4442,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25.000002, y: -50.39999}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 2.5, y: -8}
+  m_SizeDelta: {x: 115.481094, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &720719550
 MonoBehaviour:
@@ -4488,9 +4488,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1264218081}
-        m_MethodName: OnArrowClick
-        m_Mode: 6
+      - m_Target: {fileID: 83544745}
+        m_MethodName: SaveGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7107,7 +7107,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.7, y: 37.9}
+  m_AnchoredPosition: {x: -1, y: 77}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1320727198
