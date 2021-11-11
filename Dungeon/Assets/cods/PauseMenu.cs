@@ -46,6 +46,7 @@ public class PauseMenu : MonoBehaviour
         // é possivel inserir o save game ou uma tela de carregamento nessa função quando tiver uma
         Time.timeScale = 1f;
         Debug.Log("Menu");
+        SceneManager.LoadScene("Menu");
     }
 
     public void QuitGame()
