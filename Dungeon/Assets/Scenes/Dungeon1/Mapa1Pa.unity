@@ -2803,7 +2803,7 @@ PrefabInstance:
     - target: {fileID: 7576316706258625509, guid: f1bbe3c4dbd23c8449052cb380dc49f2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7576316706258625509, guid: f1bbe3c4dbd23c8449052cb380dc49f2,
         type: 3}
@@ -4061,6 +4061,164 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 577332953}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &588823418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 588823419}
+  - component: {fileID: 588823423}
+  - component: {fileID: 588823422}
+  - component: {fileID: 588823421}
+  - component: {fileID: 588823420}
+  m_Layer: 5
+  m_Name: Totem 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &588823419
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588823418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1324281978}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 13258, y: 26959}
+  m_SizeDelta: {x: 41.552635, y: 110.41848}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &588823420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588823418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4f5d1f2a001abd479a8137f3b392b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Monumento
+    sentences:
+    - "Logo a frente \xE9 o sal\xE3o de Paracelso, grande Bruxo e um dos l\xEDderes
+      da Ordem."
+--- !u!114 &588823421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588823418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 588823422}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 588823420}
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 493076143}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &588823422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588823418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &588823423
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588823418}
+  m_CullTransparentMesh: 0
 --- !u!1001 &619769479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95243,7 +95401,7 @@ GameObject:
   - component: {fileID: 923411782}
   - component: {fileID: 923411781}
   m_Layer: 5
-  m_Name: NPC (2)
+  m_Name: Totem 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95265,7 +95423,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21.5, y: 1725.5}
+  m_AnchoredPosition: {x: -20.776, y: 1723}
   m_SizeDelta: {x: 41.552635, y: 110.41848}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &923411781
@@ -95283,8 +95441,9 @@ MonoBehaviour:
   dialogue:
     name: Monumento
     sentences:
-    - "A magia n\xE3o deve ser usada para meios destrutivos ou como autoridade "
-    - "Aqueles aben\xE7oados com tal poder devem us\xE1-lo em benef\xEDcio de todos."
+    - "A magia n\xE3o deve ser usada para meios destrutivos ou como autoridade."
+    - "Aqueles aben\xE7oados com tal poder, devem us\xE1-lo em benef\xEDcio de todos."
+    - "Est\xE1tua em homenagem a Sarah, a primeira Bruxa e fundadora da Ordem."
 --- !u!114 &923411782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100577,6 +100736,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 196, y: 407, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 5
+      m_TileSpriteIndex: 5
+      m_TileMatrixIndex: 27
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 0
@@ -100589,7 +100758,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: dcddb4c4511be9b4fa68865cc0dd9e87, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: dac522b800884e04985749f97c7281c9, type: 2}
-  - m_RefCount: 4
+  - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: f0e922fcdb804c94ab7b529d5e633f87, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
@@ -100604,7 +100773,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -8005923643620191441, guid: abfdfd0ba8ef56b45bf08aef1bd7d7aa,
       type: 3}
-  - m_RefCount: 4
+  - m_RefCount: 5
     m_Data: {fileID: -1533463876049055087, guid: abfdfd0ba8ef56b45bf08aef1bd7d7aa,
       type: 3}
   m_TileMatrixArray:
@@ -101094,7 +101263,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 0
-  - m_RefCount: 6
+  - m_RefCount: 7
     m_Data:
       e00: 1
       e01: 0
@@ -101113,13 +101282,13 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 6
+  - m_RefCount: 7
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -66, y: -25, z: 0}
-  m_Size: {x: 293, y: 426, z: 1}
+  m_Size: {x: 293, y: 434, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -101191,15 +101360,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Monumento
+    name: Npc
     sentences:
-    - Ohh, de onde voce veio cara ?
-    - "Bom deve ter vindo com magia n\xE9 ? Afinal aqui \xE9 a principal base dos
+    - "Ohh, de onde voc\xEA veio cara ?"
+    - "Bom deve ter vindo com magia,n\xE9 ? Afinal, aqui \xE9 a principal base dos
       bruxos."
-    - "Estamos na entrada, se quiser se encontrar com os lideres v\xE1 para o ultimo
-      andar."
-    - "Tem varios monstros por ai mas, eles s\xF3 atacam aqueles que n\xE3o fazem
-      parte da ordem dos bruxos. N\xE3o deve ser um problema certo ?"
+    - "Estamos na entrada, se quiser ver os lideres, v\xE1 para o ultimo andar."
+    - "Tem v\xE1rios monstros por ai, mas eles s\xF3 atacam aqueles que n\xE3o fazem
+      parte da ordem dos bruxos. "
+    - "Isso n\xE3o deve ser um problema, certo?!"
 --- !u!114 &1141255909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101316,7 +101485,7 @@ GameObject:
   - component: {fileID: 1147658435}
   - component: {fileID: 1147658434}
   m_Layer: 5
-  m_Name: NPC (4)
+  m_Name: NPC (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101357,10 +101526,11 @@ MonoBehaviour:
     name: Npc
     sentences:
     - "Oh, como vai amigo? Voc\xEA tamb\xE9m veio ver o Paracelso? "
-    - "Dizem que ele \xE9 o mais leal aos ideais da ordem e aquele que mais admira
+    - "Dizem que ele \xE9 o mais leal aos ideais da ordem, e aquele que mais admira
       a Primeira bruxa."
-    - "Depois de tantos anos finalmente consegui entrar na ordem, agora quero conhecer
-      todos os principais membros. Ali\xE1s quem \xE9 voc\xEA mesmo?"
+    - 'Depois de tantos anos, finalmente consegui entrar na ordem, agora quero conhecer
+      os principais membros. '
+    - "Ali\xE1s, quem \xE9 voc\xEA mesmo?"
 --- !u!114 &1147658435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103030,6 +103200,8 @@ RectTransform:
   - {fileID: 923411780}
   - {fileID: 1654845242}
   - {fileID: 1147658433}
+  - {fileID: 2021558594}
+  - {fileID: 588823419}
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -136289,7 +136461,7 @@ GameObject:
   - component: {fileID: 1559684549}
   - component: {fileID: 1559684548}
   m_Layer: 5
-  m_Name: NPC
+  m_Name: Totem 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136329,7 +136501,8 @@ MonoBehaviour:
   dialogue:
     name: Monumento
     sentences:
-    - "Sal\xE3o de Paracelo"
+    - "Se veio em paz e for digno, a Ordem deixar\xE1 voc\xEA passar, caso contr\xE1rio,
+      encontrar\xE1 a morte!"
 --- !u!114 &1559684549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136715,8 +136888,7 @@ MonoBehaviour:
   dialogue:
     name: Estatua da primeira bruxa
     sentences:
-    - A primeira bruxa a ser reconhecida por todos.
-    - Ficou conhecida pela sua beleza e poder.
+    - Sarah, a primeira bruxa. Ficou conhecida por sua beleza e poder.
 --- !u!114 &1654845244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138798,6 +138970,164 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1970023501}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2021558593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2021558594}
+  - component: {fileID: 2021558598}
+  - component: {fileID: 2021558597}
+  - component: {fileID: 2021558596}
+  - component: {fileID: 2021558595}
+  m_Layer: 5
+  m_Name: Totem 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2021558594
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021558593}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1324281978}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1084.8, y: 4380.8}
+  m_SizeDelta: {x: 41.552635, y: 110.41848}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2021558595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021558593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4f5d1f2a001abd479a8137f3b392b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Monumento
+    sentences:
+    - "Se chegou at\xE9 aqui, provou seu valor. Mas tenha calma, eles podem estar
+      planejando uma morte dolorosa para voc\xEA logo a frente."
+--- !u!114 &2021558596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021558593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2021558597}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2021558595}
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 493076143}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2021558597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021558593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2021558598
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021558593}
+  m_CullTransparentMesh: 0
 --- !u!1 &2030364809
 GameObject:
   m_ObjectHideFlags: 0
