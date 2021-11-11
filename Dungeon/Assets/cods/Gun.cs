@@ -47,12 +47,15 @@ public class Gun : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1")) // fazer segurar botao para atirar ao invez de apertar toda hora 
         {
+           
+
             if (Time.time > nextTimeToFire)
             {
                 nextTimeToFire = Time.time + 1 / FireRate;
                 Shoot();
-                FindObjectOfType<AudioManager>().Play("Fireball");
+                
             }
+             
         }
 
     }
@@ -83,6 +86,7 @@ public class Gun : MonoBehaviour
     void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefabs, firePoint.position, transform.rotation);
+        FindObjectOfType<AudioManager>().Play("Fireball");
 
         // -- O comentado abaixo é Utilizado para deixar tiro mais rapido e tentar virar a sprite. Bug maroto
 
