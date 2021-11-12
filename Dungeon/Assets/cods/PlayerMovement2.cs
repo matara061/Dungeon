@@ -12,6 +12,7 @@ public class PlayerMovement2 : Mover
     public Animator anin;
 
     public GameObject gun;
+    public GameObject weapon;
 
     private Vector3 mousePosition;
 
@@ -75,19 +76,6 @@ public class PlayerMovement2 : Mover
 
         // DontDestroyOnLoad(gameObject);  
 
-        if (Input.GetKeyDown("i"))
-        {
-            anin.SetTrigger("show");
-            menu.UpdateMenu();
-            gun.SetActive(false);
-        }
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            anin.SetTrigger("hide");
-            menu.UpdateMenu();
-            gun.SetActive(true);
-        }
-      
     }
 
     protected override void ReceiveDamage(Damage dmg)

@@ -15,6 +15,10 @@ public class CharacterMenu : MonoBehaviour
     public Image gunSprite;
     public RectTransform xpBar;
 
+    public Animator anin;
+
+    public GameObject player;
+
     // Character selection
     public void OnArrowClick(bool right)
     {
@@ -108,5 +112,40 @@ public class CharacterMenu : MonoBehaviour
 
        // xpText.text = "NOT IMPLEMENTED";
        // xpBar.localScale = new Vector3(0.5f, 0, 0);
+    }
+
+    public void OpenMenu()
+    {
+        
+            anin.SetTrigger("show");
+            UpdateMenu();
+            player.SetActive(false);
+        Menu = true;
+            
+       
+    }
+
+    public void closeMenu()
+    {
+        anin.SetTrigger("hide");
+        UpdateMenu();
+        player.SetActive(true);
+        Menu = false;
+    }
+
+    public static bool Menu = false;
+    private void Update()
+    {
+        if (Input.GetKeyDown("i"))
+        {
+            if(Menu)
+            {
+                closeMenu();
+            }
+            else
+            {
+                OpenMenu();
+            }
+        }
     }
 }

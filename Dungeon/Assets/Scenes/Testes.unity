@@ -273,7 +273,7 @@ MonoBehaviour:
   - 3.6
   gunLevel: 0
   speed: 5
-  FireRate: 1
+  FireRate: 2
 --- !u!212 &36868420
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4974,6 +4974,7 @@ MonoBehaviour:
   animator: {fileID: 930431255}
   anin: {fileID: 1264218079}
   gun: {fileID: 36868417}
+  weapon: {fileID: 0}
   menu: {fileID: 1264218081}
 --- !u!212 &930431258
 SpriteRenderer:
@@ -5472,17 +5473,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1253779074}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -6461,6 +6451,8 @@ MonoBehaviour:
   weaponSprite: {fileID: 1045242154}
   gunSprite: {fileID: 873689415}
   xpBar: {fileID: 633670989}
+  anin: {fileID: 1264218079}
+  player: {fileID: 930431254}
 --- !u!224 &1270658372 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1262585083822148663, guid: 3c0495c510508ad4da99bb0513b0dceb,
@@ -7375,18 +7367,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1415763341}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1264218079}
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: hide
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1415763341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12432,17 +12413,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1253779074}
         m_MethodName: SetActive
         m_Mode: 6
@@ -13668,7 +13638,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1937525528
 RectTransform:
   m_ObjectHideFlags: 0
