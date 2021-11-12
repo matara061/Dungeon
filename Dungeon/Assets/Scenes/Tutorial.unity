@@ -391,6 +391,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7780401159446902633, guid: facf4e5dea4a1f74e9e844fa4d79edc9,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7780401159446902633, guid: facf4e5dea4a1f74e9e844fa4d79edc9,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7780401159446902633, guid: facf4e5dea4a1f74e9e844fa4d79edc9,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 662256311
+      objectReference: {fileID: 0}
     - target: {fileID: 7780401159446902636, guid: facf4e5dea4a1f74e9e844fa4d79edc9,
         type: 3}
       propertyPath: m_Name
@@ -860,6 +875,9 @@ MonoBehaviour:
   xSpeed: 3
   moveSpeed: 2
   animator: {fileID: 129210922}
+  anin: {fileID: 0}
+  gun: {fileID: 0}
+  menu: {fileID: 0}
 --- !u!212 &129210924
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -897,7 +915,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1767860591
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 5571167610463942239, guid: 364147074d5eef843a49aac21eeed4a2,
     type: 3}
@@ -90802,6 +90820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenuUI: {fileID: 1709170369}
+  Player: {fileID: 0}
 --- !u!114 &1380794547
 MonoBehaviour:
   m_ObjectHideFlags: 0
