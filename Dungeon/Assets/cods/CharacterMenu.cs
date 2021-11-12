@@ -48,7 +48,7 @@ public class CharacterMenu : MonoBehaviour
     // weapon upgrade
     public void OnUpgradeClick()
     {
-        FindObjectOfType<AudioManager>().Play("Level Up");
+        //FindObjectOfType<AudioManager>().Play("Level Up");
         Debug.Log("uppppppp");
         if (GameManager.instance.TryUpgradeWeapon())
             UpdateMenu();
@@ -57,7 +57,7 @@ public class CharacterMenu : MonoBehaviour
     // gun upgrade
     public void OnUpgradeClickW()
     {
-        FindObjectOfType<AudioManager>().Play("Level Up");
+      //  FindObjectOfType<AudioManager>().Play("Level Up");
         Debug.Log("uppppppp");
         if (GameManager.instance.TryUpgradeGun())
             UpdateMenu();

@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject PauseMenuUI;
+    public GameObject Player;
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.P))
@@ -28,6 +29,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         PauseMenuUI.SetActive(false);
+        Player.SetActive(true);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
@@ -37,6 +39,7 @@ public class PauseMenu : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Click");
         // Realiza o processo abaixo caso o botão de pause seja ativado.
         PauseMenuUI.SetActive(true);
+        Player.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
     }

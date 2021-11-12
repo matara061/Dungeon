@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     public GameObject menu;
     public Gun gun;
 
-     // public FloatingTextManager floatingTextManager;
+    // public FloatingTextManager floatingTextManager;
 
     // logic
     public int pesos;

@@ -9,9 +9,15 @@ public class PlayerMovement2 : Mover
   
     public Animator animator;
 
+    public Animator anin;
+
+    public GameObject gun;
+
     private Vector3 mousePosition;
 
     Vector2 movement;
+
+    public CharacterMenu menu;
 
     public static PlayerMovement2 instance;
 
@@ -28,6 +34,9 @@ public class PlayerMovement2 : Mover
             DontDestroyOnLoad(gameObject);
         }
     }
+
+    private bool open = false;
+    private bool close = true;
 
     void Update()
     {
@@ -64,8 +73,21 @@ public class PlayerMovement2 : Mover
 
         UpdateMotor(new Vector3(x, y, 0));
 
-       // DontDestroyOnLoad(gameObject);  
+        // DontDestroyOnLoad(gameObject);  
 
+        if (Input.GetKeyDown("i"))
+        {
+            anin.SetTrigger("show");
+            menu.UpdateMenu();
+            gun.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            anin.SetTrigger("hide");
+            menu.UpdateMenu();
+            gun.SetActive(true);
+        }
+      
     }
 
     protected override void ReceiveDamage(Damage dmg)
