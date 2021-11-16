@@ -10,6 +10,18 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject PauseMenuUI;
     public GameObject Player;
+
+    public static PauseMenu instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        instance = this;
+    }
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.P))
@@ -48,6 +60,9 @@ public class PauseMenu : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Click");
         // é possivel inserir o save game ou uma tela de carregamento nessa função quando tiver uma
         Time.timeScale = 1f;
+        PauseMenuUI.SetActive(false);
+        Player.SetActive(true);
+        GameIsPaused = false;
         Debug.Log("Menu");
         SceneManager.LoadScene("Menu");
     }
