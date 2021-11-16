@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fighter
   - Weapon
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -54,4 +55,7 @@ TagManager:
     locked: 0
   - name: Weapon
     uniqueID: 3220393289
+    locked: 0
+  - name: chao
+    uniqueID: 427839863
     locked: 0

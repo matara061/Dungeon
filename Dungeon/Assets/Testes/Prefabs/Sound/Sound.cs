@@ -16,6 +16,8 @@ using UnityEngine;
         [Range(.1f, 3f)]
         public float pitch; // Tom
 
+    public bool loop;
+
         [HideInInspector] // é publico mas não deve aparecer 
         public AudioSource source; // vamos chamar o Som em outros codigos através da vairiavel Source
     }

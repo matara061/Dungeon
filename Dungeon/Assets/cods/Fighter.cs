@@ -22,9 +22,13 @@ public class Fighter : MonoBehaviour
 	{
 		if (Time.time - lastImmune > immuneTime)
 		{
+			
 			lastImmune = Time.time;
 			hitpoint -= dmg.damageAmount;
+
 			pushDirection = (transform.position - dmg.origin).normalized * dmg.pushForce;
+				//FindObjectOfType<AudioManager>().Play("Soundtrack batlle");
+			
 
 			//GameManager.instance.ShowText(dmg.damageAmount.ToString(), 25, Color.red, transform.position, Vector3.zero, 0.5f);
 			if (hitpoint <= 0)
@@ -32,6 +36,11 @@ public class Fighter : MonoBehaviour
 				hitpoint = 0;
 				Death();
 			}
+			if (hitpoint >= 1)
+			{
+				FindObjectOfType<AudioManager>().Play("EnemyDamage");
+			}
+
 		}
 	}
 

@@ -86,7 +86,7 @@ public class Gun : MonoBehaviour
     void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefabs, firePoint.position, transform.rotation);
-        FindObjectOfType<AudioManager>().Play("Fireball");
+        FindObjectOfType<AudioManager>().Play("EnergyShoot");
 
         // -- O comentado abaixo é Utilizado para deixar tiro mais rapido e tentar virar a sprite. Bug maroto
 
