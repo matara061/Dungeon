@@ -7,6 +7,8 @@ public class AudioManager : MonoBehaviour
     public Sound[] sounds; // Um array de aúdio, isso permite utilizar uma boa quantidade de aúdio através de uma única função
 
     public static AudioManager instance;
+    internal readonly object currentlyPlaying;
+
     void Awake() // Basicamente é a msm coisa que o void Star, contudo, a prioridade de execução sempre vai ser do Awake 
     {
         if (instance == null)
@@ -28,17 +30,33 @@ public class AudioManager : MonoBehaviour
 
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
+            s.source.loop = s.loop;
 
         }
     }
+ 
     public void Play(string name) // Caso o nome do aúdio ñ seja encontrado, vai dar um super hiper mega bug. Se atentar ao nome pré-definido do Som
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         s.source.Play();
+        
     }
+
+    public void Stop(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return;
+        }
+        s.source.Stop(); 
+ }
+
     // Update is called once per frame
     void Update()
     {
+
 
     }
 }

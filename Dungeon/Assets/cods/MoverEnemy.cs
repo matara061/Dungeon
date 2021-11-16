@@ -22,14 +22,20 @@ public class MoverEnemy : Fighter
 
     protected virtual void UpdateMotor(Vector3 input)
     {
+        
         Vector3 screenPoint = Camera.main.WorldToScreenPoint(transform.position);
         Vector3 mousePos = Input.mousePosition;
+        
 
         // reseta moveDelta
         moveDelta = new Vector3(input.x * xSpeed, input.y * ySpeed, 0);
+        
+
+        
 
         // vira a sprite 
         if (moveDelta.x > 0)
+
             transform.localScale = Vector3.one; // vector.one é abreviação de Vector3(1, 1, 1)
 
         else if (moveDelta.x < 0)
@@ -48,6 +54,7 @@ public class MoverEnemy : Fighter
         hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
         if (hit.collider == null)
         {
+
             //make this thing move
             transform.Translate(0, moveDelta.y * Time.deltaTime, 0);
         }
@@ -57,6 +64,8 @@ public class MoverEnemy : Fighter
         {
             //make this thing move
             transform.Translate(moveDelta.x * Time.deltaTime, 0, 0);
+
         }
+        
     }
 }

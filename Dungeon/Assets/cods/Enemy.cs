@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,26 +28,34 @@ public class Enemy : MoverEnemy
 		playerTransform = GameManager.instance.player.transform;
 		startingPosition = transform.position;
 		hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
+		
 	}
 
-	private void FixedUpdate()
+
+    private void FixedUpdate()
 	{
+		
 		// player esta no alcace?
 		if (Vector3.Distance(playerTransform.position, startingPosition) < chaseLenght) 
 		{
+
+
 			if (Vector3.Distance(playerTransform.position, startingPosition) < triggerLenght)
 				chasing = true;
 
 			if (chasing)
 			{
+				
 				if (!collidingWithPlayer)
 				{
 					UpdateMotor((playerTransform.position - transform.position).normalized);// .normalized
+				
 				}
 			}
 			else
 			{
 				UpdateMotor(startingPosition - transform.position);
+				
 			}
 		}
 		else
@@ -54,6 +63,16 @@ public class Enemy : MoverEnemy
 			UpdateMotor(startingPosition - transform.position);
 			chasing = false;
 		}
+
+		//if (chasing == true)
+		//{
+		//	FindObjectOfType<AudioManager>().Play("Soundtrack batlle");
+		//}
+		//if (chasing == false)
+		//{
+		//	FindObjectOfType<AudioManager>().Stop("Soundtrack batlle");
+		//}
+
 
 		// checa sobreposições
 		collidingWithPlayer = false;
@@ -79,6 +98,7 @@ public class Enemy : MoverEnemy
 
 	protected override void Death()
 	{
+		FindObjectOfType<AudioManager>().Play("EnemyDeath");
 		Destroy(gameObject);
 		GameManager.instance.GrantXp(xpValue);
 		//GameManager.instance.ShowText("+" + xpValue + "xp", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);
