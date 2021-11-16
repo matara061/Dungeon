@@ -16,6 +16,7 @@ public class PlayerMovement2 : Mover
     Vector2 movement;
 
     public CharacterMenu menu;
+    public GameManager game;
 
     public GameObject DeathUi;
     public GameObject player;
@@ -121,6 +122,7 @@ public class PlayerMovement2 : Mover
         DeathUi.SetActive(true);
         player.SetActive(false);
         hitpoint = maxHitpoint;
+        game.pesos = game.pesos / 2; // n testado
         Time.timeScale = 0f;
        // SceneManager.LoadScene("Testes");
        // this.transform.position = GameObject.Find("SpawnPoint").transform.position;
