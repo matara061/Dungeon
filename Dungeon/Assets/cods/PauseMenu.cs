@@ -59,4 +59,14 @@ public class PauseMenu : MonoBehaviour
         Application.Quit();
         Debug.Log("Saindo do jogo");
     }
+
+    public void LoadGuild()
+    {
+        FindObjectOfType<AudioManager>().Play("Click");
+        // é possivel inserir o save game ou uma tela de carregamento nessa função quando tiver uma
+        Time.timeScale = 1f;
+        Player.SetActive(true);
+        Debug.Log("Guild");
+        SceneManager.LoadScene("Guild");
+    }
 }

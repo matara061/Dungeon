@@ -18,6 +18,9 @@ public class CharacterMenu : MonoBehaviour
     public Animator anin;
 
     public GameObject player;
+    public GameObject Weapon;
+    public GameObject Gun;
+    public GameObject fire;
 
     // Character selection
     public void OnArrowClick(bool right)
@@ -113,12 +116,11 @@ public class CharacterMenu : MonoBehaviour
        // xpText.text = "NOT IMPLEMENTED";
        // xpBar.localScale = new Vector3(0.5f, 0, 0);
     }
-
     public void OpenMenu()
     {
         
-            anin.SetTrigger("show");
             UpdateMenu();
+            anin.SetTrigger("show");
             player.SetActive(false);
         Menu = true;
             
@@ -127,8 +129,8 @@ public class CharacterMenu : MonoBehaviour
 
     public void closeMenu()
     {
-        anin.SetTrigger("hide");
         UpdateMenu();
+        anin.SetTrigger("hide");
         player.SetActive(true);
         Menu = false;
     }
@@ -136,7 +138,7 @@ public class CharacterMenu : MonoBehaviour
     public static bool Menu = false;
     private void Update()
     {
-        if (Input.GetKeyDown("i"))
+        if (Input.GetKeyDown("i") || Input.GetKeyDown(KeyCode.Escape))
         {
             if(Menu)
             {
@@ -147,5 +149,25 @@ public class CharacterMenu : MonoBehaviour
                 OpenMenu();
             }
         }
+
+        if (Input.GetKeyDown("1"))
+        {
+            Gun.SetActive(false);
+            fire.SetActive(false);
+            Weapon.SetActive(true);
+        }
+        if (Input.GetKeyDown("2"))
+        {
+            Weapon.SetActive(false);
+            Gun.SetActive(true);
+            fire.SetActive(true);
+        }
+
+        if(Weapon.activeSelf) // gambiarra
+        {
+            Gun.SetActive(false);
+            fire.SetActive(false);
+        }else if(Gun.activeSelf)
+            Weapon.SetActive(false);
     }
 }

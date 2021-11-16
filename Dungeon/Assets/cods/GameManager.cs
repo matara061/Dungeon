@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     {
         if (instance != null) // if (GameManager.instance != null)
         {
-            Destroy(gameObject);
+            Destroy(gameObject); // add os outros dps talvez.....
             Destroy(hud);
             Destroy(menu);
             return;
@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         instance = this;
        // SceneManager.sceneLoaded += LoadState;
         SceneManager.sceneLoaded += OnSceneLoaded;
-        DontDestroyOnLoad(gameObject);
+      //  DontDestroyOnLoad(gameObject);
 
     }
 
@@ -196,10 +196,13 @@ public class GameManager : MonoBehaviour
             Debug.Log("savegame");
     }
 
-    public void LoadGame()
+    public void LoadGame()  // Time.timeScale = 1f;
     {
         PlayerData data = SaveSystem.LoadPlayer();
 
+        // carregar ultima sena, sprites da arma atual
+
+        SceneManager.LoadScene(data.scene); // esta dando conflito com o spaw point
         experience = data.level;
         player.hitpoint = data.health;
         pesos = data.pesos;

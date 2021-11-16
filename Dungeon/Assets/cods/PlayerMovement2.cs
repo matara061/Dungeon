@@ -11,14 +11,14 @@ public class PlayerMovement2 : Mover
 
     public Animator anin;
 
-    public GameObject gun;
-    public GameObject weapon;
-
     private Vector3 mousePosition;
 
     Vector2 movement;
 
     public CharacterMenu menu;
+
+    public GameObject DeathUi;
+    public GameObject player;
 
     public static PlayerMovement2 instance;
 
@@ -36,8 +36,6 @@ public class PlayerMovement2 : Mover
         }
     }
 
-    private bool open = false;
-    private bool close = true;
 
     void Update()
     {
@@ -119,10 +117,14 @@ public class PlayerMovement2 : Mover
 
     protected override void Death() 
     {
-        SceneManager.LoadScene("Testes");
-        this.transform.position = GameObject.Find("SpawnPoint").transform.position;
-        // this.transform.position = new Vector3(0, 0, 0);
+        FindObjectOfType<AudioManager>().Play("Click");
+        DeathUi.SetActive(true);
+        player.SetActive(false);
         hitpoint = maxHitpoint;
+        Time.timeScale = 0f;
+       // SceneManager.LoadScene("Testes");
+       // this.transform.position = GameObject.Find("SpawnPoint").transform.position;
+       // hitpoint = maxHitpoint;
     }
     
 }

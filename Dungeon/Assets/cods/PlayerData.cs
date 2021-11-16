@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class PlayerData 
@@ -9,12 +10,15 @@ public class PlayerData
 
     public float[] position;
 
+    public string scene;
+
     public PlayerData (GameManager game)
     {
         level = game.experience;
         health = game.player.hitpoint;
         pesos = game.pesos;
         weapon = game.weapon.weaponLevel;
+        scene = SceneManager.GetActiveScene().name;
 
         position = new float[3];
         position[0] = game.player.transform.position.x;

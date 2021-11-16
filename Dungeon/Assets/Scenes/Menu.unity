@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: QUIT
+  m_text: Quit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -719,7 +719,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: OPTIONS
+  m_text: LoadGame
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -985,7 +985,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PLAY
+  m_text: Play
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1170,46 +1170,55 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 52a07a1bc996d2540a55b44a0d5f7f97, type: 3}
     volume: 0.306
     pitch: 2.02
+    loop: 0
     source: {fileID: 0}
   - name: FireBall Impact
     clip: {fileID: 8300000, guid: 710524c15a599cb409d151d6557a2f78, type: 3}
     volume: 0.311
     pitch: 2.01
+    loop: 0
     source: {fileID: 0}
   - name: Money
     clip: {fileID: 8300000, guid: 02002456b2df3cd41a80e098aee170fa, type: 3}
     volume: 0.316
     pitch: 2.02
+    loop: 0
     source: {fileID: 0}
   - name: Level Up
     clip: {fileID: 8300000, guid: 79da7f26b14f01c4bb8db90e798822d8, type: 3}
     volume: 0.306
     pitch: 2.03
+    loop: 0
     source: {fileID: 0}
   - name: Damage
     clip: {fileID: 8300000, guid: c58f6d02853be3041a47f6a26d4db79b, type: 3}
     volume: 0.302
     pitch: 2.06
+    loop: 0
     source: {fileID: 0}
   - name: Portal
     clip: {fileID: 8300000, guid: 389360995c718364e9b30a73d962198f, type: 3}
     volume: 0.306
     pitch: 2.02
+    loop: 0
     source: {fileID: 0}
   - name: Ressurgir
     clip: {fileID: 8300000, guid: 4d7c9ea2ffbebd84a9d1ab5faa4aaa56, type: 3}
     volume: 0.302
     pitch: 2.01
+    loop: 0
     source: {fileID: 0}
   - name: Click
     clip: {fileID: 8300000, guid: 6f680fb288370a04e83129312cb54f1c, type: 3}
     volume: 0.301
     pitch: 2.02
+    loop: 0
     source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
     volume: 0
     pitch: 0
+    loop: 0
     source: {fileID: 0}
 --- !u!4 &1686361361
 Transform:
@@ -1225,6 +1234,73 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1724133181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1724133184}
+  - component: {fileID: 1724133183}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1724133183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724133181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39bbbb9ab187cc14389b49375b660010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSprites: []
+  weaponSprites:
+  - {fileID: -6845980268273053146, guid: 6d800b3ab1c031f449a72797448c1df4, type: 3}
+  - {fileID: -4590863263307369687, guid: 6d800b3ab1c031f449a72797448c1df4, type: 3}
+  - {fileID: 4766128545898520377, guid: b9cb0da07124fa5439036a818edc02aa, type: 3}
+  - {fileID: 789792770048017229, guid: 8cdef3f62071825449076e675149e8a1, type: 3}
+  - {fileID: 21300000, guid: d0de5151828fe2f4eb557f2417d5751e, type: 3}
+  gunSprites:
+  - {fileID: 6596828142911244932, guid: 9e3cb77a97dcbcf418f068d43589c8bf, type: 3}
+  - {fileID: -8450793750321148256, guid: 91ba3b47464e1b344a02dc8981e77367, type: 3}
+  - {fileID: -7892942564012148539, guid: 3b9fa525f6a35e7458f4951d29ff1e9b, type: 3}
+  - {fileID: 21300000, guid: 1e02cf651813d1c4aab737c60c525e5d, type: 3}
+  - {fileID: 21300000, guid: eefcc494a35817349a879d1a320c5762, type: 3}
+  gunPrices: 1e00000032000000640000002c010000f4010000
+  weaponPrices: 1e0000006400000082000000fa0000002c010000
+  xpTable: 050000000a000000110000001e0000002f0000003c00000050000000640000007d000000c8000000
+  player: {fileID: 0}
+  weapon: {fileID: 0}
+  hitpointBar: {fileID: 0}
+  hud: {fileID: 0}
+  menu: {fileID: 0}
+  gun: {fileID: 0}
+  pesos: 0
+  experience: 0
+--- !u!4 &1724133184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724133181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.13582052, y: -0.7072073, z: -2.869509}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1933382667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,7 +1314,7 @@ GameObject:
   - component: {fileID: 1933382670}
   - component: {fileID: 1933382669}
   m_Layer: 5
-  m_Name: OptionsButton
+  m_Name: LoadGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1306,7 +1382,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1933382670}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1724133183}
+        m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1933382670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1611,8 +1698,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -6.3, y: 2.9}
+  m_SizeDelta: {x: 753.4352, y: 487.0083}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2065918075
 MonoBehaviour:
