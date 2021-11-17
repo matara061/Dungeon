@@ -23,4 +23,20 @@ public class MainMenu : MonoBehaviour
         Debug.Log("quit");
         Application.Quit();
     }
+
+    GameManager game;
+    public void LoadGame()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+
+        // carregar ultima sena, sprites da arma atual
+
+        SceneManager.LoadScene(data.scene); // esta dando conflito com o spaw point
+        game.experience = data.level;
+        game.player.hitpoint = data.health;
+        game.pesos = data.pesos;
+        game.weapon.weaponLevel = data.weapon;
+
+        game.player.transform.position = new Vector3(data.position[0], data.position[1], data.position[2]);
+    }
 }

@@ -11,17 +11,15 @@ public class AudioManager : MonoBehaviour
 
     void Awake() // Basicamente é a msm coisa que o void Star, contudo, a prioridade de execução sempre vai ser do Awake 
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
+        if (instance != null)
         {
             Destroy(gameObject);
             return;
         }
 
-        DontDestroyOnLoad(gameObject);
+        instance = this;
+
+       // DontDestroyOnLoad(gameObject);
 
         foreach (Sound s in sounds) // agr entendi. Foreach é para percorrer as posições de memória do array. podemos dizer que a Letra S são os indices
         {
