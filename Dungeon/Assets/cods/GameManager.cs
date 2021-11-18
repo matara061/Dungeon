@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour
     public GameObject hud;
     public GameObject menu;
     public Gun gun;
+    public BulletScript bullet;
+    public CharacterMenu Menu;
 
     // public FloatingTextManager floatingTextManager;
 
@@ -76,13 +78,13 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("try up");
         // is the weapon level max ?
-        if (gunPrices.Count <= gun.gunLevel)
+        if (gunPrices.Count <= bullet.gunLevel)
             return false;
 
-        if (pesos >= gunPrices[gun.gunLevel])
+        if (pesos >= gunPrices[bullet.gunLevel])
         {
             Debug.Log("tenho grana");
-            pesos -= gunPrices[gun.gunLevel];
+            pesos -= gunPrices[bullet.gunLevel];
             gun.UpgradeGun();
             return true;
         }
@@ -202,13 +204,14 @@ public class GameManager : MonoBehaviour
 
         // carregar ultima sena, sprites da arma atual
 
-        SceneManager.LoadScene(data.scene); // esta dando conflito com o spaw point
+        SceneManager.LoadScene(data.scene); 
         experience = data.level;
         player.hitpoint = data.health;
         pesos = data.pesos;
         weapon.weaponLevel = data.weapon;
+        gun.gunLevel = data.gun;
 
-        player.transform.position = new Vector3(data.position[0], data.position[1], data.position[2]); // n sei se da certo.
+        player.transform.position = new Vector3(data.position[0], data.position[1], data.position[2]); 
 
     }
 

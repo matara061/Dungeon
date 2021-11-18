@@ -135,7 +135,15 @@ MonoBehaviour:
   hitEffect: {fileID: 7310564984557905093, guid: 4179f094bd0c5484792963a58c763a25,
     type: 3}
   speed: 3
-  gun: {fileID: -923910265066491565, guid: af57a5f9536e39b46a43f2765b20766d, type: 3}
+  gunLevel: 0
+  damagePoint: 01000000020000000300000004000000050000000600000007000000
+  pushForce:
+  - 2
+  - 2.2
+  - 2.5
+  - 2.8
+  - 3
+  - 3.6
 --- !u!50 &3011707497956094985
 Rigidbody2D:
   serializedVersion: 4

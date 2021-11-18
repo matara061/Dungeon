@@ -81,11 +81,11 @@ public class CharacterMenu : MonoBehaviour
             upgradeCostText.text = GameManager.instance.weaponPrices[GameManager.instance.weapon.weaponLevel].ToString();
 
         // gun
-        gunSprite.sprite = GameManager.instance.gunSprites[GameManager.instance.gun.gunLevel];
-        if (GameManager.instance.gun.gunLevel == GameManager.instance.gunPrices.Count)
+        gunSprite.sprite = GameManager.instance.gunSprites[GameManager.instance.bullet.gunLevel];
+        if (GameManager.instance.bullet.gunLevel == GameManager.instance.gunPrices.Count)
             upgradeCostTextW.text = "MAX";
         else
-            upgradeCostTextW.text = GameManager.instance.gunPrices[GameManager.instance.gun.gunLevel].ToString();
+            upgradeCostTextW.text = GameManager.instance.gunPrices[GameManager.instance.bullet.gunLevel].ToString();
 
         // Meta
         levelText.text = GameManager.instance.GetCurrentLevel().ToString();

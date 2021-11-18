@@ -28,7 +28,7 @@ public class Gun : MonoBehaviour
     public float FireRate;
     float nextTimeToFire = 0;
 
-
+    public BulletScript bullet;
 
     void Start()
     {
@@ -57,6 +57,7 @@ public class Gun : MonoBehaviour
             }
              
         }
+        bullet.gunLevel = gunLevel;
 
     }
     void FixedUpdate()
@@ -102,8 +103,9 @@ public class Gun : MonoBehaviour
     public void UpgradeGun()
     {
         Debug.Log("UPgrad");
+        bullet.gunLevel++;
         gunLevel++;
-        spriteRenderer.sprite = GameManager.instance.gunSprites[gunLevel];
+        spriteRenderer.sprite = GameManager.instance.gunSprites[bullet.gunLevel];
         FindObjectOfType<AudioManager>().Play("Level Up");
 
         // change stats %%
@@ -111,8 +113,8 @@ public class Gun : MonoBehaviour
 
     public void SetGunLevel(int level)
     {
-        gunLevel = level;
-        spriteRenderer.sprite = GameManager.instance.gunSprites[gunLevel];
+        bullet.gunLevel = level;
+        spriteRenderer.sprite = GameManager.instance.gunSprites[bullet.gunLevel];
         FindObjectOfType<AudioManager>().Play("Level Up");
     }
 }

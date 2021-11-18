@@ -18,6 +18,7 @@ public class PlayerData
         health = game.player.hitpoint;
         pesos = game.pesos;
         weapon = game.weapon.weaponLevel;
+        gun = game.gun.gunLevel;
         scene = SceneManager.GetActiveScene().name;
 
         position = new float[3];

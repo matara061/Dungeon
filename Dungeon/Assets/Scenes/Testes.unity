@@ -411,7 +411,7 @@ MonoBehaviour:
   bulletPrefabs: {fileID: 8110874305657232654, guid: d8386c13dfe864d40abb697803dafe1d,
     type: 3}
   bulletForce: 20
-  damagePoint: 01000000020000000300000004000000050000000600000007000000
+  damagePoint: 0100000002000000030000000400000005000000
   pushForce:
   - 2
   - 2.2
@@ -422,6 +422,7 @@ MonoBehaviour:
   gunLevel: 0
   speed: 5
   FireRate: 2
+  bullet: {fileID: 8110874305657232655, guid: d8386c13dfe864d40abb697803dafe1d, type: 3}
 --- !u!212 &36868420
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -815,8 +816,8 @@ MonoBehaviour:
   - {fileID: -7892942564012148539, guid: 3b9fa525f6a35e7458f4951d29ff1e9b, type: 3}
   - {fileID: 21300000, guid: 1e02cf651813d1c4aab737c60c525e5d, type: 3}
   - {fileID: 21300000, guid: eefcc494a35817349a879d1a320c5762, type: 3}
-  gunPrices: 1e00000032000000640000002c010000f4010000
-  weaponPrices: 1e0000006400000082000000fa0000002c010000
+  gunPrices: 1e00000032000000640000002c010000
+  weaponPrices: 1e0000006400000082000000fa000000
   xpTable: 050000000a000000110000001e0000002f0000003c00000050000000640000007d000000c8000000
   player: {fileID: 930431257}
   weapon: {fileID: 1626746163}
@@ -824,6 +825,7 @@ MonoBehaviour:
   hud: {fileID: 391912280}
   menu: {fileID: 1264218073}
   gun: {fileID: 36868419}
+  bullet: {fileID: 8110874305657232655, guid: d8386c13dfe864d40abb697803dafe1d, type: 3}
   pesos: 0
   experience: 0
 --- !u!4 &83544746
@@ -1670,7 +1672,7 @@ PrefabInstance:
     - target: {fileID: 6124020078664938223, guid: 2f5a728a250bea547b8af4c9f135a2d4,
         type: 3}
       propertyPath: hitpoint
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6124020078664938223, guid: 2f5a728a250bea547b8af4c9f135a2d4,
         type: 3}
@@ -8587,7 +8589,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105455452}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.245, y: 1.014, z: 0}
+  m_LocalPosition: {x: -15.67, y: 1.014, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8787074980377244733}
@@ -10133,7 +10135,7 @@ PrefabInstance:
     - target: {fileID: 7780401159446902635, guid: facf4e5dea4a1f74e9e844fa4d79edc9,
         type: 3}
       propertyPath: pesosAmount
-      value: 500
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 7780401159446902636, guid: facf4e5dea4a1f74e9e844fa4d79edc9,
         type: 3}
@@ -19579,6 +19581,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss04
       objectReference: {fileID: 0}
+    - target: {fileID: 2584990325416809873, guid: 9b3b74b6f2b6c7a43b2e0b553d163db5,
+        type: 3}
+      propertyPath: chaseLenght
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5755855115711537023, guid: 9b3b74b6f2b6c7a43b2e0b553d163db5,
         type: 3}
       propertyPath: m_RootOrder
@@ -20252,6 +20259,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7780401159446902635, guid: facf4e5dea4a1f74e9e844fa4d79edc9,
+        type: 3}
+      propertyPath: pesosAmount
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 7780401159446902636, guid: facf4e5dea4a1f74e9e844fa4d79edc9,
         type: 3}

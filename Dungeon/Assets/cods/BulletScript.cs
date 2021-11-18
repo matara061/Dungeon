@@ -9,10 +9,11 @@ public class BulletScript : Collidable           //Weapon     //EnemyHitbox
     [SerializeField]
     float speed;
 
-    public Gun gun;
+    //public Gun gun;
+    public int gunLevel = 0;
 
-   // public int[] damagePoint = { 1, 2, 3, 4, 5, 6, 7 };
-   // public float[] pushForce = { 2.0f, 2.2f, 2.5f, 2.8f, 3f, 3.6f };
+     public int[] damagePoint = { 1, 2, 3, 4, 5, 6, 7 };
+     public float[] pushForce = { 2.0f, 2.2f, 2.5f, 2.8f, 3f, 3.6f };
 
     protected override void Start()
     {
@@ -36,9 +37,9 @@ public class BulletScript : Collidable           //Weapon     //EnemyHitbox
             Damage dmg = new Damage
             {
 
-                damageAmount = gun.damagePoint[gun.gunLevel], //
+                damageAmount = damagePoint[gunLevel], //
                 origin = transform.position,
-                pushForce = gun.pushForce[gun.gunLevel]
+                pushForce = pushForce[gunLevel]
             };
    
             Debug.Log(coll.name);
