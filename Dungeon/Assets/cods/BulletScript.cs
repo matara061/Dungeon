@@ -9,6 +9,8 @@ public class BulletScript : Collidable           //Weapon     //EnemyHitbox
     [SerializeField]
     float speed;
 
+    float timetoDestroy = 1.5f;
+
     //public Gun gun;
     public int gunLevel = 0;
 
@@ -23,6 +25,7 @@ public class BulletScript : Collidable           //Weapon     //EnemyHitbox
     void FixedUpdate() 
     {
         transform.Translate(Vector3.right * Time.deltaTime * speed);
+        Destroy(gameObject, timetoDestroy); 
     }
 
     protected override void OnCollide(Collider2D coll)
@@ -31,7 +34,7 @@ public class BulletScript : Collidable           //Weapon     //EnemyHitbox
         {
            
 
-            if (coll.name == "Player") // nao precisa ignorar apenas fazer o fire point esta sempre a frente do jogodor, fazer a sprite do jogador seguir o mouse 
+            if (coll.name == "Player" || coll.name == "SoundPlay") // nao precisa ignorar apenas fazer o fire point esta sempre a frente do jogodor, fazer a sprite do jogador seguir o mouse 
                 return;
    
             Damage dmg = new Damage
