@@ -16,9 +16,19 @@ public class Fighter : MonoBehaviour
 	//push
 	protected Vector3 pushDirection;
 
+	//SpriteRenderer m_SpriteRenderer;
+	//Color m_NewColor;
 
-	// All fighters can ReceiveDamage / die
-	protected virtual void ReceiveDamage(Damage dmg)
+
+	// void Start()
+    //{
+	//	m_SpriteRenderer = GetComponent<SpriteRenderer>();
+	//	m_SpriteRenderer.color = Color.blue;
+	//
+	//
+	//}
+    // All fighters can ReceiveDamage / die
+    protected virtual void ReceiveDamage(Damage dmg)
 	{
 		if (Time.time - lastImmune > immuneTime)
 		{
@@ -39,6 +49,7 @@ public class Fighter : MonoBehaviour
 			if (hitpoint >= 1)
 			{
 				FindObjectOfType<AudioManager>().Play("EnemyDamage");
+				//m_SpriteRenderer.color = Color.blue;
 			}
 
 		}
