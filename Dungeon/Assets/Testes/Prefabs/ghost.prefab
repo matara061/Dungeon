@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 6905675718820138903}
   - component: {fileID: 990158971455277569}
   - component: {fileID: 6124020078664938223}
+  - component: {fileID: -4548115812567617688}
   - component: {fileID: 5292337098124472737}
   m_Layer: 8
   m_Name: ghost
@@ -159,11 +160,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1767860591
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 4448715427215634006, guid: eca710fb5c4aa4f48bdbc6c0051267c8,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9622642, g: 0.9622642, b: 0.9622642, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
@@ -227,6 +228,18 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+--- !u!114 &-4548115812567617688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7218064896735201232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71af64d90adb04a4583fb2b7195f046a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &5292337098124472737
 BoxCollider2D:
   m_ObjectHideFlags: 0

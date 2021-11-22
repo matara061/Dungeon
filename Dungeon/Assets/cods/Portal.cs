@@ -18,7 +18,8 @@ public class Portal : Collidable
             GameManager.instance.SaveState();
             string sceneName = sceneNames[Random.Range(0, sceneNames.Length)];
             UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
-            
+            FindObjectOfType<AudioManager>().Play("Portal");
+
         }
     }
 }

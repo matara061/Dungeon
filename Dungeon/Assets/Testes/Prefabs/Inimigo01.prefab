@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 8895851809528079907}
   - component: {fileID: 1867387982831773633}
   - component: {fileID: 2808424128274576095}
+  - component: {fileID: -262685045148414778}
   - component: {fileID: 4290538651854953972}
   m_Layer: 8
   m_Name: Inimigo01
@@ -218,6 +219,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.18}
   m_EdgeRadius: 0
+--- !u!114 &-262685045148414778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3204228081965191809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d4148db6d000474f952a9db5e9fa767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4290538651854953972
 MonoBehaviour:
   m_ObjectHideFlags: 0

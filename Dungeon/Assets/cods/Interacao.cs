@@ -24,7 +24,7 @@ public class Interacao : MonoBehaviour
     {
         if (coll.gameObject.tag == "Bullet")
         {
-            Destroy(coll.gameObject);
+           // Destroy(coll.gameObject);
             health--;
             //animator.Play("Stone2");
             if (health <= 2)

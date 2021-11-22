@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1779819200694149909}
   - component: {fileID: 1779819200694149910}
   - component: {fileID: 1779819200694149911}
+  - component: {fileID: -5713547521025068116}
   m_Layer: 8
   m_Name: Inimigo5
   m_TagString: Fighter
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1767860591
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: -3433258028454004796, guid: 849e46d55c4411d4283647df71c2ce09,
     type: 3}
@@ -167,6 +168,18 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+--- !u!114 &-5713547521025068116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779819200694149904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c123de7ceec28e844b2c907e9aae60e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1779819201831487231
 GameObject:
   m_ObjectHideFlags: 0
