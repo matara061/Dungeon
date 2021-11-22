@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 9134130419708181790}
   - component: {fileID: 9134130419708181791}
   - component: {fileID: 3994699581440963934}
+  - component: {fileID: -7861047930527002334}
   m_Layer: 8
   m_Name: Inimigo3
   m_TagString: Fighter
@@ -295,6 +296,18 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &-7861047930527002334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9134130419708181784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c959093c2875c1429e1496343fd3c4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2821276685270457610
 PrefabInstance:
   m_ObjectHideFlags: 0

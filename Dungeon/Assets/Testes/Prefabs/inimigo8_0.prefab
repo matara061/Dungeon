@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 2650894151004981612}
   - component: {fileID: 7938472887808928617}
   - component: {fileID: 8230670254742559423}
+  - component: {fileID: 25500763061114258}
   m_Layer: 8
   m_Name: inimigo8_0
   m_TagString: Fighter
@@ -159,7 +160,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1767860591
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 3647129683684487461, guid: 2277cbce97c578a46a5e97b1714a1d7c,
     type: 3}
@@ -209,7 +210,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.26}
+    oldSize: {x: 0.25, y: 0.325}
     newSize: {x: 0.2, y: 0.26}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -253,6 +254,18 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+--- !u!114 &25500763061114258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9010472360584564786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d599eba50e57944897969cbc381a773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7108402615991516708
 PrefabInstance:
   m_ObjectHideFlags: 0

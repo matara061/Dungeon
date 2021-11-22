@@ -17,9 +17,13 @@ public class BulletScript : Collidable           //Weapon     //EnemyHitbox
      public int[] damagePoint = { 1, 2, 3, 4, 5, 6, 7 };
      public float[] pushForce = { 2.0f, 2.2f, 2.5f, 2.8f, 3f, 3.6f };
 
+    Animator animator;
+    private bool Damage = false;
+
     protected override void Start()
     {
         base.Start();
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate() 
@@ -36,7 +40,8 @@ public class BulletScript : Collidable           //Weapon     //EnemyHitbox
 
             if (coll.name == "Player" || coll.name == "SoundPlay") // nao precisa ignorar apenas fazer o fire point esta sempre a frente do jogodor, fazer a sprite do jogador seguir o mouse 
                 return;
-   
+
+
             Damage dmg = new Damage
             {
 
@@ -54,8 +59,7 @@ public class BulletScript : Collidable           //Weapon     //EnemyHitbox
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 0.5f);
         Destroy(gameObject); // this.
-       // FindObjectOfType<AudioManager>().Play("Fireball Impact");
-
+                             // FindObjectOfType<AudioManager>().Play("Fireball Impact");
 
     }
 

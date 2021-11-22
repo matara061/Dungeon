@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 3623739516149324755}
   - component: {fileID: 4039053590951377236}
   - component: {fileID: 4006977823743745786}
+  - component: {fileID: -402737762862469733}
   m_Layer: 8
   m_Name: Boss02
   m_TagString: Fighter
@@ -334,3 +335,15 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+--- !u!114 &-402737762862469733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9044578956172755405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af2588c11d77de14595cf56315125d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
