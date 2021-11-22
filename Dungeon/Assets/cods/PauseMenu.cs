@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject PauseMenuUI;
+    public GameObject DeathUi;
     public GameObject Player;
 
     public static PauseMenu instance;
@@ -60,6 +61,7 @@ public class PauseMenu : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Click");
         // é possivel inserir o save game ou uma tela de carregamento nessa função quando tiver uma
         Time.timeScale = 1f;
+        DeathUi.SetActive(false);
         PauseMenuUI.SetActive(false);
         Player.SetActive(true);
         GameIsPaused = false;
@@ -80,8 +82,11 @@ public class PauseMenu : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Click");
         // é possivel inserir o save game ou uma tela de carregamento nessa função quando tiver uma
         Time.timeScale = 1f;
+        DeathUi.SetActive(false);
         Player.SetActive(true);
+        GameIsPaused = false;
         Debug.Log("Guild");
         SceneManager.LoadScene("Guild");
     }
+
 }

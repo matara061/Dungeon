@@ -9,14 +9,28 @@ public class DialogueManager : MonoBehaviour
 
 	public Text nameText;
 	public Text dialogueText;
+	//public GameObject weapon;
+	//public GameObject gun;
+	public GameObject continueB;
 
 	public Animator animator;
 
 	private Queue<string> sentences;
 
-   
-    // Use this for initialization
-    void Start()
+	public static DialogueManager instance;
+	void Awake() // Basicamente é a msm coisa que o void Star, contudo, a prioridade de execução sempre vai ser do Awake 
+	{
+		if (instance != null)
+		{
+			Destroy(gameObject);
+			return;
+		}
+
+		instance = this;
+	}
+
+		// Use this for initialization
+		void Start()
 	{
 		sentences = new Queue<string>();
 	}
@@ -26,6 +40,9 @@ public class DialogueManager : MonoBehaviour
 		FindObjectOfType<AudioManager>().Play("Click");
 		animator.SetBool("IsOpen", true);
 
+		//weapon.SetActive(false);
+		//gun.SetActive(false);
+		continueB.SetActive(true);
 		nameText.text = dialogue.name;
 
 		sentences.Clear();
@@ -66,6 +83,9 @@ public class DialogueManager : MonoBehaviour
 	{
 		FindObjectOfType<AudioManager>().Play("Click");
 		animator.SetBool("IsOpen", false);
+		continueB.SetActive(false);
+		//weapon.SetActive(true);
+		//gun.SetActive(true);
 	}
 
 }
