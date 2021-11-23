@@ -11090,8 +11090,8 @@ MonoBehaviour:
   - {fileID: -7892942564012148539, guid: 3b9fa525f6a35e7458f4951d29ff1e9b, type: 3}
   - {fileID: 21300000, guid: 1e02cf651813d1c4aab737c60c525e5d, type: 3}
   - {fileID: 21300000, guid: eefcc494a35817349a879d1a320c5762, type: 3}
-  gunPrices: 1e00000032000000640000002c010000
-  weaponPrices: 1e0000006400000082000000fa000000
+  gunPrices: 640000002c0100001c020000bc020000
+  weaponPrices: 1e000000fa00000090010000a8020000
   xpTable: 050000000a000000110000001e0000002f0000003c00000050000000640000007d000000c8000000
   player: {fileID: 1355809269}
   weapon: {fileID: 2037041239}
@@ -18381,7 +18381,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037041234}
-  m_LocalRotation: {x: -0, y: -0, z: 0.03637047, w: 0.9993384}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.198, y: 0.245, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -18469,8 +18469,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1767860591
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: -1190269453821814239, guid: d3ca03fe69c829740bc16ae70d755ab7,
     type: 3}
@@ -18510,7 +18510,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  damagePoint: 01000000020000000300000004000000050000000600000007000000
+  damagePoint: 02000000030000000400000005000000060000000700000008000000
   pushForce:
   - 2
   - 2.2

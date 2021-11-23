@@ -103,4 +103,12 @@ public class Enemy : MoverEnemy
 		GameManager.instance.GrantXp(xpValue);
 		//GameManager.instance.ShowText("+" + xpValue + "xp", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);
 	}
+
+    private void OnDrawGizmosSelected()
+    {
+		Gizmos.DrawWireSphere(transform.position, chaseLenght);
+		Gizmos.color = Color.blue;
+		Gizmos.DrawWireSphere(transform.position, triggerLenght);
+		Gizmos.color = Color.green;
+	}
 }
