@@ -73,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1767860591
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -7607171138242779694, guid: 30251c0598869cd4b9a154f23e2de916,
     type: 3}
@@ -145,15 +145,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5890a6995bdeaa9488280b4e7df2f91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoint: 70
-  maxHitpoint: 70
+  hitpoint: 14
+  maxHitpoint: 14
   pushRecoverySpeed: 0.2
   immuneTime: 1
   ySpeed: 0.75
   xSpeed: 1
-  xpValue: 20
-  triggerLenght: 5
-  chaseLenght: 15
+  xpValue: 10
+  triggerLenght: 3
+  chaseLenght: 6
   filter:
     useTriggers: 0
     useLayerMask: 0
