@@ -1,22 +1,16 @@
 fileFormatVersion: 2
-guid: 51e78b7df5bad294f8f76029c93a7fbe
+guid: d85d06b10bf7359448d9a2304bdf393e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9039532766796973047
-    second: Gun 2_0
+      213: -3007162486112536237
+    second: NpcParado1_0
   - first:
-      213: 5898267398856993459
-    second: Gun 2_1
+      213: -1417395687259323259
+    second: NpcParado1_1
   - first:
-      213: 5522614519569475629
-    second: Gun 2_2
-  - first:
-      213: -8341206942243068174
-    second: Gun 2_3
-  - first:
-      213: 1014322680014803112
-    second: Gun 2_4
+      213: 719956958173811371
+    second: NpcParado1_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -60,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 350
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -102,13 +96,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gun 2_0
+      name: NpcParado1_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 121
-        width: 142
-        height: 46
+        x: 12
+        y: 63
+        width: 23
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -116,20 +110,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f3007c682fd27d70800000000000000
-      internalID: 9039532766796973047
+      spriteID: 359b169c6a96446d0800000000000000
+      internalID: -3007162486112536237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gun 2_1
+      name: NpcParado1_1
       rect:
         serializedVersion: 2
-        x: 153
-        y: 121
-        width: 144
-        height: 46
+        x: 57
+        y: 63
+        width: 24
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ba632be2fadad150800000000000000
-      internalID: 5898267398856993459
+      spriteID: 584ccb2d126645ce0800000000000000
+      internalID: -1417395687259323259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gun 2_2
+      name: NpcParado1_2
       rect:
         serializedVersion: 2
-        x: 3
-        y: 61
-        width: 142
-        height: 46
+        x: 12
+        y: 0
+        width: 23
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,50 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d286a5e35a444ac40800000000000000
-      internalID: 5522614519569475629
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gun 2_3
-      rect:
-        serializedVersion: 2
-        x: 153
-        y: 61
-        width: 142
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f66499ca741e3c80800000000000000
-      internalID: -8341206942243068174
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gun 2_4
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 1
-        width: 142
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a097e57a19931e00800000000000000
-      internalID: 1014322680014803112
+      spriteID: ba25589f90dcdf900800000000000000
+      internalID: 719956958173811371
       vertices: []
       indices: 
       edges: []
