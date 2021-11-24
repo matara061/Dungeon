@@ -198,6 +198,9 @@ public class GameManager : MonoBehaviour
             Debug.Log("savegame");
     }
 
+   // public PauseMenu pause;
+    public GameObject DeathUi;
+    public GameObject Player1;
     public void LoadGame()  // Time.timeScale = 1f;
     {
         PlayerData data = SaveSystem.LoadPlayer();
@@ -210,6 +213,10 @@ public class GameManager : MonoBehaviour
         pesos = data.pesos;
         weapon.weaponLevel = data.weapon;
         gun.gunLevel = data.gun;
+        DeathUi.SetActive(false);
+        Player1.SetActive(true);
+        Time.timeScale = 1f;
+        PauseMenu.GameIsPaused = false;
 
         player.transform.position = new Vector3(data.position[0], data.position[1], data.position[2]); 
 
