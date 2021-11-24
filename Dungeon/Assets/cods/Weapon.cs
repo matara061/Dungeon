@@ -70,6 +70,7 @@ public class Weapon : Collidable // : monobehav....
 	{
 		//Debug.Log("Swing");
 		anim.SetTrigger("Swing");
+		FindObjectOfType<AudioManager>().Play("Sword5");
 	}
 
 	public void UpgradeWeapon()
