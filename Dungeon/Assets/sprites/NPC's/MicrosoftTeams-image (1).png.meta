@@ -1,7 +1,16 @@
 fileFormatVersion: 2
-guid: f09f96f8307d3cd43a3305efdab9cb30
+guid: 345bc6bd61b12684a8ee369f613c064f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4158721639895151377
+    second: MicrosoftTeams-image (1)_0
+  - first:
+      213: -7751120294685907360
+    second: MicrosoftTeams-image (1)_1
+  - first:
+      213: 8679189356592410478
+    second: MicrosoftTeams-image (1)_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,12 +49,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 80
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -85,7 +94,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MicrosoftTeams-image (1)_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 64
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fecc15ec3b04946c0800000000000000
+      internalID: -4158721639895151377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MicrosoftTeams-image (1)_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 64
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066ecefb82d7e6490800000000000000
+      internalID: -7751120294685907360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MicrosoftTeams-image (1)_2
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6faa0a4cbca27870800000000000000
+      internalID: 8679189356592410478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
