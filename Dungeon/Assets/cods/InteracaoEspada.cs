@@ -27,7 +27,7 @@ public class InteracaoEspada : Collidable
 
            if (health == 1)
             {
-                animator.Play("Ponte2");
+                animator.Play("Ponti2");
                 FindObjectOfType<AudioManager>().Play("Bridge");
 
             }

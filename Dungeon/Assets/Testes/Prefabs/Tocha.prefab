@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3525635895581509980}
   - component: {fileID: 5945587054362640950}
   m_Layer: 0
-  m_Name: Tocha_0
+  m_Name: Tocha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 0.6770347
+  m_PointLightOuterRadius: 1.06
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
