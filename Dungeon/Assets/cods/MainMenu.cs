@@ -39,4 +39,10 @@ public class MainMenu : MonoBehaviour
 
         game.player.transform.position = new Vector3(data.position[0], data.position[1], data.position[2]);
     }
+
+    public void Creditos()
+    {
+        FindObjectOfType<AudioManager>().Play("Click");
+        SceneManager.LoadScene("credits");
+    }
 }

@@ -247,8 +247,8 @@ MonoBehaviour:
   maxHitpoint: 8
   pushRecoverySpeed: 0.2
   immuneTime: 0.5
-  ySpeed: 0.75
-  xSpeed: 1
+  ySpeed: 1
+  xSpeed: 1.5
   xpValue: 5
   triggerLenght: 3
   chaseLenght: 9

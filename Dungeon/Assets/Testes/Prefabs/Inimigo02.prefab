@@ -161,7 +161,7 @@ MonoBehaviour:
   maxHitpoint: 10
   pushRecoverySpeed: 0.2
   immuneTime: 0.7
-  ySpeed: 0.75
+  ySpeed: 1.5
   xSpeed: 1
   xpValue: 6
   triggerLenght: 3
