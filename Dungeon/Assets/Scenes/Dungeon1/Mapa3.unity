@@ -101876,13 +101876,14 @@ MonoBehaviour:
   dialogue:
     name: Mary
     sentences:
-    - "Voc\xEA est\xE1 provando seu valor. Voc\xEA com toda certeza \xE9 um grande
-      bruxo."
+    - "Voc\xEA com toda certeza \xE9 um grande bruxo. Mas tenha calma, ainda faltam
+      alguns andares."
     - "As coisas come\xE7am a complicar ainda mais nesse andar. "
-    - "\rMas sei que agora voc\xEA \xE9 o \xFAnico capaz de chegar at\xE9 a Morgana."
-    - "\rPreparado para mais um desafio?!"
+    - "Bom, eu vou juntar mais informa\xE7\xF5es sobre esse andar, e te encontro
+      depois."
     - "Ahh, n\xE3o se esque\xE7a de comprar armas melhores, caso tenha dinheiro pra
       isso. Te ajudar\xE1 muito nas batalhas."
+    - 
 --- !u!114 &1764372541
 MonoBehaviour:
   m_ObjectHideFlags: 0
