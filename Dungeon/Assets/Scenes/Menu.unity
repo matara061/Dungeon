@@ -1038,7 +1038,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2065918075}
-        m_MethodName: Tutorial
+        m_MethodName: Creditos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

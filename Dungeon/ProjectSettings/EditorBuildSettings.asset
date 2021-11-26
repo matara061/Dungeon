@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dungeon1/Mapa5Pa.unity
     guid: e24a5b2c74bb4b84d92292aad6e6d6a2
+  - enabled: 1
+    path: Assets/Scenes/credits.unity
+    guid: 65f7eb026a2befc4d90c2c722a8a1f5e
   m_configObjects: {}

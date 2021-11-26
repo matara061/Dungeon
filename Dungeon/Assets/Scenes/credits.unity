@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -155,8 +155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00073242, y: -87}
-  m_SizeDelta: {x: 117.97882, y: 30}
+  m_AnchoredPosition: {x: 0.73148, y: -100}
+  m_SizeDelta: {x: 221.95575, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &88210453
 MonoBehaviour:
@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: pessoa2
+  m_Text: Gabriel Aranda
 --- !u!222 &88210454
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -426,8 +426,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00073242, y: -87}
-  m_SizeDelta: {x: 117.97882, y: 30}
+  m_AnchoredPosition: {x: -0.000045776, y: -93}
+  m_SizeDelta: {x: 494.34607, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &259733555
 MonoBehaviour:
@@ -461,7 +461,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: pessoa2
+  m_Text: Petkovic dos Santos Paiva Moreira
 --- !u!222 &259733556
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -657,11 +657,11 @@ RectTransform:
   - {fileID: 1808063543}
   - {fileID: 259733554}
   m_Father: {fileID: 1722267431}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -344.92, y: 253.24896}
+  m_AnchoredPosition: {x: 0.00000095367, y: 484}
   m_SizeDelta: {x: 233.14313, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &368625961
@@ -737,11 +737,11 @@ RectTransform:
   - {fileID: 1332246817}
   - {fileID: 637720725}
   m_Father: {fileID: 1722267431}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -136.74008, y: 86.248}
+  m_AnchoredPosition: {x: 9.09e-13, y: -215}
   m_SizeDelta: {x: 216.49811, y: 29.999748}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &377911803
@@ -814,12 +814,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1722267431}
-  m_RootOrder: 1
+  m_Father: {fileID: 1218603711}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.6000605, y: 318.24896}
+  m_AnchoredPosition: {x: 0, y: -36.74106}
   m_SizeDelta: {x: 497.9818, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &440051853
@@ -1081,8 +1081,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00073242, y: -87}
-  m_SizeDelta: {x: 117.97882, y: 30}
+  m_AnchoredPosition: {x: -0.000030518, y: -91}
+  m_SizeDelta: {x: 423.0327, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &548291446
 MonoBehaviour:
@@ -1116,7 +1116,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: pessoa2
+  m_Text: Matheus Ferreira Dos Santos
 --- !u!222 &548291447
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1159,8 +1159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: -48}
-  m_SizeDelta: {x: 117.98035, y: 30}
+  m_AnchoredPosition: {x: -0.0000076293945, y: -48}
+  m_SizeDelta: {x: 232.73877, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &629955319
 MonoBehaviour:
@@ -1194,7 +1194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: pessoa1
+  m_Text: Gabriel Aranda
 --- !u!222 &629955320
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1315,8 +1315,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: -48}
-  m_SizeDelta: {x: 117.98035, y: 30}
+  m_AnchoredPosition: {x: -0.0000076293945, y: -48}
+  m_SizeDelta: {x: 214.63501, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &723136028
 MonoBehaviour:
@@ -1350,7 +1350,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: pessoa1
+  m_Text: "Jo\xE3o Marques"
 --- !u!222 &723136029
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1358,6 +1358,84 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723136026}
+  m_CullTransparentMesh: 0
+--- !u!1 &825496826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 825496827}
+  - component: {fileID: 825496829}
+  - component: {fileID: 825496828}
+  m_Layer: 5
+  m_Name: pessoa3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &825496827
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825496826}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1339806841}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.73146, y: -145}
+  m_SizeDelta: {x: 435.4936, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &825496828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825496826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 42910a56736d9fa4dbe1ae43276c59b3, type: 3}
+    m_FontSize: 23
+    m_FontStyle: 2
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Matheus Ferreira Dos Santos
+--- !u!222 &825496829
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825496826}
   m_CullTransparentMesh: 0
 --- !u!1 &833386988
 GameObject:
@@ -1491,11 +1569,11 @@ RectTransform:
   - {fileID: 629955318}
   - {fileID: 548291445}
   m_Father: {fileID: 1722267431}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 365.99994, y: 253.24896}
+  m_AnchoredPosition: {x: -5.06e-13, y: -53}
   m_SizeDelta: {x: 216.49811, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1202522659
@@ -1567,13 +1645,14 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 440051852}
   m_Father: {fileID: 1722267431}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.6000605, y: 354.99}
+  m_AnchoredPosition: {x: -7, y: 600}
   m_SizeDelta: {x: 497.9818, y: 43.485214}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1218603712
@@ -1651,8 +1730,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: -48}
-  m_SizeDelta: {x: 117.98035, y: 30}
+  m_AnchoredPosition: {x: -0.000015259, y: -45}
+  m_SizeDelta: {x: 248.71777, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1332246818
 MonoBehaviour:
@@ -1686,7 +1765,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: pessoa1
+  m_Text: Ricardo Randmer
 --- !u!222 &1332246819
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1726,12 +1805,13 @@ RectTransform:
   m_Children:
   - {fileID: 1844418151}
   - {fileID: 88210452}
+  - {fileID: 825496827}
   m_Father: {fileID: 1722267431}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 128.87, y: 253.24896}
+  m_AnchoredPosition: {x: 9.09e-13, y: 157}
   m_SizeDelta: {x: 257.73187, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1339806842
@@ -1807,11 +1887,11 @@ RectTransform:
   - {fileID: 723136027}
   - {fileID: 2139879018}
   m_Father: {fileID: 1722267431}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -114.17, y: 253.24896}
+  m_AnchoredPosition: {x: 0, y: 312}
   m_SizeDelta: {x: 228.33371, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1435625449
@@ -1887,12 +1967,12 @@ RectTransform:
   - {fileID: 469363102}
   - {fileID: 188636339}
   m_Father: {fileID: 1722267431}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 163.8, y: 86.24896}
-  m_SizeDelta: {x: 245.01938, y: 30}
+  m_AnchoredPosition: {x: 0, y: -380}
+  m_SizeDelta: {x: 399.7997, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1677687897
 MonoBehaviour:
@@ -1926,7 +2006,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- outros(temp) -'
+  m_Text: '- Agradecimentos especiais -'
 --- !u!222 &1677687898
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1965,7 +2045,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1218603711}
-  - {fileID: 440051852}
   - {fileID: 368625960}
   - {fileID: 1435625448}
   - {fileID: 1339806841}
@@ -1977,8 +2056,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: -135.24}
-  m_SizeDelta: {x: 979.9999, y: 821.47217}
+  m_AnchoredPosition: {x: -0.000030518, y: -383}
+  m_SizeDelta: {x: 979.9999, y: 1316.9541}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1722267432
 MonoBehaviour:
@@ -2051,8 +2130,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -51}
-  m_SizeDelta: {x: 117.98035, y: 30}
+  m_AnchoredPosition: {x: 0, y: -47}
+  m_SizeDelta: {x: 424.05334, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1808063544
 MonoBehaviour:
@@ -2086,7 +2165,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: pessoa1
+  m_Text: Matheus Ferreira Dos Santos
 --- !u!222 &1808063545
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2129,8 +2208,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: -48}
-  m_SizeDelta: {x: 117.98035, y: 30}
+  m_AnchoredPosition: {x: -0.0000038146973, y: -48}
+  m_SizeDelta: {x: 220.4928, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1844418152
 MonoBehaviour:
@@ -2164,7 +2243,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: pessoa1
+  m_Text: "Jo\xE3o Marques"
 --- !u!222 &1844418153
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2242,8 +2321,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00073242, y: -87}
-  m_SizeDelta: {x: 117.97882, y: 30}
+  m_AnchoredPosition: {x: -0.000030518, y: -91}
+  m_SizeDelta: {x: 484.13824, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2139879019
 MonoBehaviour:
@@ -2277,7 +2356,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: pessoa2
+  m_Text: Petkovic dos Santos Paiva Moreira
 --- !u!222 &2139879020
 CanvasRenderer:
   m_ObjectHideFlags: 0
