@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2c28f223158e35745b18915b16d8fa7f
+guid: 51cdf9a5a209e63418ba20795aa2e16a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8294644566714574965
-    second: BlocoSombra2-1.png (1)_0
+      213: 2251809350804381445
+    second: MuroVer_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -90,12 +90,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BlocoSombra2-1.png (1)_0
+      name: MuroVer_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 10
         y: 0
-        width: 32
+        width: 12
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -104,8 +104,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b879ad6a6b083ec80800000000000000
-      internalID: -8294644566714574965
+      spriteID: 50f19988ca8004f10800000000000000
+      internalID: 2251809350804381445
       vertices: []
       indices: 
       edges: []

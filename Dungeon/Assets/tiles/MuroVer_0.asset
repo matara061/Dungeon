@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SujeiraDungeon_0
+  m_Name: MuroVer_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 3852276214050367933, guid: 08072b0a2923b174bb6318c9527848c7,
+  m_Sprite: {fileID: 2251809350804381445, guid: 51cdf9a5a209e63418ba20795aa2e16a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
