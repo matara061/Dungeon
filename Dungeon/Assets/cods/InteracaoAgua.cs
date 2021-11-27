@@ -21,9 +21,7 @@ public class InteracaoAgua : Collidable
     {
         if (coll.gameObject.tag == "Bullet")
         {
-            Destroy(coll.gameObject);
             health--;
-
 
             if (health == 1)
             {

@@ -98,7 +98,7 @@ public class Enemy : MoverEnemy
 
 	protected override void Death()
 	{
-		FindObjectOfType<AudioManager>().Play("EnemyDeath");
+		//FindObjectOfType<AudioManager>().Play("EnemyDeath");
 		Destroy(gameObject);
 		GameManager.instance.GrantXp(xpValue);
 		//GameManager.instance.ShowText("+" + xpValue + "xp", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);

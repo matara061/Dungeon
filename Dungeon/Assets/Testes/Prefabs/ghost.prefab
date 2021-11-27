@@ -240,6 +240,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71af64d90adb04a4583fb2b7195f046a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitpoint: 50
+  maxHitpoint: 50
+  pushRecoverySpeed: 0.2
+  immuneTime: 1
+  ySpeed: 1
+  xSpeed: 1
+  xpValue: 15
+  triggerLenght: 10
+  chaseLenght: 10
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!61 &5292337098124472737
 BoxCollider2D:
   m_ObjectHideFlags: 0

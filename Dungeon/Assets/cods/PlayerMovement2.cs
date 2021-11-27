@@ -75,6 +75,7 @@ public class PlayerMovement2 : Mover
 
         // DontDestroyOnLoad(gameObject);  
 
+
     }
 
     protected override void ReceiveDamage(Damage dmg)
