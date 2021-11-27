@@ -41,11 +41,11 @@ public class Fighter : MonoBehaviour
 				hitpoint = 0;
 				Death();
 			}
-			if (hitpoint >= 1)
-			{
-				FindObjectOfType<AudioManager>().Play("EnemyDamage");
-
-			}
+			//if (hitpoint >= 1)
+			//{
+			//	FindObjectOfType<AudioManager>().Play("EnemyDamage");
+			//
+			//}
 
 		}
 	}

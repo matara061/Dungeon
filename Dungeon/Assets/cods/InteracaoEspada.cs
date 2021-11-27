@@ -21,7 +21,7 @@ public class InteracaoEspada : Collidable
     {
         if (coll.gameObject.tag == "Bullet")
         {
-            Destroy(coll.gameObject);
+            
             health--;
            
 

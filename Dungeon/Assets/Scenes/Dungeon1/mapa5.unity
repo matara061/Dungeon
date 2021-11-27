@@ -22784,7 +22784,7 @@ PrefabInstance:
     - target: {fileID: 7576316706258625509, guid: f1bbe3c4dbd23c8449052cb380dc49f2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7576316706258625509, guid: f1bbe3c4dbd23c8449052cb380dc49f2,
         type: 3}
@@ -23016,7 +23016,7 @@ PrefabInstance:
     - target: {fileID: 5294345714948196341, guid: b4d47d07b2984ca4ba0a279a30ead4d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5294345714948196341, guid: b4d47d07b2984ca4ba0a279a30ead4d8,
         type: 3}
@@ -46654,7 +46654,7 @@ PrefabInstance:
     - target: {fileID: 1156373494640165770, guid: 56faa5be647b47f479eb78d82688d3a1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1156373494640165770, guid: 56faa5be647b47f479eb78d82688d3a1,
         type: 3}
@@ -46728,7 +46728,7 @@ PrefabInstance:
     - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
         type: 3}
@@ -49309,7 +49309,7 @@ PrefabInstance:
     - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
         type: 3}
@@ -49956,7 +49956,7 @@ RectTransform:
   - {fileID: 1942168645}
   - {fileID: 1456351166}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -51111,7 +51111,7 @@ PrefabInstance:
     - target: {fileID: 105371231280213335, guid: 2215322ea35b6f64fa0bf3f4c0854a7a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 105371231280213335, guid: 2215322ea35b6f64fa0bf3f4c0854a7a,
         type: 3}
@@ -51655,7 +51655,7 @@ PrefabInstance:
     - target: {fileID: 105371231280213335, guid: 2215322ea35b6f64fa0bf3f4c0854a7a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 105371231280213335, guid: 2215322ea35b6f64fa0bf3f4c0854a7a,
         type: 3}
@@ -51873,7 +51873,7 @@ PrefabInstance:
     - target: {fileID: 105371231280213335, guid: 2215322ea35b6f64fa0bf3f4c0854a7a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 105371231280213335, guid: 2215322ea35b6f64fa0bf3f4c0854a7a,
         type: 3}
@@ -52383,6 +52383,194 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1320867717}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1334867659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1334867661}
+  - component: {fileID: 1334867660}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1334867660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334867659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f15c3ce0788c5439eda266c93ee321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Fireball
+    clip: {fileID: 8300000, guid: 52a07a1bc996d2540a55b44a0d5f7f97, type: 3}
+    volume: 0.201
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Fireball Impact
+    clip: {fileID: 8300000, guid: 710524c15a599cb409d151d6557a2f78, type: 3}
+    volume: 0.311
+    pitch: 2.01
+    loop: 0
+    source: {fileID: 0}
+  - name: Money
+    clip: {fileID: 8300000, guid: 02002456b2df3cd41a80e098aee170fa, type: 3}
+    volume: 0.316
+    pitch: 2.02
+    loop: 0
+    source: {fileID: 0}
+  - name: Level Up
+    clip: {fileID: 8300000, guid: 79da7f26b14f01c4bb8db90e798822d8, type: 3}
+    volume: 0.306
+    pitch: 2.03
+    loop: 0
+    source: {fileID: 0}
+  - name: Damage
+    clip: {fileID: 8300000, guid: c58f6d02853be3041a47f6a26d4db79b, type: 3}
+    volume: 0.302
+    pitch: 2.06
+    loop: 0
+    source: {fileID: 0}
+  - name: Portal
+    clip: {fileID: 8300000, guid: 389360995c718364e9b30a73d962198f, type: 3}
+    volume: 0.306
+    pitch: 2.02
+    loop: 0
+    source: {fileID: 0}
+  - name: Ressurgir
+    clip: {fileID: 8300000, guid: 4d7c9ea2ffbebd84a9d1ab5faa4aaa56, type: 3}
+    volume: 0.302
+    pitch: 2.01
+    loop: 0
+    source: {fileID: 0}
+  - name: Click
+    clip: {fileID: 8300000, guid: 6f680fb288370a04e83129312cb54f1c, type: 3}
+    volume: 0.301
+    pitch: 2.02
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDamage
+    clip: {fileID: 8300000, guid: 676a6200040ca3246bdaf2c57c21833d, type: 3}
+    volume: 0.808
+    pitch: 2.01
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDeath
+    clip: {fileID: 8300000, guid: f576c42f901122d4cbeac58c8872fa5a, type: 3}
+    volume: 0.059
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Soundtrack batlle
+    clip: {fileID: 8300000, guid: e0a141de77bce494e92606cfaa27efc7, type: 3}
+    volume: 0.101
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Stone Explosion
+    clip: {fileID: 8300000, guid: ee7decb51b8a3504a858d3b236ba4a1c, type: 3}
+    volume: 0.161
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnergyShoot
+    clip: {fileID: 8300000, guid: 28e36a59ad57e494f804d330eb40437d, type: 3}
+    volume: 0.22
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bridge
+    clip: {fileID: 8300000, guid: 0d3325acaf71e0c419da2baa2e3c13d1, type: 3}
+    volume: 0.22
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Sword5
+    clip: {fileID: 8300000, guid: da5dd1940e3a06043a46bc5bac187121, type: 3}
+    volume: 0.22
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Sword5
+    clip: {fileID: 8300000, guid: da5dd1940e3a06043a46bc5bac187121, type: 3}
+    volume: 0.22
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDamage1
+    clip: {fileID: 8300000, guid: afff8304ec378364aa25d3cbd7d43d6c, type: 3}
+    volume: 0.101
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDamage2
+    clip: {fileID: 8300000, guid: 1dedbf5d39550914aab2590fb3ccd183, type: 3}
+    volume: 0.402
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDamage3
+    clip: {fileID: 8300000, guid: 461e5067a30f4374fa434e6746aa7414, type: 3}
+    volume: 0.427
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDamage4
+    clip: {fileID: 8300000, guid: 15eaff2daec714843b303e71dbf02719, type: 3}
+    volume: 0.429
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDeath1
+    clip: {fileID: 8300000, guid: 66d886257f6f5ba45ad0d6c5e839a286, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDeath2
+    clip: {fileID: 8300000, guid: 7dbc83670b8494742a3433cd6858f7b4, type: 3}
+    volume: 0.446
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDeath3
+    clip: {fileID: 8300000, guid: c7356593168f32e4b821b85e2d06ab41, type: 3}
+    volume: 0.361
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDeath4
+    clip: {fileID: 8300000, guid: 3211274297c0f1d45b99da37fcc8a7a6, type: 3}
+    volume: 0.359
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!4 &1334867661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334867659}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.41610143, y: -0.71212816, z: -0.6767927}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1347526796
 GameObject:
   m_ObjectHideFlags: 0
@@ -53046,140 +53234,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1442183148}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1452404343
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1452404345}
-  - component: {fileID: 1452404344}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1452404344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1452404343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21f15c3ce0788c5439eda266c93ee321, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: Fireball
-    clip: {fileID: 8300000, guid: 52a07a1bc996d2540a55b44a0d5f7f97, type: 3}
-    volume: 0.201
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Fireball Impact
-    clip: {fileID: 8300000, guid: 710524c15a599cb409d151d6557a2f78, type: 3}
-    volume: 0.311
-    pitch: 2.01
-    loop: 0
-    source: {fileID: 0}
-  - name: Money
-    clip: {fileID: 8300000, guid: 02002456b2df3cd41a80e098aee170fa, type: 3}
-    volume: 0.316
-    pitch: 2.02
-    loop: 0
-    source: {fileID: 0}
-  - name: Level Up
-    clip: {fileID: 8300000, guid: 79da7f26b14f01c4bb8db90e798822d8, type: 3}
-    volume: 0.306
-    pitch: 2.03
-    loop: 0
-    source: {fileID: 0}
-  - name: Damage
-    clip: {fileID: 8300000, guid: c58f6d02853be3041a47f6a26d4db79b, type: 3}
-    volume: 0.302
-    pitch: 2.06
-    loop: 0
-    source: {fileID: 0}
-  - name: Portal
-    clip: {fileID: 8300000, guid: 389360995c718364e9b30a73d962198f, type: 3}
-    volume: 0.306
-    pitch: 2.02
-    loop: 0
-    source: {fileID: 0}
-  - name: Ressurgir
-    clip: {fileID: 8300000, guid: 4d7c9ea2ffbebd84a9d1ab5faa4aaa56, type: 3}
-    volume: 0.302
-    pitch: 2.01
-    loop: 0
-    source: {fileID: 0}
-  - name: Click
-    clip: {fileID: 8300000, guid: 6f680fb288370a04e83129312cb54f1c, type: 3}
-    volume: 0.301
-    pitch: 2.02
-    loop: 0
-    source: {fileID: 0}
-  - name: EnemyDamage
-    clip: {fileID: 8300000, guid: 676a6200040ca3246bdaf2c57c21833d, type: 3}
-    volume: 0.808
-    pitch: 2.01
-    loop: 0
-    source: {fileID: 0}
-  - name: EnemyDeath
-    clip: {fileID: 8300000, guid: f576c42f901122d4cbeac58c8872fa5a, type: 3}
-    volume: 0.059
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Soundtrack batlle
-    clip: {fileID: 8300000, guid: e0a141de77bce494e92606cfaa27efc7, type: 3}
-    volume: 0.101
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Stone Explosion
-    clip: {fileID: 8300000, guid: ee7decb51b8a3504a858d3b236ba4a1c, type: 3}
-    volume: 0.161
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: EnergyShoot
-    clip: {fileID: 8300000, guid: 28e36a59ad57e494f804d330eb40437d, type: 3}
-    volume: 0.22
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Bridge
-    clip: {fileID: 8300000, guid: 0d3325acaf71e0c419da2baa2e3c13d1, type: 3}
-    volume: 0.22
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Sword5
-    clip: {fileID: 8300000, guid: da5dd1940e3a06043a46bc5bac187121, type: 3}
-    volume: 0.22
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
---- !u!4 &1452404345
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1452404343}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.41610143, y: -0.71212816, z: -0.6767927}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1456351165
 GameObject:
   m_ObjectHideFlags: 0

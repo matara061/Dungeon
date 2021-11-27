@@ -13,7 +13,7 @@ public class Inimigo5 : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.name == "Bullet2(Clone)")
+        if (coll.gameObject.name == "Bullet2(Clone)" || coll.gameObject.name == "Weapon")
         {
             Hitpoint--;
             animator.Play("Inimigo5Damage");
