@@ -161,10 +161,36 @@ public class GameManager : MonoBehaviour
         Debug.Log("SaveState");
     }
 
-
+    public GameObject jogador;
+    public GameObject cam;
+    public GameObject cameraa;
     public void OnSceneLoaded(Scene s, LoadSceneMode mode)
     {
-        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        string sceneName = currentScene.name;
+
+        if (sceneName == "credits" || sceneName == "Menu")
+        {
+            Debug.Log("destroi");
+
+            hud.SetActive(false);
+            menu.SetActive(false);
+            jogador.SetActive(false);
+            cam.SetActive(false);
+            cameraa.SetActive(false); ;
+        }
+        else
+        {
+            jogador.SetActive(true);
+            player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+            hud.SetActive(true);
+            menu.SetActive(true);
+            cam.SetActive(true);
+            cameraa.SetActive(true);
+
+
+        }
     }
     public void LoadState(Scene s, LoadSceneMode mode)
     {

@@ -17,7 +17,7 @@ public class Gun : MonoBehaviour
 
     // upgrade
     public int gunLevel = 0;
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
 
 
 

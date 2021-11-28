@@ -700,6 +700,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 547424530}
     m_Modifications:
+    - target: {fileID: -4010363923412677675, guid: 1987a674044540c4982ff6adecb277a5,
+        type: 3}
+      propertyPath: xpValue
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: -4010363923412677675, guid: 1987a674044540c4982ff6adecb277a5,
+        type: 3}
+      propertyPath: hitpoint
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: -4010363923412677675, guid: 1987a674044540c4982ff6adecb277a5,
+        type: 3}
+      propertyPath: maxHitpoint
+      value: 23
+      objectReference: {fileID: 0}
     - target: {fileID: 8787074981334902939, guid: 1987a674044540c4982ff6adecb277a5,
         type: 3}
       propertyPath: m_RootOrder

@@ -11,7 +11,7 @@ public class Weapon : Collidable // : monobehav....
 
 	// upgrade
 	public int weaponLevel = 0;
-	private SpriteRenderer spriteRenderer;
+	public SpriteRenderer spriteRenderer;
 
 	// Swing
 	private Animator anim;
