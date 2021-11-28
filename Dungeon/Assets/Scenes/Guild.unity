@@ -10440,8 +10440,9 @@ MonoBehaviour:
     name: Dono da taverna
     sentences:
     - Um pequeno aviso aos jogadores.
-    - "Esse jogo n\xE3o tem um sistema de save, entao tome cuidado ao sair do jogo."
-    - "Ir e voltar do menu principal n\xE3o ira afetar o personagem principal mas,
+    - "Esse jogo n\xE3o tem um sistema de save, ent\xE3o tome cuidado ao sair do
+      jogo."
+    - "Ir e voltar do menu principal n\xE3o ira afetar o personagem principal, mas,
       ira voltar para esta sala ao clicar em iniciar."
 --- !u!114 &733113667
 MonoBehaviour:
