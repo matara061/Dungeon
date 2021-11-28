@@ -80,7 +80,22 @@ PrefabInstance:
     - target: {fileID: 1124459510711559375, guid: 654c3a2f3625c3547bbecccb3497893d,
         type: 3}
       propertyPath: m_Name
-      value: Inimigo1
+      value: Inimigo1 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4482001467171391364, guid: 654c3a2f3625c3547bbecccb3497893d,
+        type: 3}
+      propertyPath: xpValue
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4482001467171391364, guid: 654c3a2f3625c3547bbecccb3497893d,
+        type: 3}
+      propertyPath: hitpoint
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 4482001467171391364, guid: 654c3a2f3625c3547bbecccb3497893d,
+        type: 3}
+      propertyPath: maxHitpoint
+      value: 46
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 654c3a2f3625c3547bbecccb3497893d, type: 3}

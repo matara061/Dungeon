@@ -7,6 +7,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3982496460798597702, guid: 276eaa3f95386b540b39a9a66ba7c74b,
+        type: 3}
+      propertyPath: xpValue
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3982496460798597702, guid: 276eaa3f95386b540b39a9a66ba7c74b,
+        type: 3}
+      propertyPath: hitpoint
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 3982496460798597702, guid: 276eaa3f95386b540b39a9a66ba7c74b,
+        type: 3}
+      propertyPath: maxHitpoint
+      value: 52
+      objectReference: {fileID: 0}
     - target: {fileID: 8357939960552545110, guid: 276eaa3f95386b540b39a9a66ba7c74b,
         type: 3}
       propertyPath: m_RootOrder
@@ -65,7 +80,7 @@ PrefabInstance:
     - target: {fileID: 8357939960552545114, guid: 276eaa3f95386b540b39a9a66ba7c74b,
         type: 3}
       propertyPath: m_Name
-      value: SmallEnemy (1)
+      value: SmallEnemy (1) Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8357939960552545115, guid: 276eaa3f95386b540b39a9a66ba7c74b,
         type: 3}

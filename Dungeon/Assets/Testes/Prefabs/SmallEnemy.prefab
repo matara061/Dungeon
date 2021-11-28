@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 841922915071416561}
   - component: {fileID: 841922915071416574}
   - component: {fileID: 841922915071416575}
+  - component: {fileID: -3524373348497253919}
   - component: {fileID: 841922915071416572}
   m_Layer: 8
   m_Name: SmallEnemy
@@ -198,6 +199,41 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.43184042, y: 0.6027776}
   m_EdgeRadius: 0
+--- !u!114 &-3524373348497253919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841922915071416573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29713263b3618564bab34bf11a3b086d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitpoint: 12
+  maxHitpoint: 12
+  pushRecoverySpeed: 0.2
+  immuneTime: 0
+  ySpeed: 0.75
+  xSpeed: 1
+  xpValue: 7
+  triggerLenght: 1
+  chaseLenght: 3
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!114 &841922915071416572
 MonoBehaviour:
   m_ObjectHideFlags: 0

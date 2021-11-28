@@ -62,10 +62,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2150886398706470177, guid: d954f833bb878ca498a0e6fa5102dc4c,
+        type: 3}
+      propertyPath: xpValue
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150886398706470177, guid: d954f833bb878ca498a0e6fa5102dc4c,
+        type: 3}
+      propertyPath: hitpoint
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150886398706470177, guid: d954f833bb878ca498a0e6fa5102dc4c,
+        type: 3}
+      propertyPath: maxHitpoint
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 5617131032414032742, guid: d954f833bb878ca498a0e6fa5102dc4c,
         type: 3}
       propertyPath: m_Name
-      value: Inimigo01
+      value: Inimigo01 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6487633950861990931, guid: d954f833bb878ca498a0e6fa5102dc4c,
         type: 3}

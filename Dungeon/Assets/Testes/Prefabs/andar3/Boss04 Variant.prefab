@@ -7,6 +7,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4157793290989992406, guid: 9b3b74b6f2b6c7a43b2e0b553d163db5,
+        type: 3}
+      propertyPath: xpValue
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: -4157793290989992406, guid: 9b3b74b6f2b6c7a43b2e0b553d163db5,
+        type: 3}
+      propertyPath: hitpoint
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -4157793290989992406, guid: 9b3b74b6f2b6c7a43b2e0b553d163db5,
+        type: 3}
+      propertyPath: immuneTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -4157793290989992406, guid: 9b3b74b6f2b6c7a43b2e0b553d163db5,
+        type: 3}
+      propertyPath: chaseLenght
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -4157793290989992406, guid: 9b3b74b6f2b6c7a43b2e0b553d163db5,
+        type: 3}
+      propertyPath: maxHitpoint
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -4157793290989992406, guid: 9b3b74b6f2b6c7a43b2e0b553d163db5,
+        type: 3}
+      propertyPath: triggerLenght
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 360560499953114121, guid: 9b3b74b6f2b6c7a43b2e0b553d163db5,
         type: 3}
       propertyPath: m_Name

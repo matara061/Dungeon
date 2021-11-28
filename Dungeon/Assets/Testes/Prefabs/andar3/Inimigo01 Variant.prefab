@@ -7,6 +7,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -262685045148414778, guid: 32b0ddfe492d95b44b4c0c19b1f3bf5d,
+        type: 3}
+      propertyPath: xpValue
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: -262685045148414778, guid: 32b0ddfe492d95b44b4c0c19b1f3bf5d,
+        type: 3}
+      propertyPath: hitpoint
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: -262685045148414778, guid: 32b0ddfe492d95b44b4c0c19b1f3bf5d,
+        type: 3}
+      propertyPath: chaseLenght
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -262685045148414778, guid: 32b0ddfe492d95b44b4c0c19b1f3bf5d,
+        type: 3}
+      propertyPath: maxHitpoint
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: -262685045148414778, guid: 32b0ddfe492d95b44b4c0c19b1f3bf5d,
+        type: 3}
+      propertyPath: triggerLenght
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3204228081965191809, guid: 32b0ddfe492d95b44b4c0c19b1f3bf5d,
         type: 3}
       propertyPath: m_Name

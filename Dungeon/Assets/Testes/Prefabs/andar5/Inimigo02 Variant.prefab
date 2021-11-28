@@ -25,7 +25,22 @@ PrefabInstance:
     - target: {fileID: 1157567739929450416, guid: c6cba1f14b6935e46b1b55173cbe9da8,
         type: 3}
       propertyPath: m_Name
-      value: Inimigo02
+      value: Inimigo02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348249432199773867, guid: c6cba1f14b6935e46b1b55173cbe9da8,
+        type: 3}
+      propertyPath: xpValue
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348249432199773867, guid: c6cba1f14b6935e46b1b55173cbe9da8,
+        type: 3}
+      propertyPath: hitpoint
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348249432199773867, guid: c6cba1f14b6935e46b1b55173cbe9da8,
+        type: 3}
+      propertyPath: maxHitpoint
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 8996854098361468387, guid: c6cba1f14b6935e46b1b55173cbe9da8,
         type: 3}

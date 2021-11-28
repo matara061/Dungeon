@@ -22,6 +22,21 @@ PrefabInstance:
       propertyPath: maxHitpoint
       value: 63
       objectReference: {fileID: 0}
+    - target: {fileID: 5248389156949154624, guid: 10e1454f24ceb2547907bec944a76883,
+        type: 3}
+      propertyPath: xpValue
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248389156949154624, guid: 10e1454f24ceb2547907bec944a76883,
+        type: 3}
+      propertyPath: hitpoint
+      value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248389156949154624, guid: 10e1454f24ceb2547907bec944a76883,
+        type: 3}
+      propertyPath: maxHitpoint
+      value: 63
+      objectReference: {fileID: 0}
     - target: {fileID: 5309253325622328006, guid: 10e1454f24ceb2547907bec944a76883,
         type: 3}
       propertyPath: m_RootOrder
@@ -80,7 +95,7 @@ PrefabInstance:
     - target: {fileID: 5709432522247747350, guid: 10e1454f24ceb2547907bec944a76883,
         type: 3}
       propertyPath: m_Name
-      value: Boss02
+      value: Boss02 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10e1454f24ceb2547907bec944a76883, type: 3}

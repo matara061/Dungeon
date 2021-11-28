@@ -7,10 +7,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1349840815359936, guid: 04e73997509b7f64fba5acf96f4a0723, type: 3}
+      propertyPath: xpValue
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349840815359936, guid: 04e73997509b7f64fba5acf96f4a0723, type: 3}
+      propertyPath: hitpoint
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349840815359936, guid: 04e73997509b7f64fba5acf96f4a0723, type: 3}
+      propertyPath: maxHitpoint
+      value: 44
+      objectReference: {fileID: 0}
     - target: {fileID: 344534471085184485, guid: 04e73997509b7f64fba5acf96f4a0723,
         type: 3}
       propertyPath: m_Name
-      value: inimigo10
+      value: inimigo10 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6048045161592201881, guid: 04e73997509b7f64fba5acf96f4a0723,
         type: 3}
