@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - Sound
   - Agua
+  - Tornado
   layers:
   - Default
   - TransparentFX

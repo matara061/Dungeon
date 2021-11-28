@@ -62,10 +62,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2921505889478391071, guid: 142134da031045d4398a5c6947e2b2aa,
+        type: 3}
+      propertyPath: xpValue
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 2921505889478391071, guid: 142134da031045d4398a5c6947e2b2aa,
+        type: 3}
+      propertyPath: hitpoint
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 2921505889478391071, guid: 142134da031045d4398a5c6947e2b2aa,
+        type: 3}
+      propertyPath: maxHitpoint
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 2921505889478391071, guid: 142134da031045d4398a5c6947e2b2aa,
+        type: 3}
+      propertyPath: triggerLenght
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7717819552540191454, guid: 142134da031045d4398a5c6947e2b2aa,
         type: 3}
       propertyPath: m_Name
-      value: inimigo9
+      value: inimigo9 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8205514550801477531, guid: 142134da031045d4398a5c6947e2b2aa,
         type: 3}

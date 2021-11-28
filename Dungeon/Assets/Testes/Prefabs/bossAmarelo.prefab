@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2125879471177693467}
   - component: {fileID: 718873915377744378}
   - component: {fileID: 8384180953154861078}
+  - component: {fileID: -8850648077556516339}
   - component: {fileID: 1403908582627981654}
   m_Layer: 8
   m_Name: bossAmarelo
@@ -112,6 +113,41 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.49436426, y: 0.5116353}
   m_EdgeRadius: 0
+--- !u!114 &-8850648077556516339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550164723139607075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57e28c7e98518ed4da823420b5bd0373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitpoint: 28
+  maxHitpoint: 28
+  pushRecoverySpeed: 0.2
+  immuneTime: 1
+  ySpeed: 0.75
+  xSpeed: 1
+  xpValue: 20
+  triggerLenght: 1
+  chaseLenght: 5
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!114 &1403908582627981654
 MonoBehaviour:
   m_ObjectHideFlags: 0

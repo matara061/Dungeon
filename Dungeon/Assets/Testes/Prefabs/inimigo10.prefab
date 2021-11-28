@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7220949499895365609}
   - component: {fileID: 1815776854126146861}
   - component: {fileID: 7409723620535855131}
+  - component: {fileID: -8681346804087079302}
   m_Layer: 8
   m_Name: inimigo10
   m_TagString: Fighter
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1767860591
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 8696589310378586371, guid: 409683b6f981ad246a535bd67352a068,
     type: 3}
@@ -123,7 +124,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.3, y: 0.31}
+    oldSize: {x: 0.375, y: 0.3875}
     newSize: {x: 0.3, y: 0.31}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -142,6 +143,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5890a6995bdeaa9488280b4e7df2f91f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitpoint: 10
+  maxHitpoint: 10
+  pushRecoverySpeed: 0.2
+  immuneTime: 0.1
+  ySpeed: 0.75
+  xSpeed: 1
+  xpValue: 1
+  triggerLenght: 2
+  chaseLenght: 5
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+--- !u!114 &-8681346804087079302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236838073995881567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea159a1fb3ccbdc47bc1ce1efa8c0058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoint: 10

@@ -7,6 +7,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 523962923327694190, guid: 88fa780713f00ac43b3b11e607a5cda5,
+        type: 3}
+      propertyPath: xpValue
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 523962923327694190, guid: 88fa780713f00ac43b3b11e607a5cda5,
+        type: 3}
+      propertyPath: hitpoint
+      value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 523962923327694190, guid: 88fa780713f00ac43b3b11e607a5cda5,
+        type: 3}
+      propertyPath: maxHitpoint
+      value: 62
+      objectReference: {fileID: 0}
     - target: {fileID: 1074415532838485051, guid: 88fa780713f00ac43b3b11e607a5cda5,
         type: 3}
       propertyPath: m_RootOrder
@@ -65,7 +80,7 @@ PrefabInstance:
     - target: {fileID: 4902457752881217357, guid: 88fa780713f00ac43b3b11e607a5cda5,
         type: 3}
       propertyPath: m_Name
-      value: Boss04
+      value: Boss04 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7121962900153726677, guid: 88fa780713f00ac43b3b11e607a5cda5,
         type: 3}

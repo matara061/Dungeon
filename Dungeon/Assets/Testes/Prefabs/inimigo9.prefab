@@ -180,6 +180,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c179bd419486aa14f9e53517e1809038, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitpoint: 10
+  maxHitpoint: 10
+  pushRecoverySpeed: 0.2
+  immuneTime: 0.1
+  ySpeed: 0.75
+  xSpeed: 1
+  xpValue: 5
+  triggerLenght: 3
+  chaseLenght: 6
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!1 &8586574103251242885
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -402737762862469733, guid: 3fa577e6aeb6f864cab9bd2c99ecdba7,
+        type: 3}
+      propertyPath: xpValue
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: -402737762862469733, guid: 3fa577e6aeb6f864cab9bd2c99ecdba7,
+        type: 3}
+      propertyPath: hitpoint
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: -402737762862469733, guid: 3fa577e6aeb6f864cab9bd2c99ecdba7,
+        type: 3}
+      propertyPath: immuneTime
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -402737762862469733, guid: 3fa577e6aeb6f864cab9bd2c99ecdba7,
+        type: 3}
+      propertyPath: chaseLenght
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -402737762862469733, guid: 3fa577e6aeb6f864cab9bd2c99ecdba7,
+        type: 3}
+      propertyPath: maxHitpoint
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: -402737762862469733, guid: 3fa577e6aeb6f864cab9bd2c99ecdba7,
+        type: 3}
+      propertyPath: triggerLenght
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4006977823743745786, guid: 3fa577e6aeb6f864cab9bd2c99ecdba7,
         type: 3}
       propertyPath: xpValue

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6306736431543583726}
   - component: {fileID: 3993551804878060531}
+  - component: {fileID: 7004355597551487798}
   - component: {fileID: 6249648720634571692}
   - component: {fileID: 6122446122347305665}
   m_Layer: 8
@@ -86,6 +87,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7004355597551487798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2518751035906607657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68962b41ea9b6e143b2aee25fe6db788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitpoint: 10
+  maxHitpoint: 10
+  pushRecoverySpeed: 0.2
+  immuneTime: 1
+  ySpeed: 0.75
+  xSpeed: 1
+  xpValue: 1
+  triggerLenght: 1
+  chaseLenght: 5
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!114 &6249648720634571692
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -80,7 +80,22 @@ PrefabInstance:
     - target: {fileID: 2100918443229010989, guid: b547f88799baed241875ca655db678b9,
         type: 3}
       propertyPath: m_Name
-      value: SmallEnemy (1)
+      value: SmallEnemy (1) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457602504499338545, guid: b547f88799baed241875ca655db678b9,
+        type: 3}
+      propertyPath: xpValue
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457602504499338545, guid: b547f88799baed241875ca655db678b9,
+        type: 3}
+      propertyPath: hitpoint
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457602504499338545, guid: b547f88799baed241875ca655db678b9,
+        type: 3}
+      propertyPath: maxHitpoint
+      value: 65
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b547f88799baed241875ca655db678b9, type: 3}

@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 2402483742702777908, guid: 734b5fb88a1025e4b9eee7e47e6e3d6c,
         type: 3}
       propertyPath: m_Name
-      value: Inimigo01
+      value: Inimigo01 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3939502202506918209, guid: 734b5fb88a1025e4b9eee7e47e6e3d6c,
         type: 3}
@@ -81,6 +81,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176886682225862771, guid: 734b5fb88a1025e4b9eee7e47e6e3d6c,
+        type: 3}
+      propertyPath: xpValue
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176886682225862771, guid: 734b5fb88a1025e4b9eee7e47e6e3d6c,
+        type: 3}
+      propertyPath: hitpoint
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176886682225862771, guid: 734b5fb88a1025e4b9eee7e47e6e3d6c,
+        type: 3}
+      propertyPath: maxHitpoint
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 734b5fb88a1025e4b9eee7e47e6e3d6c, type: 3}

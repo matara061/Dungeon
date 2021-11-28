@@ -10,7 +10,22 @@ PrefabInstance:
     - target: {fileID: 839994890692554056, guid: cca8864bda461fe449846d30ed163506,
         type: 3}
       propertyPath: m_Name
-      value: Boss02
+      value: Boss02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 884322253914472734, guid: cca8864bda461fe449846d30ed163506,
+        type: 3}
+      propertyPath: xpValue
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 884322253914472734, guid: cca8864bda461fe449846d30ed163506,
+        type: 3}
+      propertyPath: hitpoint
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 884322253914472734, guid: cca8864bda461fe449846d30ed163506,
+        type: 3}
+      propertyPath: maxHitpoint
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 954193038135746712, guid: cca8864bda461fe449846d30ed163506,
         type: 3}

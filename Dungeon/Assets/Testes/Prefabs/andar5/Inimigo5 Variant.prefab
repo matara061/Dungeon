@@ -7,10 +7,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1782144130843887375, guid: 3426c887dc65d464fb62a9e221e60531,
+        type: 3}
+      propertyPath: xpValue
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782144130843887375, guid: 3426c887dc65d464fb62a9e221e60531,
+        type: 3}
+      propertyPath: hitpoint
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782144130843887375, guid: 3426c887dc65d464fb62a9e221e60531,
+        type: 3}
+      propertyPath: maxHitpoint
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3512003185290549171, guid: 3426c887dc65d464fb62a9e221e60531,
         type: 3}
       propertyPath: m_Name
-      value: Inimigo5
+      value: Inimigo5 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3512003185290549172, guid: 3426c887dc65d464fb62a9e221e60531,
         type: 3}
