@@ -41595,7 +41595,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1373905593}
+      - m_Target: {fileID: 1739906628}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -69550,6 +69550,9 @@ MonoBehaviour:
   Menu: {fileID: 0}
   pesos: 0
   experience: 0
+  jogador: {fileID: 0}
+  cam: {fileID: 0}
+  cameraa: {fileID: 0}
   DeathUi: {fileID: 228408211}
   Player1: {fileID: 0}
 --- !u!114 &1405481630
@@ -71786,6 +71789,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dedf828f4ea00b40a76095041e6bc54, type: 3}
+--- !u!1 &1739906628 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6032042854185020901, guid: 2dedf828f4ea00b40a76095041e6bc54,
+    type: 3}
+  m_PrefabInstance: {fileID: 1739906627}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1766886269
 PrefabInstance:
   m_ObjectHideFlags: 0
