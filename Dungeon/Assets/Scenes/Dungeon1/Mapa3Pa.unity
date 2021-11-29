@@ -183,6 +183,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2150886398706470177, guid: d954f833bb878ca498a0e6fa5102dc4c,
+        type: 3}
+      propertyPath: chaseLenght
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150886398706470177, guid: d954f833bb878ca498a0e6fa5102dc4c,
+        type: 3}
+      propertyPath: triggerLenght
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5617131032414032742, guid: d954f833bb878ca498a0e6fa5102dc4c,
         type: 3}
       propertyPath: m_Name
@@ -525,7 +535,7 @@ PrefabInstance:
     - target: {fileID: 3876981428757817303, guid: 641975d373c4f0a4b97e30ba1205df7d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3876981428757817303, guid: 641975d373c4f0a4b97e30ba1205df7d,
         type: 3}
@@ -1090,12 +1100,12 @@ PrefabInstance:
     - target: {fileID: 8357939960552545115, guid: 276eaa3f95386b540b39a9a66ba7c74b,
         type: 3}
       propertyPath: chaseLenght
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8357939960552545115, guid: 276eaa3f95386b540b39a9a66ba7c74b,
         type: 3}
       propertyPath: triggerLenght
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 276eaa3f95386b540b39a9a66ba7c74b, type: 3}
@@ -2474,6 +2484,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2150886398706470177, guid: d954f833bb878ca498a0e6fa5102dc4c,
+        type: 3}
+      propertyPath: chaseLenght
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150886398706470177, guid: d954f833bb878ca498a0e6fa5102dc4c,
+        type: 3}
+      propertyPath: triggerLenght
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5617131032414032742, guid: d954f833bb878ca498a0e6fa5102dc4c,
         type: 3}
       propertyPath: m_Name
@@ -3007,7 +3027,7 @@ PrefabInstance:
     - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
         type: 3}
@@ -3384,7 +3404,7 @@ PrefabInstance:
     - target: {fileID: 5392773778153225250, guid: 034a2bedaa562834cb0694143d823619,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5392773778153225250, guid: 034a2bedaa562834cb0694143d823619,
         type: 3}
@@ -4401,6 +4421,16 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6358413945794596846, guid: e4330fc951bc83242802a30aca1218c1,
+        type: 3}
+      propertyPath: triggerLenght
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514251405750906890, guid: e4330fc951bc83242802a30aca1218c1,
+        type: 3}
+      propertyPath: chaseLenght
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514251405750906890, guid: e4330fc951bc83242802a30aca1218c1,
         type: 3}
       propertyPath: triggerLenght
       value: 5
@@ -20807,6 +20837,16 @@ PrefabInstance:
       propertyPath: triggerLenght
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8514251405750906890, guid: e4330fc951bc83242802a30aca1218c1,
+        type: 3}
+      propertyPath: chaseLenght
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514251405750906890, guid: e4330fc951bc83242802a30aca1218c1,
+        type: 3}
+      propertyPath: triggerLenght
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4330fc951bc83242802a30aca1218c1, type: 3}
 --- !u!4 &682332680 stripped
@@ -21511,6 +21551,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2150886398706470177, guid: d954f833bb878ca498a0e6fa5102dc4c,
+        type: 3}
+      propertyPath: chaseLenght
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150886398706470177, guid: d954f833bb878ca498a0e6fa5102dc4c,
+        type: 3}
+      propertyPath: triggerLenght
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5617131032414032742, guid: d954f833bb878ca498a0e6fa5102dc4c,
         type: 3}
       propertyPath: m_Name
@@ -21833,6 +21883,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2150886398706470177, guid: d954f833bb878ca498a0e6fa5102dc4c,
+        type: 3}
+      propertyPath: chaseLenght
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150886398706470177, guid: d954f833bb878ca498a0e6fa5102dc4c,
+        type: 3}
+      propertyPath: triggerLenght
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5617131032414032742, guid: d954f833bb878ca498a0e6fa5102dc4c,
         type: 3}
       propertyPath: m_Name
@@ -22008,6 +22068,11 @@ PrefabInstance:
         type: 3}
       propertyPath: triggerLenght
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514251405750906890, guid: e4330fc951bc83242802a30aca1218c1,
+        type: 3}
+      propertyPath: chaseLenght
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4330fc951bc83242802a30aca1218c1, type: 3}
@@ -22708,7 +22773,7 @@ PrefabInstance:
     - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
         type: 3}
@@ -23012,7 +23077,7 @@ PrefabInstance:
     - target: {fileID: 5392773778153225250, guid: 034a2bedaa562834cb0694143d823619,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5392773778153225250, guid: 034a2bedaa562834cb0694143d823619,
         type: 3}
@@ -23250,7 +23315,7 @@ PrefabInstance:
     - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
         type: 3}
@@ -99744,6 +99809,16 @@ PrefabInstance:
       propertyPath: triggerLenght
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8514251405750906890, guid: e4330fc951bc83242802a30aca1218c1,
+        type: 3}
+      propertyPath: chaseLenght
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514251405750906890, guid: e4330fc951bc83242802a30aca1218c1,
+        type: 3}
+      propertyPath: triggerLenght
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4330fc951bc83242802a30aca1218c1, type: 3}
 --- !u!4 &1144732021 stripped
@@ -99851,7 +99926,7 @@ PrefabInstance:
     - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
         type: 3}
@@ -100956,7 +101031,7 @@ PrefabInstance:
     - target: {fileID: 1156373494640165770, guid: 56faa5be647b47f479eb78d82688d3a1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1156373494640165770, guid: 56faa5be647b47f479eb78d82688d3a1,
         type: 3}
@@ -101904,6 +101979,200 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff2dc80ce88603747a9893bd54b343c2, type: 3}
+--- !u!1 &1494018640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1494018642}
+  - component: {fileID: 1494018641}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1494018641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494018640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f15c3ce0788c5439eda266c93ee321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Fireball
+    clip: {fileID: 8300000, guid: 52a07a1bc996d2540a55b44a0d5f7f97, type: 3}
+    volume: 0.201
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Fireball Impact
+    clip: {fileID: 8300000, guid: 710524c15a599cb409d151d6557a2f78, type: 3}
+    volume: 0.311
+    pitch: 2.01
+    loop: 0
+    source: {fileID: 0}
+  - name: Money
+    clip: {fileID: 8300000, guid: 02002456b2df3cd41a80e098aee170fa, type: 3}
+    volume: 0.25
+    pitch: 2.02
+    loop: 0
+    source: {fileID: 0}
+  - name: Level Up
+    clip: {fileID: 8300000, guid: 79da7f26b14f01c4bb8db90e798822d8, type: 3}
+    volume: 0.306
+    pitch: 2.03
+    loop: 0
+    source: {fileID: 0}
+  - name: Damage
+    clip: {fileID: 8300000, guid: c58f6d02853be3041a47f6a26d4db79b, type: 3}
+    volume: 0.302
+    pitch: 2.06
+    loop: 0
+    source: {fileID: 0}
+  - name: Portal
+    clip: {fileID: 8300000, guid: 389360995c718364e9b30a73d962198f, type: 3}
+    volume: 0.281
+    pitch: 2.02
+    loop: 0
+    source: {fileID: 0}
+  - name: Ressurgir
+    clip: {fileID: 8300000, guid: 4d7c9ea2ffbebd84a9d1ab5faa4aaa56, type: 3}
+    volume: 0.264
+    pitch: 2.01
+    loop: 0
+    source: {fileID: 0}
+  - name: Click
+    clip: {fileID: 8300000, guid: 6f680fb288370a04e83129312cb54f1c, type: 3}
+    volume: 0.301
+    pitch: 2.02
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDamage
+    clip: {fileID: 8300000, guid: 676a6200040ca3246bdaf2c57c21833d, type: 3}
+    volume: 0.256
+    pitch: 2.01
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDeath
+    clip: {fileID: 8300000, guid: f576c42f901122d4cbeac58c8872fa5a, type: 3}
+    volume: 0.073
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Soundtrack batlle
+    clip: {fileID: 8300000, guid: e0a141de77bce494e92606cfaa27efc7, type: 3}
+    volume: 0.101
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Stone Explosion
+    clip: {fileID: 8300000, guid: ee7decb51b8a3504a858d3b236ba4a1c, type: 3}
+    volume: 0.144
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnergyShoot
+    clip: {fileID: 8300000, guid: 28e36a59ad57e494f804d330eb40437d, type: 3}
+    volume: 0.22
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bridge
+    clip: {fileID: 8300000, guid: 0d3325acaf71e0c419da2baa2e3c13d1, type: 3}
+    volume: 0.22
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Sword5
+    clip: {fileID: 8300000, guid: da5dd1940e3a06043a46bc5bac187121, type: 3}
+    volume: 0.22
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Vaso
+    clip: {fileID: 8300000, guid: dc3eaa4aea792a44fb9d74f48c84e9a6, type: 3}
+    volume: 0.22
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDamage1
+    clip: {fileID: 8300000, guid: afff8304ec378364aa25d3cbd7d43d6c, type: 3}
+    volume: 0.231
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDamage2
+    clip: {fileID: 8300000, guid: 1dedbf5d39550914aab2590fb3ccd183, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDamage3
+    clip: {fileID: 8300000, guid: 461e5067a30f4374fa434e6746aa7414, type: 3}
+    volume: 0.247
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDamage4
+    clip: {fileID: 8300000, guid: 15eaff2daec714843b303e71dbf02719, type: 3}
+    volume: 0.272
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDeath1
+    clip: {fileID: 8300000, guid: 66d886257f6f5ba45ad0d6c5e839a286, type: 3}
+    volume: 0.103
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDeath2
+    clip: {fileID: 8300000, guid: 7dbc83670b8494742a3433cd6858f7b4, type: 3}
+    volume: 0.206
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDeath3
+    clip: {fileID: 8300000, guid: c7356593168f32e4b821b85e2d06ab41, type: 3}
+    volume: 0.226
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDeath4
+    clip: {fileID: 8300000, guid: 3211274297c0f1d45b99da37fcc8a7a6, type: 3}
+    volume: 0.231
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: IceSound
+    clip: {fileID: 8300000, guid: e5ceb993369180943876727582768769, type: 3}
+    volume: 0.239
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!4 &1494018642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494018640}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.41610143, y: -0.71212816, z: -0.6767927}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1503993192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -101914,7 +102183,7 @@ PrefabInstance:
     - target: {fileID: 1353743285915497496, guid: ff2dc80ce88603747a9893bd54b343c2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1353743285915497496, guid: ff2dc80ce88603747a9893bd54b343c2,
         type: 3}
@@ -102114,6 +102383,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2150886398706470177, guid: d954f833bb878ca498a0e6fa5102dc4c,
+        type: 3}
+      propertyPath: chaseLenght
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150886398706470177, guid: d954f833bb878ca498a0e6fa5102dc4c,
+        type: 3}
+      propertyPath: triggerLenght
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5617131032414032742, guid: d954f833bb878ca498a0e6fa5102dc4c,
         type: 3}
       propertyPath: m_Name
@@ -102153,7 +102432,7 @@ PrefabInstance:
     - target: {fileID: 1353743285915497496, guid: ff2dc80ce88603747a9893bd54b343c2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1353743285915497496, guid: ff2dc80ce88603747a9893bd54b343c2,
         type: 3}
@@ -102928,7 +103207,7 @@ PrefabInstance:
     - target: {fileID: 3876981428757817303, guid: 641975d373c4f0a4b97e30ba1205df7d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3876981428757817303, guid: 641975d373c4f0a4b97e30ba1205df7d,
         type: 3}
@@ -103202,6 +103481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150886398706470177, guid: d954f833bb878ca498a0e6fa5102dc4c,
+        type: 3}
+      propertyPath: chaseLenght
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5617131032414032742, guid: d954f833bb878ca498a0e6fa5102dc4c,
         type: 3}
@@ -106403,200 +106687,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741647175}
   m_CullTransparentMesh: 0
---- !u!1 &1746448148
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1746448150}
-  - component: {fileID: 1746448149}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1746448149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1746448148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21f15c3ce0788c5439eda266c93ee321, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: Fireball
-    clip: {fileID: 8300000, guid: 52a07a1bc996d2540a55b44a0d5f7f97, type: 3}
-    volume: 0.201
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Fireball Impact
-    clip: {fileID: 8300000, guid: 710524c15a599cb409d151d6557a2f78, type: 3}
-    volume: 0.311
-    pitch: 2.01
-    loop: 0
-    source: {fileID: 0}
-  - name: Money
-    clip: {fileID: 8300000, guid: 02002456b2df3cd41a80e098aee170fa, type: 3}
-    volume: 0.316
-    pitch: 2.02
-    loop: 0
-    source: {fileID: 0}
-  - name: Level Up
-    clip: {fileID: 8300000, guid: 79da7f26b14f01c4bb8db90e798822d8, type: 3}
-    volume: 0.306
-    pitch: 2.03
-    loop: 0
-    source: {fileID: 0}
-  - name: Damage
-    clip: {fileID: 8300000, guid: c58f6d02853be3041a47f6a26d4db79b, type: 3}
-    volume: 0.302
-    pitch: 2.06
-    loop: 0
-    source: {fileID: 0}
-  - name: Portal
-    clip: {fileID: 8300000, guid: 389360995c718364e9b30a73d962198f, type: 3}
-    volume: 0.306
-    pitch: 2.02
-    loop: 0
-    source: {fileID: 0}
-  - name: Ressurgir
-    clip: {fileID: 8300000, guid: 4d7c9ea2ffbebd84a9d1ab5faa4aaa56, type: 3}
-    volume: 0.302
-    pitch: 2.01
-    loop: 0
-    source: {fileID: 0}
-  - name: Click
-    clip: {fileID: 8300000, guid: 6f680fb288370a04e83129312cb54f1c, type: 3}
-    volume: 0.301
-    pitch: 2.02
-    loop: 0
-    source: {fileID: 0}
-  - name: EnemyDamage
-    clip: {fileID: 8300000, guid: 676a6200040ca3246bdaf2c57c21833d, type: 3}
-    volume: 0.808
-    pitch: 2.01
-    loop: 0
-    source: {fileID: 0}
-  - name: EnemyDeath
-    clip: {fileID: 8300000, guid: f576c42f901122d4cbeac58c8872fa5a, type: 3}
-    volume: 0.28
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Soundtrack batlle
-    clip: {fileID: 8300000, guid: e0a141de77bce494e92606cfaa27efc7, type: 3}
-    volume: 0.101
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Stone Explosion
-    clip: {fileID: 8300000, guid: ee7decb51b8a3504a858d3b236ba4a1c, type: 3}
-    volume: 0.161
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: EnergyShoot
-    clip: {fileID: 8300000, guid: 28e36a59ad57e494f804d330eb40437d, type: 3}
-    volume: 0.22
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Bridge
-    clip: {fileID: 8300000, guid: 0d3325acaf71e0c419da2baa2e3c13d1, type: 3}
-    volume: 0.22
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Sword5
-    clip: {fileID: 8300000, guid: da5dd1940e3a06043a46bc5bac187121, type: 3}
-    volume: 0.22
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Vaso
-    clip: {fileID: 8300000, guid: dc3eaa4aea792a44fb9d74f48c84e9a6, type: 3}
-    volume: 0.22
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: EnemyDamage1
-    clip: {fileID: 8300000, guid: afff8304ec378364aa25d3cbd7d43d6c, type: 3}
-    volume: 0.305
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: EnemyDamage2
-    clip: {fileID: 8300000, guid: 1dedbf5d39550914aab2590fb3ccd183, type: 3}
-    volume: 0.402
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: EnemyDamage3
-    clip: {fileID: 8300000, guid: 461e5067a30f4374fa434e6746aa7414, type: 3}
-    volume: 0.427
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: EnemyDamage4
-    clip: {fileID: 8300000, guid: 15eaff2daec714843b303e71dbf02719, type: 3}
-    volume: 0.429
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: EnemyDeath1
-    clip: {fileID: 8300000, guid: 66d886257f6f5ba45ad0d6c5e839a286, type: 3}
-    volume: 0.103
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: EnemyDeath2
-    clip: {fileID: 8300000, guid: 7dbc83670b8494742a3433cd6858f7b4, type: 3}
-    volume: 0.446
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: EnemyDeath3
-    clip: {fileID: 8300000, guid: c7356593168f32e4b821b85e2d06ab41, type: 3}
-    volume: 0.361
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: EnemyDeath4
-    clip: {fileID: 8300000, guid: 3211274297c0f1d45b99da37fcc8a7a6, type: 3}
-    volume: 0.359
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: IceSound
-    clip: {fileID: 8300000, guid: e5ceb993369180943876727582768769, type: 3}
-    volume: 0.359
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
---- !u!4 &1746448150
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1746448148}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.41610143, y: -0.71212816, z: -0.6767927}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 25
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1747432131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106930,7 +107020,7 @@ RectTransform:
   - {fileID: 1931045125}
   - {fileID: 288575274}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -108446,6 +108536,16 @@ PrefabInstance:
       propertyPath: triggerLenght
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8514251405750906890, guid: e4330fc951bc83242802a30aca1218c1,
+        type: 3}
+      propertyPath: chaseLenght
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514251405750906890, guid: e4330fc951bc83242802a30aca1218c1,
+        type: 3}
+      propertyPath: triggerLenght
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4330fc951bc83242802a30aca1218c1, type: 3}
 --- !u!4 &1988293299 stripped
@@ -108680,6 +108780,16 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6358413945794596846, guid: e4330fc951bc83242802a30aca1218c1,
+        type: 3}
+      propertyPath: triggerLenght
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514251405750906890, guid: e4330fc951bc83242802a30aca1218c1,
+        type: 3}
+      propertyPath: chaseLenght
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514251405750906890, guid: e4330fc951bc83242802a30aca1218c1,
         type: 3}
       propertyPath: triggerLenght
       value: 3
@@ -109259,6 +109369,16 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6358413945794596846, guid: e4330fc951bc83242802a30aca1218c1,
+        type: 3}
+      propertyPath: triggerLenght
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514251405750906890, guid: e4330fc951bc83242802a30aca1218c1,
+        type: 3}
+      propertyPath: chaseLenght
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514251405750906890, guid: e4330fc951bc83242802a30aca1218c1,
         type: 3}
       propertyPath: triggerLenght
       value: 3

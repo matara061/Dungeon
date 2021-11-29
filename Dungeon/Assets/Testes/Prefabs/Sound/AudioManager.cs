@@ -19,7 +19,7 @@ public class AudioManager : MonoBehaviour
 
         instance = this;
 
-       // DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject); //Se deixar comentado Buga o som do portal
 
         foreach (Sound s in sounds) // agr entendi. Foreach é para percorrer as posições de memória do array. podemos dizer que a Letra S são os indices
         {
