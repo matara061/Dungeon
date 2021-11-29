@@ -104364,6 +104364,9 @@ MonoBehaviour:
   Menu: {fileID: 0}
   pesos: 0
   experience: 0
+  jogador: {fileID: 0}
+  cam: {fileID: 0}
+  cameraa: {fileID: 0}
   DeathUi: {fileID: 2082904421}
   Player1: {fileID: 0}
 --- !u!114 &1758280028
@@ -105641,7 +105644,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1387, y: 7300}
+  m_AnchoredPosition: {x: 1371.7, y: 7307.7}
   m_SizeDelta: {x: 44.276955, y: 130.60092}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1953275311
@@ -106162,7 +106165,7 @@ GameObject:
   - component: {fileID: 2010108780}
   - component: {fileID: 2010108782}
   - component: {fileID: 2010108781}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Decora
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111379,6 +111382,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 17, y: 111, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 1
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 36, y: 116, z: 0}
     second:
       serializedVersion: 2
@@ -112071,7 +112084,7 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: c95b14e10602e1240be23c2fd9fecd17, type: 2}
   - m_RefCount: 115
     m_Data: {fileID: 11400000, guid: 7957fd0687caf1f4392e7f6f57847ce2, type: 2}
@@ -112084,7 +112097,7 @@ Tilemap:
   - m_RefCount: 115
     m_Data: {fileID: 8357032436491248363, guid: 5bf2e2bffe0ca4d4bbbaf7fafc4d47f4,
       type: 3}
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: -3346543787538410223, guid: abfdfd0ba8ef56b45bf08aef1bd7d7aa,
       type: 3}
   m_TileMatrixArray:
@@ -112106,7 +112119,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 582
+  - m_RefCount: 583
     m_Data:
       e00: 1
       e01: 0
@@ -112125,7 +112138,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 583
+  - m_RefCount: 584
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
