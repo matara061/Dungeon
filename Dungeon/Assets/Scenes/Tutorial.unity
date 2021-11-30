@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1466,86 +1466,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &222900837
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1376796049}
-    m_Modifications:
-    - target: {fileID: 6032042854185020901, guid: 2dedf828f4ea00b40a76095041e6bc54,
-        type: 3}
-      propertyPath: m_Name
-      value: icon (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9.27
-      objectReference: {fileID: 0}
-    - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 74.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.37347636
-      objectReference: {fileID: 0}
-    - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6032042854185020903, guid: 2dedf828f4ea00b40a76095041e6bc54,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2dedf828f4ea00b40a76095041e6bc54, type: 3}
---- !u!4 &222900838 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6032042854185020902, guid: 2dedf828f4ea00b40a76095041e6bc54,
-    type: 3}
-  m_PrefabInstance: {fileID: 222900837}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &223789926 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6845259520380332637, guid: 79b6f82f9c2f80144a5b9cf6cef3da15,
@@ -16699,10 +16619,11 @@ MonoBehaviour:
   dialogue:
     name: Tutorial3
     sentences:
-    - Voce ganhara pontos de Xp ao derrotar inimigos pelo mapa e apos conseguir uma
-      certa quantia ira passar de nivel.
-    - "Ao passar de nivel a sua vida maxima \xE9 aumentada e restaurada."
-    - Voce pode conferir seus pontos de xp apertar a tecla "i" ou "esc" do teclado.
+    - "Voc\xEA ganhara pontos de XP ao derrotar inimigos pelo mapa e apos conseguir
+      uma certa quantia ira passar de n\xEDvel."
+    - "Ao passar de n\xEDvel a sua vida m\xE1xima \xE9 aumentada e restaurada."
+    - "Voc\xEA pode conferir seus pontos de XP apertar a tecla \"i\" ou \"esc\" do
+      teclado."
 --- !u!114 &287861602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18858,8 +18779,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: 6412}
-  m_SizeDelta: {x: 42.01317, y: 107.30218}
+  m_AnchoredPosition: {x: -1.39, y: 6591.9}
+  m_SizeDelta: {x: 50.3583, y: 157.37228}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &761256631
 MonoBehaviour:
@@ -18876,9 +18797,10 @@ MonoBehaviour:
   dialogue:
     name: Tutorial5
     sentences:
-    - Ao chegar no final do andar, voce encontrara com o boss do andar.
-    - Ao derrotalo, ira aparecer um portal verde que o levara para o proximo andar.
-    - Para voltar a tela de inicio utilize a tecla "p" e va em "Menu"
+    - "Ao chegar no final do andar, voc\xEA encontrara com o boss do andar."
+    - "Ao derrot\xE1-lo, ira aparecer um portal verde que o levara para o pr\xF3ximo
+      andar e um portal azul que o levara a um local desconhecido."
+    - "Para voltar a tela de in\xEDcio utilize a tecla \"p\" e v\xE1 em \"Menu\""
 --- !u!114 &761256632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98598,7 +98520,6 @@ Transform:
   - {fileID: 129736118}
   - {fileID: 866707511}
   - {fileID: 1726332206}
-  - {fileID: 222900838}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -99443,8 +99364,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2256, y: -8196}
-  m_SizeDelta: {x: 41.882828, y: 108.879135}
+  m_AnchoredPosition: {x: 2255.58, y: -8179.2134}
+  m_SizeDelta: {x: 49.436584, y: 167.6332}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1532585744
 MonoBehaviour:
@@ -99461,12 +99382,17 @@ MonoBehaviour:
   dialogue:
     name: Tutorial1
     sentences:
-    - Clique em objetos/personagens com um simbolo amarelo em cima para ver oque
-      eles tem a dizer.
+    - "Clique em objetos/personagens com um s\xEDmbolo amarelo em cima para ver oque
+      eles t\xEAm a dizer."
     - "Bot\xE3o esquerdo do mouse para atacar"
-    - Use as teclas "1" e "2" para trocar de arma.
+    - Use as teclas "1", "2" e "3" para trocar de arma.
+    - 'Tecla "1" espada.
+
+      Tecla "2" cajado
+
+      Tecla "3" sem arma'
+    - "A op\xE7\xE3o \"sem arma\" \xE9 \xFAtil para quando for iniciar um dialogo."
     - W,A,S,D para se mover.
-    - Aperte "P" para pausar o jogo.
 --- !u!114 &1532585745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100122,13 +100048,13 @@ MonoBehaviour:
   dialogue:
     name: Tutorial4
     sentences:
-    - Parece que voce tem dinheiro suficiente para aprimorar sua arma
-    - Para aprimorar a arma, aperte a tecla "i" ou "esc" do teclado e clique no numero
-      ao lado da arma.
-    - 'Cajados: armas de longa distancia que pode ser usada de outros jeitos alem
-      de atacar.'
-    - 'Espadas: armas de curta distancia que podem acertar varios inimigos de uma
-      vez, tem o dobro de dano do cajado.'
+    - "Parece que voc\xEA tem dinheiro suficiente para aprimorar sua arma."
+    - "Para aprimorar a arma, aperte a tecla \"i\" ou \"esc\" do teclado e clique
+      no n\xFAmero abaixo da arma."
+    - "Cajado:  arma de longa dist\xE2ncia que pode ser usada para iluminar locais
+      escuros."
+    - "Espada: arma de curta dist\xE2ncia que pode acertar v\xE1rios inimigos de
+      uma vez, tem o dobro de dano do cajado."
 --- !u!114 &1634287855
 MonoBehaviour:
   m_ObjectHideFlags: 0

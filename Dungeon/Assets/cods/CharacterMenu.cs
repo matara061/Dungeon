@@ -161,6 +161,11 @@ public class CharacterMenu : MonoBehaviour
             Weapon.SetActive(false);
             Gun.SetActive(true);
             fire.SetActive(true);
+        }else if(Input.GetKeyDown("3"))
+        {
+            Weapon.SetActive(false);
+            Gun.SetActive(false);
+            fire.SetActive(false);
         }
 
         if(Weapon.activeSelf)
