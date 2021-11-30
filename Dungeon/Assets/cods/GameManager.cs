@@ -172,7 +172,7 @@ public class GameManager : MonoBehaviour
 
         if (sceneName == "credits" || sceneName == "Menu")
         {
-            Debug.Log("destroi");
+            //Debug.Log("destroi");
 
             hud.SetActive(false);
             menu.SetActive(false);

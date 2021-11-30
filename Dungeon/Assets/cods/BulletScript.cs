@@ -34,11 +34,11 @@ public class BulletScript : Collidable           //Weapon     //EnemyHitbox
 
     protected override void OnCollide(Collider2D coll)
     {
-        if (coll.CompareTag("Fighter")) // coll.Tag é o original
+        if (coll.CompareTag("Fighter")) 
         {
            
 
-            if (coll.name == "Player" || coll.name == "SoundPlay") // nao precisa ignorar apenas fazer o fire point esta sempre a frente do jogodor, fazer a sprite do jogador seguir o mouse 
+            if (coll.name == "Player" || coll.name == "SoundPlay") 
                 return;
 
 
@@ -50,7 +50,7 @@ public class BulletScript : Collidable           //Weapon     //EnemyHitbox
                 pushForce = pushForce[gunLevel]
             };
    
-            Debug.Log(coll.name);
+            //Debug.Log(coll.name);
             coll.SendMessage("ReceiveDamage", dmg);
             
 

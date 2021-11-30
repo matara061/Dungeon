@@ -163,7 +163,7 @@ public class CharacterMenu : MonoBehaviour
             fire.SetActive(true);
         }
 
-        if(Weapon.activeSelf) // gambiarra
+        if(Weapon.activeSelf)
         {
             Gun.SetActive(false);
             fire.SetActive(false);

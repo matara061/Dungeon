@@ -20,7 +20,7 @@ public class Weapon : Collidable // : monobehav....
 
     private void Awake()
     {
-		spriteRenderer = GetComponent<SpriteRenderer>(); // tem outro jeito de fazer se der ruim. 5:31:35
+		spriteRenderer = GetComponent<SpriteRenderer>(); 
 	}
 
     protected override void Start()
@@ -47,9 +47,9 @@ public class Weapon : Collidable // : monobehav....
 
 	protected override void OnCollide(Collider2D coll)
 	{
-		if (coll.CompareTag("Fighter")) // coll.Tag é o original
+		if (coll.CompareTag("Fighter")) 
 		{
-			if (coll.name == "Player" ) //|| coll.name == "Bullet")
+			if (coll.name == "Player" ) 
 				return;
 
 			// create a new damage object, then we ll send it to the fighter we ve hit 
@@ -60,7 +60,7 @@ public class Weapon : Collidable // : monobehav....
 				pushForce = pushForce[weaponLevel]
 			};
 
-			Debug.Log(coll.name);
+			//Debug.Log(coll.name);
 			coll.SendMessage("ReceiveDamage", dmg);
 
 		}
