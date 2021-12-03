@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BattleOff : BattleOn
+public class BattleOff : MonoBehaviour
 {
     private int health = 2;
     Animator animator;
@@ -12,21 +12,11 @@ public class BattleOff : BattleOn
     }
     private void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.tag == "Bullet")
+        if (coll.gameObject.name == "Bullet2(Clone)" || coll.gameObject.name == "Weapon")
         {
-           
-            health--;
-
-            if (health == 1)
-            {
-                //animator.Play("Ponti2");
-                //FindObjectOfType<AudioManager>().Play("Bridge");
-                Destroy(gameObject);
-                animator.Play("Barreira");
-
-            }
-
+            //FindObjectOfType<AudioManager>().Stop("Soundtrack batlle");
+            animator.Play("BloqueioOff2");
         }
 
-        }
     }
+}
