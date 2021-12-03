@@ -7,6 +7,7 @@ public class Gun : MonoBehaviour
     Animator animator;
     public Transform firePoint;
     public GameObject bulletPrefabs;
+    //public GameObject bulletPrefabs1;
     SpriteRenderer sprite;
 
     public float bulletForce = 20f;
@@ -29,6 +30,7 @@ public class Gun : MonoBehaviour
     float nextTimeToFire = 0;
 
     public BulletScript bullet;
+   // public BulletScript bullet1;
 
     void Start()
     {
@@ -88,6 +90,12 @@ public class Gun : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletPrefabs, firePoint.position, transform.rotation);
         FindObjectOfType<AudioManager>().Play("EnergyShoot");
+
+       // if(gunLevel == 1)
+       // {
+       //     GameObject bullet1 = Instantiate(bulletPrefabs1, firePoint.position, transform.rotation);
+       //     FindObjectOfType<AudioManager>().Play("Money");
+       // }
 
         // -- O comentado abaixo é Utilizado para deixar tiro mais rapido e tentar virar a sprite. Bug maroto
 

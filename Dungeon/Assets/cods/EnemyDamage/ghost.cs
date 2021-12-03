@@ -6,8 +6,9 @@ public class ghost : Enemy
 {
     Animator animator;
     //private int Hitpoint = 2;
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         animator = GetComponent<Animator>();
     }
     private void FixedUpdate()

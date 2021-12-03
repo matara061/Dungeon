@@ -71,6 +71,34 @@ public class Weapon : Collidable // : monobehav....
 		//Debug.Log("Swing");
 		anim.SetTrigger("Swing");
 		FindObjectOfType<AudioManager>().Play("Sword5");
+
+		if(weaponLevel == 1)
+        {
+			anim.SetTrigger("Swing");
+			FindObjectOfType<AudioManager>().Play("Sword2");
+			FindObjectOfType<AudioManager>().Stop("Sword5");
+		}
+		if (weaponLevel == 2)
+		{
+			anim.SetTrigger("Swing");
+			FindObjectOfType<AudioManager>().Play("Sword3");
+			FindObjectOfType<AudioManager>().Stop("Sword2");
+			FindObjectOfType<AudioManager>().Stop("Sword5");
+		}
+		if (weaponLevel == 3)
+		{
+			anim.SetTrigger("Swing");
+			FindObjectOfType<AudioManager>().Play("Sword4");
+			FindObjectOfType<AudioManager>().Stop("Sword3");
+			FindObjectOfType<AudioManager>().Stop("Sword2");
+			FindObjectOfType<AudioManager>().Stop("Sword5");
+		}
+		if (weaponLevel == 4)
+		{
+			anim.SetTrigger("Swing");
+			FindObjectOfType<AudioManager>().Play("Sword1");
+			FindObjectOfType<AudioManager>().Stop("Sword4");
+		}
 	}
 
 	public void UpgradeWeapon()

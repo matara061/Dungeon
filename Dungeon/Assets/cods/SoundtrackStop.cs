@@ -2,26 +2,46 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundtrackStop : Collidable
+public class SoundtrackStop : MonoBehaviour
 {
     Animator animator;
+    private int health = 3;
+
+
     void Start()
     {
         animator = GetComponent<Animator>();
+
     }
 
     void Update()
     {
-        
+
     }
-    // Start is called before the first frame update
-    protected override void OnCollide(Collider2D coll)
+
+    private void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.name == "Player")
+        if (coll.gameObject.tag == "Bullet")
         {
-            //FindObjectOfType<AudioManager>().Stop("Soundtrack batlle");
-            animator.Play("Barreira2");
+            // Destroy(coll.gameObject);
+            health--;
+            //animator.Play("Stone2");
+            if (health <= 2)
+            {
+                animator.Play("Porta2");
+                FindObjectOfType<AudioManager>().Play("DoorOpen");
+            }
+
+           // if (health == 1)
+           // {
+           //     animator.Play("Stone2");
+           //     FindObjectOfType<AudioManager>().Play("Stone Explosion");
+           // }
+           // if (health == 0)
+           // {
+           //     Destroy(gameObject);
+           // }
         }
-   
+
     }
 }
