@@ -10596,7 +10596,7 @@ PrefabInstance:
     - target: {fileID: 1156373494640165773, guid: 56faa5be647b47f479eb78d82688d3a1,
         type: 3}
       propertyPath: sceneNames.Array.data[0]
-      value: Mapa2
+      value: Mapa1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56faa5be647b47f479eb78d82688d3a1, type: 3}
@@ -10744,7 +10744,7 @@ PrefabInstance:
     - target: {fileID: 7780401159446902636, guid: facf4e5dea4a1f74e9e844fa4d79edc9,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: facf4e5dea4a1f74e9e844fa4d79edc9, type: 3}
@@ -11914,7 +11914,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.034560084, y: -0.01263082}
+  m_Offset: {x: -0.026689112, y: -0.030996323}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -11925,7 +11925,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.29887295, y: 0.47689986}
+  m_Size: {x: 0.209669, y: 0.40868473}
   m_EdgeRadius: 0
 --- !u!212 &1355809273
 SpriteRenderer:
@@ -18687,12 +18687,12 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 0.37735236
+  m_PointLightOuterRadius: 0.56
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 1
+  m_ShapeLightParametricRadius: 0.02
   m_ShapeLightFalloffSize: 0.5
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
