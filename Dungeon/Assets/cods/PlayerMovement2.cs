@@ -110,7 +110,7 @@ public class PlayerMovement2 : Mover
         DeathUi.SetActive(true);
         player.SetActive(false);
         hitpoint = maxHitpoint;
-        game.pesos = game.pesos / 2; // n testado
+       // game.pesos = game.pesos / 2; // n testado
         Time.timeScale = 0f;
        // SceneManager.LoadScene("Testes");
        // this.transform.position = GameObject.Find("SpawnPoint").transform.position;

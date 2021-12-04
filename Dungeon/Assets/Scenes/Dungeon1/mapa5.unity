@@ -56914,6 +56914,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dedf828f4ea00b40a76095041e6bc54, type: 3}
+--- !u!1 &1377282731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6032042854185020901, guid: 2dedf828f4ea00b40a76095041e6bc54,
+    type: 3}
+  m_PrefabInstance: {fileID: 1377282730}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1390338515 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8413916617350626679, guid: a349fc3fded35424d8393b32950ff097,
@@ -69560,7 +69566,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 903455298}
+      - m_Target: {fileID: 1377282731}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
